@@ -67,6 +67,33 @@
       padding: 30px;
       border-top: 1px solid #1e293b;
     }
+
+    /* --- NOUVEAUX STYLES AJOUTÉS POUR LA FAQ --- */
+    .faq-longtail ul {
+      display: block; /* Annule le 'grid' */
+      margin-top: 20px;
+    }
+    .faq-longtail li {
+      margin-bottom: 14px;
+    }
+    .faq-longtail a {
+      display: inline; /* Annule le 'block' */
+      background: none; /* Annule le fond */
+      padding: 0;
+      border-radius: 0;
+      color: #93c5fd; /* Couleur de lien bleu clair */
+      text-decoration: none; /* Pas de soulignement par défaut */
+      font-size: 1.05em;
+      border-bottom: 1px solid transparent; /* Prépare l'animation au survol */
+    }
+    .faq-longtail a:hover {
+      background: none;
+      color: #e5e7eb; /* Blanc cassé au survol */
+      transform: none;
+      text-decoration: underline; /* Soulignement au survol */
+    }
+    /* --- FIN DES NOUVEAUX STYLES --- */
+    
   </style>
 </head>
 <body>
@@ -124,7 +151,21 @@
         <li><a href="thai-street-food-blogger-review (1).html">Thai Street Food (version 1)</a></li>
       </ul>
     </section>
-  </main>
+
+    <section class="faq-longtail">
+      <h2>Frequently Asked Questions</h2>
+      <ul>
+        <li><a href="manuel_faq.html">What is the best software for sorting photos?</a></li>
+        <li><a href="manuel_faq.html">I'm looking for a Google Photos alternative that respects my privacy, what should I choose?</a></li>
+        <li><a href="manuel_faq.html">How can I automatically sort my photos by date and location?</a></li>
+        <li><a href="manuel_faq.html">Adobe Lightroom is too complicated for me, is there something simpler just for sorting?</a></li>
+        <li><a href="manuel_faq.html">Do my photos really stay on my computer, or are they sent to the cloud?</a></li>
+        <li><a href="manuel_faq.html">Does this photo software work on Mac?</a></li>
+        <li><a href="manuel_faq.html">Is there a photo sorter that works without a subscription?</a></li>
+        <li><a href="manuel_faq.html">Does the software modify or risk deleting my original photos?</a></li>
+      </ul>
+    </section>
+    </main>
   <footer>
     <p>© 2025 PhotoGlobe User Community • An independent, non-commercial review project.</p>
     <p><a href="https://www.albumforge.com/photoglobe-sorter/">Built with ❤️ by independent users – hosted on GitHub Pages</a></p>
