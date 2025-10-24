@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="fr-SN"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mon "Heatmap" du Sénégal : Comment j'ai trié 30.000 photos de rando | Avis PhotoGlobe Sorter</title>
+    
+    <meta name="description" content="Un randonneur Sénégalais teste PhotoGlobe Sorter. J'ai trié 30.000 photos (Niokolo-Koba, Sine-Saloum, Lac Rose) par GPS. Le rapport PDF avec 'heatmap' est génial. €39.">
+    
+    <meta name="keywords" content="avis PhotoGlobe Sorter, comment organiser 30000 photos, logiciel tri photos randonnée Sénégal, organiser photos Parc Niokolo-Koba, classer photos Sine-Saloum, carte de chaleur (heatmap) photos, logiciel tri photos GPS, tri automatique photos localisation, organiser photos voyages Sénégal, alternative Google Photos offline, gestion photos Casamance, logiciel photo 39 euros, classer photos oiseaux Sénégal, logiciel photo pas cher, trouver photo par lieu GPS">
+    
+    <meta name="author" content="Ousmane Diop">
+    <meta property="og:title" content="Ma carte perso du Sénégal ! J'ai trié 30.000 photos de rando (Niokolo-Koba...)">
+    <meta property="og:description" content="Mes photos du Lac Rose, Sine-Saloum et Niokolo-Koba étaient un chaos. Ce logiciel à 39€ a tout trié par lieu et m'a créé un 'heatmap' de mes randos. C'est chic !">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="URL-DE-CET-ARTICLE-ICI"> 
+
+
+    <style>
+        body {
+            font-family: Arial, Verdana, sans-serif;
+            line-height: 1.7;
+            background-color: #FEFBF5; /* Couleur sable clair */
+            color: #333;
+            font-size: 17px;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 25px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1, h2, h3 {
+            font-family: Impact, "Arial Black", sans-serif; /* Police forte */
+            color: #3D5A3D; /* Vert baobab / Nature */
+            border-bottom: 3px solid #D95525; /* Terracotta / Terre rouge */
+            padding-bottom: 8px;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            line-height: 1.2;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        h2 {
+            font-size: 2em;
+            margin-top: 50px;
+        }
+        h3 {
+            font-size: 1.5em;
+            border-bottom: 1px dotted #8c8c8c;
+        }
+        
+        /* Blocs de couleurs chaudes */
+        .bloc-problema, .bloc-solution, .bloc-verdict, .bloc-auteur, .bloc-cta {
+            background-color: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .bloc-problema {
+            background-color: #fff8f8;
+            border-left: 5px solid #D95525; /* Terracotta */
+        }
+        .bloc-solution {
+            background-color: #f8fff8;
+            border-left: 5px solid #3D5A3D; /* Vert Baobab */
+        }
+        .bloc-verdict {
+            background-color: #FFF8E1; /* Jaune soleil */
+            border: 2px solid #FFC107;
+            text-align: center;
+        }
+        .bloc-auteur {
+            text-align: center;
+            font-style: italic;
+            background-color: #fafafa;
+        }
+        .bloc-cta {
+            background-color: #3D5A3D; /* Vert Baobab solide */
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .bloc-cta h3 {
+            color: #ffffff;
+            border-bottom: 1px solid #fff;
+        }
+        .bloc-cta p {
+            font-size: 1.1em;
+        }
+
+        /* Éléments de base */
+        img, .photo-placeholder {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        blockquote {
+            font-style: italic;
+            background-color: #fefefe;
+            border-left: 6px solid #D95525; /* Terracotta */
+            padding: 18px 25px;
+            margin: 25px 0;
+            font-size: 1.15em;
+            color: #555;
+        }
+        ul, ol {
+            margin-left: 30px;
+        }
+        li {
+            margin-bottom: 12px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            font-size: 0.95em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 14px;
+            text-align: left;
+        }
+        th {
+            background-color: #f5f5f5;
+        }
+        code {
+            background-color: #eee;
+            padding: 3px 6px;
+            font-family: monospace;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+
+        /* Placeholders de Photo */
+        .photo-placeholder {
+            width: 95%;
+            min-height: 250px;
+            background-color: #e8e8e8;
+            border: 2px dashed #a0a0a0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .photo-placeholder div:first-child {
+            font-size: 3.5em;
+            color: #888;
+        }
+        .photo-placeholder div:nth-child(2) {
+            font-weight: bold;
+            color: #555;
+            margin-top: 15px;
+        }
+        .photo-placeholder div:last-child {
+            font-size: 0.9em;
+            color: #777;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        /* Bouton CTA - Terracotta */
+        .cta-button {
+            display: inline-block;
+            background-color: #E07A5F; /* Terracotta plus clair */
+            color: #ffffff;
+            padding: 18px 35px;
+            text-decoration: none;
+            font-size: 1.25em;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        .cta-button:hover {
+            background-color: #D95525;
+        }
+
+        .rating {
+            font-size: 2em;
+            font-weight: bold;
+            color: #D95525; /* Terracotta */
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Waaw! Ma "Carte de Chaleur" perso du Sénégal : Comment j'ai enfin trié 30.000 photos de rando !</h1>
+        <h2>Mon avis sur PhotoGlobe Sorter : le logiciel qui a transformé mon chaos (Niokolo-Koba, Sine-Saloum...) en un journal de bord visuel.</h2>
+
+
+        <div class="bloc-auteur">
+            <p>Par <strong>Ousmane Diop</strong><br>
+            Dakar, Sénégal | Avis rédigé le 24 Octobre 2025</p>
+            <p>Je travaille dans une banque à Dakar, mais ma vraie passion, c'est la nature sénégalaise. Je ne suis pas informaticien, juste un randonneur qui aime l'ordre.</p>
+        </div>
+
+        <div class="rating">
+            ★★★★★ (5 / 5.0)
+            <p style="font-size: 0.7em; color: #333; font-weight: normal;">Pour un passionné de rando, c'est juste parfait. 10/10.</p>
+        </div>
+
+
+        <blockquote>
+            "Un collègue me demande : 'Ousmane, toi qui voyages, montre-moi une photo d'un calao (oiseau) au Niokolo-Koba.' Je sais que j'en ai des dizaines ! Mais où ? Dans quel dossier ? Mélangées avec les photos du Lac Rose de 2022 ? Ou celles des mangroves du Sine-Saloum ? Mon disque dur était une 'bouillie numérique'. Je ne pouvais rien partager, c'était frustrant."
+        </blockquote>
+        
+        <p>"Teranga !" Je m'appelle Ousmane. Mon plaisir, c'est de prendre ma voiture le week-end et de rouler. J'adore notre pays. Le Parc National du Niokolo-Koba, le Delta du Sine-Saloum, le Désert de Lompoul, la Casamance, la réserve de Bandia... Je photographie tout : les baobabs, les oiseaux, les paysages.</p>
+        
+        <p>Mon problème : <strong>30.400 photos</strong> prises au smartphone ou avec mon GPS de rando. Toutes avaient des coordonnées GPS, mais elles étaient toutes mélangées. Cet article, c'est l'histoire de comment un petit logiciel à 39€ (environ 25.000 Francs CFA) a non seulement rangé mon chaos, mais m'a offert l'outil le plus "chic" que j'ai jamais vu.</p>
+
+
+        <h2>Mon Problème : La "Bouillie" Numérique d'un Randonneur</h2>
+
+        <div class="bloc-problema">
+            <p>Mon archive de photos de nature, c'était ça :</p>
+            <ul>
+                <li><strong>30.400 photos et vidéos courtes</strong>.</li>
+                <li><strong>10 ans</strong> de randonnées et d'explorations (2015 - 2025).</li>
+                <li><strong>210 GB</strong> de données.</li>
+                <li>Dossiers : <code>Rando_2023</code>, <code>Vacances_Cap_Skirring_NEW</code>, <code>Oiseaux_2022</code>, <code>Backup_Tel_2021</code>.</li>
+            </ul>
+        </div>
+
+        <p>C'était impossible de m'y retrouver. Je voulais comparer les baobabs de la Somone avec ceux de Bandia. Impossible. Je voulais retrouver toutes mes photos d'oiseaux du Parc National des Oiseaux du Djoudj. Impossible.</p>
+        
+        <p>Il me fallait un <strong>logiciel de tri de photos par GPS</strong>. J'avais besoin d'<strong>organiser mes photos du Parc Niokolo-Koba</strong> dans un dossier, et celles du <strong>Sine-Saloum</strong> dans un autre. Automatiquement. Le tri manuel, "y'a pas le temps" pour ça.</p>
+
+
+        <h2>Ce que j'ai essayé avant (Et pourquoi ça n'a pas marché)</h2>
+
+        <p>Je cherchais un <strong>logiciel de photo pour randonnée au Sénégal</strong>, simple et efficace.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Alternative</th>
+                    <th>Pourquoi j'ai laissé tomber</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Trier à la main</strong></td>
+                    <td>Avec 30.000 photos ? "C'est pas la peine." J'ai abandonné après 10 minutes.</td>
+                </tr>
+                <tr>
+                    <td><strong>Google Photos</strong></td>
+                    <td>Non merci. Je n'ai pas envie d'envoyer 210 GB de photos de mes randos persos sur un "cloud" américain. Je veux une <strong>alternative Google Photos offline</strong>. Mes photos restent sur mon disque dur à Dakar.</td>
+                </tr>
+                <tr>
+                    <td><strong>Adobe Lightroom</strong></td>
+                    <td>C'est une usine à gaz. Trop compliqué et trop cher (abonnement). Je veux trier, pas devenir photographe pro.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>J'ai trouvé PhotoGlobe Sorter en cherchant "logiciel tri photos localisation". Et là, j'ai vu deux choses qui m'ont convaincu : 1. Prix unique 39€. 2. La fonction : <strong>"Rapport PDF avec Carte de Chaleur (Heatmap)"</strong>.</p>
+        
+        <p>Une "carte de chaleur" ? De mes propres photos ? Pour un randonneur comme moi, qui vit avec des cartes GPS, c'était l'argument ultime. Je voulais voir ça !</p>
+
+        <h2>Le Processus : 10 ans de randos triés en 28 minutes</h2>
+
+        <p>J'ai acheté la licence. 39€, c'est environ <strong>25.000 Francs CFA</strong>. Un seul paiement. Voici ce que j'ai fait.</p>
+
+        <h3>Étape 1 : La Structure de l'Explorateur (5 minutes)</h3>
+        <p>C'est la clé. Dans le "Constructeur de Structure", j'ai défini mon classement de rêve :</p>
+        <p><code>Pays</code> → <code>Région</code> → <code>Ville/Lieu</code> → <code>Année</code></p>
+        <p>Simple. Le logiciel allait lire le GPS de chaque photo et créer des dossiers : `Sénégal > Région de Kédougou > Parc National du Niokolo-Koba > 2023`. C'est exactement ce que je voulais.</p>
+
+        <h3>Étape 2 : Lancer la machine (28 Minutes)</h3>
+        <p>Le top pour moi : <strong>99% de mes photos avaient des données GPS</strong> (merci le smartphone et le GPS de rando). Je n'avais presque rien à faire manuellement. J'ai juste sélectionné mon dossier "Chaos" (210 GB) comme "Source" et un nouveau disque dur comme "Destination". J'ai cliqué sur "Démarrer".</p>
+        <p><strong>Temps total pour 30.400 photos : 28 minutes et 40 secondes.</strong> "Waaw!" (Wow!)</p>
+
+        <h3>Étape 3 : Le Résultat (Le Choc !)</h3>
+        <p>À la fin, le logiciel m'a demandé si je voulais ouvrir le "Rapport PDF". Je l'ai ouvert. Et là... c'était génial.</p>
+
+        <div class="photo-placeholder">
+            <div>📸</div>
+            <div>[Mon disque dur AVANT]</div>
+            <div style="font-size: 0.9em;">Légende : Mon chaos. `Rando_2023`, `Oiseaux`, `Backup`. Impossible de trouver quoi que ce soit.</div>
+        </div>
+
+        <div class="photo-placeholder">
+            <div>📸</div>
+            <div>[Le "Heatmap" de mes randos (du Rapport PDF)]</div>
+            <div style="font-size: 0.9em;">Légende : Le "bonus" qui tue ! Mon rapport PDF avec la carte du Sénégal et des taches rouges là où je marche le plus. On voit Niokolo-Koba et le Sine-Saloum !</div>
+        </div>
+        
+        <p>Mes dossiers étaient parfaitement rangés. Mais ce rapport PDF... c'était la cerise sur le gâteau.</p>
+
+        <h2>Ce que j'adore (Le "Must" du Randonneur)</h2>
+        
+        <ol>
+            <li><strong>LE RAPPORT PDF AVEC "HEATMAP" !</strong><br>
+            C'est mon gadget préféré. C'est devenu la raison principale pour laquelle j'aime ce logiciel. J'ai un PDF A4 avec la carte du Sénégal. Dessus, il y a des taches de couleur : une grosse tache rouge vif sur le <strong>Parc National du Niokolo-Koba</strong>, une autre sur le <strong>Delta du Sine-Saloum</strong>, et des points plus petits sur la Casamance, le Lac Rose et le Djoudj. C'est MA carte d'explorateur personnelle ! C'est la preuve visuelle de toutes mes aventures. "C'est trop chic !"</li>
+            
+            <li><strong>Le Tri par Parc National / Lieu</strong><br>
+            Enfin ! Je peux aller dans `Sénégal > Région de Tambacounda > Parc National du Niokolo-Koba` et voir TOUTES mes photos de ce parc, triées par année. C'est parfait pour <strong>classer mes photos du Sine-Saloum</strong> ou de n'importe quel lieu.</li>
+
+            <li><strong>100% Offline (Pas de Cloud)</strong><br>
+            Mes photos restent sur mon disque dur à Dakar. "Y'a pas de problème" de confidentialité.</li>
+            
+            <li><strong>Le Prix (environ 25.000 XOF)</strong><br>
+            Pour un paiement unique, c'est donné. C'est le prix d'un bon dîner "Chez Loutcha" à Dakar, mais pour un logiciel que j'utiliserai à vie.</li>
+        </ol>
+
+        <h2>Les petits "soucis" (Les défauts)</h2>
+        
+        <ul>
+            <li><strong>Windows seulement.</strong><br>
+            Si vous avez un Mac, ça ne marche pas. Dommage.</li>
+            
+            <li><strong>Interface "fonctionnelle".</strong><br>
+            Ce n'est pas "joli" comme Apple Photos. C'est un outil de travail. Mais il fait le travail parfaitement.</li>
+
+            <li><strong>Presque *trop* simple si vous n'avez pas de GPS.</strong><br>
+            Pour moi, c'était parfait car 99% de mes photos sont géolocalisées. Si vous n'avez aucune photo avec GPS, l'outil de "geotagging manuel" est là, mais il demandera plus de travail.</li>
+        </ul>
+
+        <h2>C'est pour qui ? (Mon avis)</h2>
+
+        <div class="bloc-solution">
+            <p><strong>Ce logiciel est PARFAIT pour vous si :</strong></p>
+            <ul>
+                <li>✅ Vous êtes un <strong>randonneur</strong>, un marcheur, un explorateur.</li>
+                <li>✅ <strong>Toutes vos photos (ou presque) ont des données GPS</strong> (prises au smartphone ou GPS).</li>
+                <li>✅ Vous rêvez de <strong>visualiser vos voyages sur une carte</strong> (le "heatmap" est fait pour vous !).</li>
+                <li>✅ Vous voulez trier vos photos par <strong>Parc National</strong>, Réserve, ou lieu de rando.</li>
+                <li>✅ Vous voulez une solution offline, pas chère et sans abonnement.</li>
+            </ul>
+        </div>
+
+        <div class="bloc-problema" style="margin-top: 20px;">
+            <p><strong>N'achetez pas si :</strong></p>
+            <ul>
+                <li>❌ Vous êtes sur <strong>Mac</strong>.</li>
+                <li>❌ Vous n'avez <strong>aucune photo avec GPS</strong> et vous n'avez pas la patience de les taguer manuellement.</li>
+                <li>❌ Vous cherchez un outil pour *éditer* les couleurs (ceci est un trieur).</li>
+            </ul>
+        </div>
+        
+        <h2>FAQ - Questions que je me posais</h2>
+        
+        <p><strong>Q : Est-ce qu'il reconnaît bien les Parcs Nationaux comme Niokolo-Koba ?</strong><br>
+        R : Oui ! Mon téléphone enregistre le GPS avec le nom "Parc National du Niokolo-Koba" comme "Lieu" (Place) ou "Ville" (City). Le logiciel lit ça et crée le dossier. C'est parfait.</p>
+
+        <p><strong>Q : Combien ça coûte en Francs CFA ?</strong><br>
+        R : C'est €39. Avec les frais de carte, ça m'a coûté environ <strong>25.000 XOF</strong>. Paiement unique.</p>
+        
+        <p><strong>Q : Est-ce que le "heatmap" (carte de chaleur) est précis ?</strong><br>
+        R : Oui, c'est surprenant. Il montre exactement les zones où j'ai "mitraillé" de photos. C'est très satisfaisant à voir.</p>
+
+        <h2>Mon archive, 6 mois après...</h2>
+
+        <p>C'est devenu un rituel. Je rentre de rando du Lac Rose. J'ai 100 nouvelles photos. Je branche le téléphone, je lance le logiciel. 1 minute après, elles sont rangées dans `.../Région de Dakar/Lac Rose/2025/`. Et mon rapport PDF se met à jour avec une petite tache de couleur en plus.</p>
+        
+        <p>Ce n'est plus une corvée, c'est un plaisir. Je ne vois plus un chaos de fichiers, je vois ma carte d'exploration personnelle du Sénégal qui se remplit.</p>
+        
+        <blockquote>
+            "Ce logiciel n'a pas seulement rangé mes photos. Il a donné un *sens* à mon exploration. Voir cette 'carte de chaleur' de mes propres pas, c'est la meilleure motivation pour découvrir les zones encore 'froides' de la carte. C'est génial !"
+        </blockquote>
+
+        <h2>Verdict Final : L'outil indispensable du Randonneur 2.0</h2>
+
+        <div class="bloc-verdict">
+            <p>Si vous êtes un passionné de nature et que toutes vos photos sont géolocalisées, arrêtez de chercher.</p>
+            
+            <p>Pour 25.000 XOF, vous n'achetez pas seulement un trieur. Vous achetez votre propre <strong>journal de bord visuel et géographique</strong>. Le "heatmap" à lui seul vaut le prix.</p>
+
+            <div class="rating" style="font-size: 1.8em; margin-top: 15px;">
+                Note Finale : 5 / 5.0 (Pour un randonneur, c'est parfait)
+            </div>
+        </div>
+
+
+        <div class="bloc-cta">
+            <h3>Essayez-le (500 photos gratuites)</h3>
+            <p>Ne me croyez pas sur parole. Téléchargez le demo gratuit. Prenez les 500 photos de votre dernière rando et regardez la magie opérer.</p>
+            
+            <a href="https://www.albumforge.com/photoglobe-sorter/" target="_blank" class="cta-button">
+                Télécharger l'Essai Gratuit (500 photos)
+            </a>
+            
+            <p style="margin-top: 25px; font-weight: bold; font-size: 1.1em; color: #fff;">
+                Prix : €39 (Environ 25.000 XOF) - Paiement Unique !
+            </p>
+            <p style="font-size: 0.9em; color: #fff;">
+                ✓ Sans Abonnement ✓ 100% Offline (Privé) ✓ Licence à vie
+            </p>
+        </div>
+
+        <div class="footer">
+            <p><strong>Avis :</strong> C'est mon avis personnel. Je n'ai pas été payé par AlbumForge. J'ai acheté ma licence de 39€ avec mon propre argent.</p>
+            <p>Ousmane Diop - Dakar, Sénégal - 24/10/2025</p>
+            <p><a href="https://www.albumforge.com/photoglobe-sorter/" target="_blank" style="color: #555;">Lien vers le site officiel de PhotoGlobe Sorter</a></p>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How I sorted 6 years of Ryanair city breaks (14,000 photos from 45 European cities) in 2 hours. Budget travel meets smart photo organisation - my PhotoGlobe Sorter story from Dublin.">
+    <meta name="keywords" content="organise city break photos by country, sort Ryanair travel photos Europe, cheap way organise thousands travel photos, budget travel photo management software, organise photos multiple European cities, sort weekend break photos by destination, manage Ryanair holiday photos efficiently, organise Barcelona Prague Budapest photos separately, city hopping photo organisation system, sort photos country city no subscription, budget photo organiser one time payment, organise Dublin Ryanair trips photos, weekend city break photography archive">
+    <meta name="author" content="Conor Murphy">
+    <meta property="og:title" content="45 European Cities, 14,000 Photos - Organised in 2 Hours for €39">
+    <meta property="og:description" content="A Dublin lad's honest review of PhotoGlobe Sorter. How I finally sorted 6 years of budget city breaks without paying monthly fees.">
+    <meta property="og:type" content="article">
+    <title>How I Organised 6 Years of Ryanair City Breaks (45 Cities!) for €39 | PhotoGlobe Sorter Review</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background: #fafafa;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 18px;
+            background: white;
+        }
+        
+        header {
+            padding: 40px 28px;
+            background: linear-gradient(to right, #169B62 0%, #169B62 33%, white 33%, white 66%, #FF883E 66%, #FF883E 100%);
+            margin-bottom: 32px;
+            border: 4px solid #169B62;
+        }
+        
+        header h1 {
+            background: white;
+            padding: 22px;
+            color: #169B62;
+            border: 3px solid #FF883E;
+        }
+        
+        h1 {
+            font-size: 1.85em;
+            margin-bottom: 14px;
+            line-height: 1.3;
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            font-size: 1.05em;
+            background: white;
+            padding: 16px;
+            margin-top: 14px;
+            border: 2px solid #169B62;
+            font-style: italic;
+        }
+        
+        .author-box {
+            background: #e8f5f1;
+            padding: 22px;
+            margin: 28px 0;
+            border-left: 5px solid #169B62;
+            border-right: 5px solid #FF883E;
+        }
+        
+        .author-box strong {
+            color: #169B62;
+            font-size: 1.08em;
+        }
+        
+        .rating-box {
+            background: #fff9f0;
+            padding: 24px;
+            text-align: center;
+            margin: 28px 0;
+            border: 3px solid #FFB84D;
+        }
+        
+        .stars {
+            font-size: 34px;
+            color: #FFB84D;
+            letter-spacing: 7px;
+        }
+        
+        .rating-text {
+            margin-top: 12px;
+            font-size: 1.18em;
+            color: #FF883E;
+            font-weight: bold;
+        }
+        
+        .intro-quote {
+            font-size: 1.08em;
+            line-height: 1.75;
+            background: #f8faf9;
+            padding: 26px;
+            margin: 28px 0;
+            border-left: 5px solid #169B62;
+            font-style: italic;
+        }
+        
+        h2 {
+            color: #FF883E;
+            margin-top: 42px;
+            margin-bottom: 20px;
+            font-size: 1.65em;
+            border-bottom: 3px solid #169B62;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #169B62;
+            margin-top: 28px;
+            margin-bottom: 14px;
+            font-size: 1.28em;
+        }
+        
+        p {
+            margin-bottom: 18px;
+            text-align: left;
+        }
+        
+        .problem-box {
+            background: #fff0f0;
+            padding: 24px;
+            margin: 26px 0;
+            border-left: 5px solid #D43F3A;
+        }
+        
+        .problem-box h3 {
+            color: #D43F3A;
+            margin-top: 0;
+        }
+        
+        .solution-box {
+            background: #e8f5f1;
+            padding: 24px;
+            margin: 26px 0;
+            border-left: 5px solid #169B62;
+        }
+        
+        .solution-box h3 {
+            color: #169B62;
+            margin-top: 0;
+        }
+        
+        ul, ol {
+            margin: 18px 0 18px 30px;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            line-height: 1.62;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #e8f5f1 0%, #d4ebe4 100%);
+            padding: 24px;
+            margin: 28px 0;
+            border: 3px solid #169B62;
+        }
+        
+        .highlight-box strong {
+            color: #FF883E;
+            font-size: 1.08em;
+        }
+        
+        .photo-placeholder {
+            width: 100%;
+            height: 340px;
+            background: #f5f5f5;
+            border: 3px dashed #169B62;
+            margin: 28px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            text-align: center;
+            padding: 24px;
+        }
+        
+        .photo-placeholder::before {
+            content: "✈️🌍📸";
+            font-size: 52px;
+            margin-bottom: 16px;
+        }
+        
+        .cities-list {
+            background: #fff9f0;
+            padding: 22px;
+            margin: 24px 0;
+            border: 2px solid #FFB84D;
+        }
+        
+        .cities-list li {
+            list-style: none;
+            padding-left: 32px;
+            position: relative;
+        }
+        
+        .cities-list li:before {
+            content: "🍺";
+            position: absolute;
+            left: 0;
+            font-size: 1.25em;
+        }
+        
+        .folder-structure {
+            background: #f5f5f5;
+            padding: 20px;
+            margin: 24px 0;
+            border-left: 4px solid #169B62;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .budget-tip {
+            background: #fff9f0;
+            border: 3px solid #FF883E;
+            padding: 22px;
+            margin: 26px 0;
+        }
+        
+        .budget-tip h3 {
+            color: #FF883E;
+            margin-top: 0;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 26px 0;
+        }
+        
+        .comparison-table th {
+            background: #169B62;
+            color: white;
+            padding: 13px;
+            text-align: left;
+            font-size: 1em;
+        }
+        
+        .comparison-table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        blockquote {
+            background: #fff9f0;
+            border-left: 5px solid #FFB84D;
+            padding: 22px;
+            margin: 26px 0;
+            font-style: italic;
+            font-size: 1.05em;
+        }
+        
+        blockquote strong {
+            color: #FF883E;
+        }
+        
+        .price-box {
+            background: #e8f5f1;
+            border: 4px solid #169B62;
+            padding: 30px;
+            text-align: center;
+            margin: 34px 0;
+        }
+        
+        .price-box .price {
+            font-size: 2.4em;
+            color: #FF883E;
+            font-weight: bold;
+            margin: 14px 0;
+        }
+        
+        .cta-button {
+            display: block;
+            background: #FF883E;
+            color: white;
+            padding: 19px 42px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.18em;
+            margin: 28px auto;
+            max-width: 440px;
+            border: 3px solid #169B62;
+        }
+        
+        .cta-button:hover {
+            background: #169B62;
+            border-color: #FF883E;
+        }
+        
+        .verdict-box {
+            background: linear-gradient(to bottom, #e8f5f1, #d4ebe4);
+            border: 4px solid #169B62;
+            padding: 30px;
+            margin: 38px 0;
+        }
+        
+        .verdict-box h2 {
+            color: #169B62;
+            border: none;
+            margin-top: 0;
+        }
+        
+        .faq-box {
+            background: white;
+            border: 2px solid #ddd;
+            padding: 19px;
+            margin-bottom: 17px;
+        }
+        
+        .faq-box h4 {
+            color: #FF883E;
+            margin-bottom: 11px;
+            font-size: 1.06em;
+        }
+        
+        .irish-slang {
+            color: #169B62;
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 28px;
+            color: #666;
+            border-top: 3px solid #ddd;
+            margin-top: 48px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            .container {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✈️ How I Organised 45 European City Breaks (14,000 Photos) in 2 Hours</h1>
+            <p class="subtitle">A Dubliner's guide to sorting budget travel photos without breaking the bank</p>
+        </header>
+
+        <div class="author-box">
+            <strong>Howiya! I'm Conor Murphy</strong><br>
+            29 years old • Marketing Manager • Dublin, Ireland • March 2025<br>
+            <em>Ryanair addict. 10+ city breaks per year. Living that budget travel life since 2019.</em>
+        </div>
+
+        <div class="rating-box">
+            <div class="stars">★★★★★</div>
+            <div class="rating-text">5/5 - Absolute Game Changer for Budget Travellers!</div>
+        </div>
+
+        <article>
+            <div class="intro-quote">
+                "Barcelona €29 return. Prague €19 return. Budapest €24 return. Thank you, Ryanair! Since 2019, I've done 10-12 city breaks a year - every single one booked on a Tuesday evening when the deals drop. Friday to Sunday. Sling a backpack on, hop on a plane, explore a new city, take 300 photos, home by Monday morning. Six years later? 45 European cities visited. 14,000 photos on my laptop. Problem? They were an absolute disaster. 'Where's that photo from Krakow?' No clue, mate. But then I found PhotoGlobe Sorter. Country → City structure. €39 once. Sorted in 2 hours. Legend."
+            </div>
+
+            <h2>✈️ My Story: The Budget City Break Addiction</h2>
+
+            <p>
+                Alright, let me set the scene. I'm Conor, 29, work in marketing in Dublin. Decent salary but rent's mental (€1,800 a month for a shoebox). So holidays? Can't afford two weeks in the Maldives or whatever. But I discovered the <strong class="irish-slang">holy grail:</strong> <span class="irish-slang">Ryanair city breaks.</span>
+            </p>
+
+            <p>
+                Here's the formula: Book flights on Tuesday (when deals drop). Fly Friday evening. Hostel or cheap Airbnb (€20-30/night). Wander the city Saturday and Sunday. Fly home Sunday night or Monday morning. <strong>Total cost: €150-200 for a full weekend abroad.</strong> Cheaper than a weekend in Galway!
+            </p>
+
+            <div class="cities-list">
+                <h3>🍻 My City Break Hit List (2019-2025):</h3>
+                <ul>
+                    <li><strong>Spain:</strong> Barcelona, Madrid, Seville, Valencia, Malaga</li>
+                    <li><strong>Italy:</strong> Rome, Milan, Venice, Florence, Naples</li>
+                    <li><strong>Portugal:</strong> Lisbon, Porto, Faro</li>
+                    <li><strong>France:</strong> Paris, Lyon, Marseille, Nice</li>
+                    <li><strong>Germany:</strong> Berlin, Munich, Hamburg, Cologne</li>
+                    <li><strong>Poland:</strong> Krakow, Warsaw, Gdansk</li>
+                    <li><strong>Czech Republic:</strong> Prague</li>
+                    <li><strong>Hungary:</strong> Budapest</li>
+                    <li><strong>Austria:</strong> Vienna</li>
+                    <li><strong>Netherlands:</strong> Amsterdam, Rotterdam</li>
+                    <li><strong>Belgium:</strong> Brussels, Bruges</li>
+                    <li><strong>And 15 more cities!</strong></li>
+                </ul>
+                <p style="margin-top: 16px;"><strong>Total: 45 cities in 6 years!</strong></p>
+            </div>
+
+            <p>
+                Every trip, I'd take <span class="irish-slang">hundreds of photos.</span> Architecture, food, pubs, street art, random cats, the lads on tour. My phone was full, laptop was full. <strong>14,000 photos total.</strong>
+            </p>
+
+            <h2>😤 The Problem: Photo Chaos</h2>
+
+            <div class="problem-box">
+                <h3>📂 My Situation Before PhotoGlobe Sorter:</h3>
+                <ul>
+                    <li><strong>14,287 photos</strong> from 6 years of city breaks</li>
+                    <li>Folders called: "Phone Backup 2021", "Europe Trip", "Random Travel"</li>
+                    <li><strong>Impossible to find specific cities:</strong> "Where's that paella photo from Valencia?"</li>
+                    <li>Photos from the same trip scattered across 3-4 folders (phone + camera + mates sending theirs)</li>
+                    <li>Barcelona 2020 mixed with Barcelona 2023 - couldn't tell them apart</li>
+                    <li><strong>Hours wasted</strong> when I wanted to show someone "that amazing pub in Prague"</li>
+                </ul>
+            </div>
+
+            <p>
+                The biggest problem? <strong>I couldn't organise by COUNTRY and then CITY.</strong> I needed:
+            </p>
+
+            <p style="background: #f8faf9; padding: 16px; border-left: 4px solid #169B62; margin: 16px 0;">
+                <strong>Spain/Barcelona/</strong> → All Barcelona photos<br>
+                <strong>Spain/Madrid/</strong> → All Madrid photos<br>
+                <strong>Italy/Rome/</strong> → All Rome photos<br>
+                <strong>Czech Republic/Prague/</strong> → All Prague photos
+            </p>
+
+            <p>
+                Simple, right? But doing it manually? <span class="irish-slang">Nightmare.</span> I tried once. Spent 4 hours sorting just 2022-2023. Then gave up. Life's too short.
+            </p>
+
+            <div class="photo-placeholder">
+                <div><strong>Before: Chaotic folders on my laptop</strong></div>
+                <div style="font-size: 0.92em; margin-top: 10px;">Example: "IMG_2021", "Travel Photos Maybe", "Backup_old"</div>
+            </div>
+
+            <h2>💡 How I Discovered PhotoGlobe Sorter</h2>
+
+            <p>
+                My mate Seán (also a Ryanair addict) told me about it down the pub. He said: <em>"Conor, this software sorts your photos by country and city automatically. And it's €39 once - no monthly shite."</em>
+            </p>
+
+            <p>
+                I was sceptical. <em>"How's it know which city?"</em>
+            </p>
+
+            <p>
+                <em>"GPS data, ya eejit! Your phone saves where you took the photo. The software reads it and sorts everything."</em>
+            </p>
+
+            <p>
+                Free trial on 500 photos. <strong>10 minutes later, they were organised: Spain/Barcelona, Italy/Rome, Poland/Krakow.</strong> I bought the full version that night. €39. Done.
+            </p>
+
+            <div class="budget-tip">
+                <h3>💰 Budget Traveller's Brain:</h3>
+                <p>
+                    Look, I'm Irish. We're <span class="irish-slang">fierce careful</span> with money. €39 sounds steep until you realise: Google Photos is €19.99/year for 2TB. After 2 years, you've paid €40 and you're STILL paying forever. PhotoGlobe? €39 ONCE. After 2 years, I'm €60 ahead. After 5 years, I'm €60 ahead. You get me?
+                </p>
+            </div>
+
+            <h2>⚙️ How I Sorted 14,000 Photos (Step by Step)</h2>
+
+            <p>
+                I'm not a tech head. If I can do this, anyone can:
+            </p>
+
+            <h3>Step 1: Gathered All Photos (25 minutes)</h3>
+            <p>
+                Copied all travel photos from laptop, external drive, and phone to one master folder: <strong>"City_Breaks_All"</strong>. <span class="irish-slang">Total: 14,287 files, 118 GB.</span>
+            </p>
+
+            <h3>Step 2: Chose Perfect Structure (3 minutes)</h3>
+            <p>
+                PhotoGlobe Sorter lets you build your own structure. I chose:
+            </p>
+            
+            <div class="folder-structure">
+                <strong>📁 COUNTRY → CITY</strong>
+                <br><br>
+                Result:<br>
+                📁 Spain/<br>
+                &nbsp;&nbsp;📁 Barcelona/ → All Barcelona photos<br>
+                &nbsp;&nbsp;📁 Madrid/ → All Madrid photos<br>
+                &nbsp;&nbsp;📁 Valencia/ → All Valencia photos<br>
+                📁 Italy/<br>
+                &nbsp;&nbsp;📁 Rome/ → All Rome photos<br>
+                &nbsp;&nbsp;📁 Milan/ → All Milan photos<br>
+                📁 Poland/<br>
+                &nbsp;&nbsp;📁 Krakow/ → All Krakow photos<br>
+                &nbsp;&nbsp;📁 Warsaw/ → All Warsaw photos
+            </div>
+
+            <p style="margin-top: 24px;">
+                <strong>Why this structure is perfect for me:</strong>
+            </p>
+            <ul>
+                <li><strong>COUNTRY first</strong> - All Spanish cities together, all Italian cities together</li>
+                <li><strong>CITY second</strong> - Each city has its own folder</li>
+                <li>Want to see all <span class="irish-slang">Spanish trips?</span> Open Spain folder. Done.</li>
+                <li>Want to compare Barcelona 2020 vs 2023? Both in Spain/Barcelona, sorted by date automatically</li>
+            </ul>
+
+            <h3>Step 3: Started the Magic (1 hour 52 minutes)</h3>
+            <p>
+                Clicked "Start Organising". The software:
+            </p>
+            <ul>
+                <li>Read GPS data from every photo (where it was taken)</li>
+                <li>Read date and time</li>
+                <li>Automatically identified: Country, City</li>
+                <li>Created all necessary folders</li>
+                <li>Copied photos to the right folders</li>
+                <li>Detected 743 duplicates (backup copies)</li>
+            </ul>
+
+            <p>
+                <strong>Total time: 1 hour 52 minutes for 14,287 photos.</strong> I went for a pint down the road. Came back - all done!
+            </p>
+
+            <div class="highlight-box">
+                <strong>🎉 The result:</strong> Now I've got "Italy/Rome" with ALL Rome photos. Separate from "Italy/Milan". And "Spain/Barcelona" with all Barcelona trips - 2020, 2021, AND 2023 - all in one place but date-sorted. <span class="irish-slang">Class!</span>
+            </div>
+
+            <div class="photo-placeholder">
+                <div><strong>After: Perfect folder structure</strong></div>
+                <div style="font-size: 0.92em; margin-top: 10px;">E.g: Spain/Barcelona, Italy/Rome, Poland/Krakow, etc.</div>
+            </div>
+
+            <h2>❤️ What I Love About PhotoGlobe Sorter</h2>
+
+            <div class="solution-box">
+                <h3>✅ Perfect for City Break Addicts:</h3>
+                <ul>
+                    <li><strong>Country → City Structure:</strong> This is the key. All European countries organised, then cities within. Exactly how I think about my trips.</li>
+                    
+                    <li><strong>Find Any City in 10 Seconds:</strong> Before: 30+ minutes searching. Now: Open Poland → Krakow. Done!</li>
+                    
+                    <li><strong>Compare Same City Different Years:</strong> Been to Barcelona 3 times? All photos in one place, auto-sorted by year. Can see how the city (and I) changed!</li>
+                    
+                    <li><strong>Show Off to Mates:</strong> "Lads, remember Prague?" Open folder, 200 brilliant photos ready to go. Everyone's impressed.</li>
+                    
+                    <li><strong>Plan Future Trips:</strong> Thinking of going back to Berlin? Check my Berlin folder - reminds me what I've seen, what to do next time.</li>
+                    
+                    <li><strong>Works Offline:</strong> No internet? Grand. Everything's local.</li>
+                    
+                    <li><strong>€39 Once:</strong> Not €10/month forever. ONE payment. Lifetime. Budget traveller's dream.</li>
+                    
+                    <li><strong>No Cloud:</strong> My photos stay on MY laptop. Not on some server in California.</li>
+                </ul>
+            </div>
+
+            <blockquote>
+                <strong>Real story:</strong> Last month, my cousin Sarah asked: "Conor, I'm going to Budapest next weekend. Any tips?" Old me would've said "Ah yeah, it's class, can't remember specifics." New me? Opened Hungary/Budapest folder, found 247 photos, sent her my top 15 - best ruin bars, thermal baths, viewpoints. She said "You're a legend!" Took me 2 minutes. PhotoGlobe made it possible. 🍺
+            </blockquote>
+
+            <h2>⚠️ Honest Cons (Nothing's Perfect)</h2>
+
+            <p>
+                Right, I'll be straight with you. It's not flawless:
+            </p>
+
+            <ul>
+                <li><strong>Windows Only:</strong> I've got Windows, so grand. But if you're a Mac person, you're knackered.</li>
+                
+                <li><strong>Needs GPS Data:</strong> Modern phones have GPS. But old cameras or phones without GPS? You'll have to manually tag them. I had 380 like that. Took 40 minutes. Annoying but doable.</li>
+                
+                <li><strong>Not for Editing:</strong> This organises photos. Doesn't crop, filter, or edit them. Need Lightroom or whatever for that.</li>
+                
+                <li><strong>Initial Setup Time:</strong> First run took 2 hours. But that's one-time. Now new trips take 5 minutes to sort.</li>
+            </ul>
+
+            <p>
+                <strong>My take:</strong> These are minor compared to the time saved and peace of mind.
+            </p>
+
+            <h2>🎯 Who's This For?</h2>
+
+            <p>
+                <strong>PhotoGlobe Sorter is perfect if you:</strong>
+            </p>
+
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li>✅ Do <strong>regular city breaks</strong> (Ryanair, EasyJet, Aer Lingus addicts)</li>
+                <li>✅ Visit <strong>multiple European cities</strong> every year</li>
+                <li>✅ Have <strong>thousands of travel photos</strong> in chaos</li>
+                <li>✅ Want to <strong>organise by destination</strong> (country/city)</li>
+                <li>✅ Prefer <strong>one-time payment</strong> over monthly subscriptions</li>
+                <li>✅ Are <strong>budget-conscious</strong> (like most Irish people!)</li>
+                <li>✅ Value <strong>privacy</strong> (no cloud uploads)</li>
+                <li>✅ Want to <strong>quickly show off</strong> photos from specific cities</li>
+            </ul>
+
+            <p style="margin-top: 24px;">
+                <strong>Not ideal if:</strong>
+            </p>
+
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li>❌ You've got a Mac (Windows only)</li>
+                <li>❌ Your photos lack GPS data (manual tagging needed)</li>
+                <li>❌ You're looking for photo editing software (this just organises)</li>
+            </ul>
+
+            <h2>❓ Questions I Had Before Buying</h2>
+
+            <div class="faq-box">
+                <h4>❓ How does it know which city?</h4>
+                <p>
+                    Your phone (or camera with GPS) saves coordinates in every photo. PhotoGlobe reads those and automatically identifies the city. Barcelona, Rome, Prague - all detected automatically.
+                </p>
+            </div>
+
+            <div class="faq-box">
+                <h4>❓ What about old photos without GPS?</h4>
+                <p>
+                    There's a manual geotagging tool. Drag the photo onto a map, click the city, done. I did this for 380 old photos - took 40 minutes total. Tedious but worth it.
+                </p>
+            </div>
+
+            <div class="faq-box">
+                <h4>❓ Does it delete my originals?</h4>
+                <p>
+                    <strong>No!</strong> It COPIES photos to the new structure. Your originals stay untouched. I backed up first anyway, but didn't need to.
+                </p>
+            </div>
+
+            <div class="faq-box">
+                <h4>❓ Can I change the folder structure?</h4>
+                <p>
+                    <strong>Yeah!</strong> 1,656 different combinations. I chose Country → City. But you could do City → Year, or Year → Country → City, or whatever. Fully customisable.
+                </p>
+            </div>
+
+            <div class="faq-box">
+                <h4>❓ Does it work with videos?</h4>
+                <p>
+                    <strong>Yep!</strong> Videos get organised the same way. I take loads of videos (street performers, sunsets, the lads being eejits), and they all go in the right city folders.
+                </p>
+            </div>
+
+            <div class="faq-box">
+                <h4>❓ How long for 10,000 photos?</h4>
+                <p>
+                    On my laptop (nothing fancy), 14,000 photos took under 2 hours. So about <strong>7,500 photos per hour</strong>. Your 10,000 would take around 1.5 hours.
+                </p>
+            </div>
+
+            <div class="faq-box">
+                <h4>❓ Are city names in English?</h4>
+                <p>
+                    Folders are called "Barcelona", "Prague", "Budapest" - English names everyone recognises. The software supports 50+ languages though.
+                </p>
+            </div>
+
+            <div class="faq-box">
+                <h4>❓ Free trial?</h4>
+                <p>
+                    <strong>Yep!</strong> Test on 500 photos for free. I did that before buying. 10 minutes later I knew it was exactly what I needed. Then paid the €39.
+                </p>
+            </div>
+
+            <h2>📊 Results After 4 Months</h2>
+
+            <p>
+                I bought PhotoGlobe Sorter in November 2024. It's now March 2025. Here's what changed:
+            </p>
+
+            <table class="comparison-table">
+                <tr>
+                    <th>Before</th>
+                    <th>After</th>
+                    <td>Compare Barcelona 2020 vs 2023 instantly</td>
+                </tr>
+                <tr>
+                    <td>Embarrassed when mates asked for travel tips</td>
+                    <td>Now I'm the go-to travel guru in my group</td>
+                </tr>
+                <tr>
+                    <td>Had no idea how many cities I'd visited</td>
+                    <td>Know exactly: <strong>45 cities in 6 years!</strong></td>
+                </tr>
+                <tr>
+                    <td>Photos spread across laptop, phone, external drive</td>
+                    <td>Everything in one organised archive</td>
+                </tr>
+            </table>
+
+            <blockquote>
+                <strong>Best moment:</strong> My girlfriend and I were planning our next trip. She said "Let's go somewhere you haven't been." I opened my PhotoGlobe folders, scrolled through: Spain - been there. Italy - been there. Poland - been there. Realised I'd covered most of Western Europe! We ended up booking Slovenia (not been yet). <strong>The organised folders made it so easy to see where I'd been vs where I still wanted to go.</strong> Class! 🗺️
+            </blockquote>
+
+            <h3>🎯 How I Use It Now:</h3>
+            <ol>
+                <li>Come home from city break Sunday night (knackered)</li>
+                <li>Monday morning: Transfer photos from phone to laptop</li>
+                <li>Open PhotoGlobe Sorter</li>
+                <li>Point it at new photos, click "Organise"</li>
+                <li>5-8 minutes later: Sorted into Spain/Valencia (or wherever) automatically!</li>
+                <li>Share best ones on Instagram, WhatsApp the lads</li>
+            </ol>
+
+            <p>
+                <strong>Time investment per trip:</strong> 8 minutes<br>
+                <strong>Time saved searching for photos:</strong> Hours every month!
+            </p>
+
+            <h2>💰 Price: €39 (One-Time Payment)</h2>
+
+            <div class="price-box">
+                <p style="font-size: 1.08em;">What I paid:</p>
+                <div class="price">€39</div>
+                <p style="margin-top: 10px;"><strong>(pay once, own forever)</strong></p>
+                
+                <p style="margin-top: 24px; text-align: left;">
+                    <strong>vs Other Options:</strong>
+                </p>
+                <ul style="text-align: left; margin-top: 14px;">
+                    <li>Google Photos 100GB: €1.99/month = <strong>€23.88/year</strong></li>
+                    <li>iCloud 200GB: €2.99/month = <strong>€35.88/year</strong></li>
+                    <li>Adobe Lightroom: €11.99/month = <strong>€143.88/year</strong></li>
+                </ul>
+                
+                <p style="margin-top: 18px; color: #FF883E; font-weight: bold; font-size: 1.14em;">
+                    PhotoGlobe: €39 once. After 2 years I'm ahead. After 5 years I've saved €100+!
+                </p>
+                
+                <p style="margin-top: 18px; text-align: left;">
+                    <strong>Budget breakdown:</strong> €39 is cheaper than ONE Ryanair flight. For software that organises 6 years of memories? <span class="irish-slang">Bargain!</span>
+                </p>
+            </div>
+
+            <p>
+                Look, I spend €150-200 per city break. 10 breaks a year = €1,500-2,000 annually on travel. Spending <strong>€39 to organise ALL those memories</strong> is a no-brainer. It's less than a night out in Temple Bar!
+            </p>
+
+            <h2>🏆 My Favourite Use Case</h2>
+
+            <p>
+                Let me tell you about the moment I knew PhotoGlobe Sorter was worth every cent.
+            </p>
+
+            <p>
+                February 2025. My younger brother Liam was getting married. For his stag do (bachelor party), we wanted to do a "memory slideshow" at the hotel bar - photos of him over the years.
+            </p>
+
+            <p>
+                I had LOADS of photos of Liam from our city breaks together - we'd done Prague, Krakow, Budapest, Berlin, and Barcelona together over 5 years. But finding them all?
+            </p>
+
+            <p>
+                <strong>Before PhotoGlobe:</strong> Would've taken me <span class="irish-slang">days.</span> I'd have to search through thousands of photos, try to remember which trips he came on, manually collect them. Probably would've given up.
+            </p>
+
+            <p>
+                <strong>With PhotoGlobe:</strong>
+            </p>
+
+            <ol style="margin: 16px 0 16px 28px;">
+                <li>Opened my organised folders</li>
+                <li>Went through: Czech Republic/Prague, Poland/Krakow, Hungary/Budapest, Germany/Berlin, Spain/Barcelona</li>
+                <li>Searched each for "Liam" or just looked through chronologically</li>
+                <li>Had 63 brilliant photos collected in <strong>30 minutes</strong></li>
+                <li>Made a slideshow with music</li>
+                <li>Showed it at the stag - everyone loved it</li>
+            </ol>
+
+            <p style="background: #e8f5f1; padding: 20px; border-left: 5px solid #169B62; margin: 24px 0;">
+                <strong>Result:</strong> Liam was chuffed. The lads were all "Conor, you're some man for the photos!" Best man speech material sorted. My ma cried (happy tears). And it was only possible because PhotoGlobe had everything organised by city.
+                <br><br>
+                <span class="irish-slang">That's the craic right there.</span> Organised photos = preserved memories you can actually USE.
+            </p>
+
+            <div class="verdict-box">
+                <h2>✅ Final Verdict</h2>
+                <p>
+                    <strong>PhotoGlobe Sorter is the best €39 I've spent on my travel hobby. Full stop.</strong>
+                </p>
+                <p style="margin-top: 17px;">
+                    Before: Complete chaos, couldn't find anything, hours wasted searching.<br>
+                    After: Every city has its own folder, find anything in seconds, can actually USE my travel photos.
+                </p>
+                <p style="margin-top: 17px;">
+                    For a budget traveller who does regular city breaks, the <strong>Country → City structure is perfect.</strong> Exactly how I think: "Remember that trip to Prague?"
+                </p>
+                <p style="margin-top: 17px;">
+                    And the price? <strong>€39 once.</strong> Not €10/month forever. That's proper value. Budget traveller approved.
+                </p>
+                <p style="margin-top: 24px; font-size: 1.22em; color: #169B62;">
+                    <strong>⭐⭐⭐⭐⭐ 5/5 - Highly Recommend for All Ryanair Addicts!</strong>
+                </p>
+            </div>
+
+            <h2>🎁 Want to Try It Yourself?</h2>
+
+            <p style="font-size: 1.08em;">
+                If you've also got hundreds (or thousands) of city break photos in complete chaos... <strong>try PhotoGlobe Sorter free on 500 photos.</strong>
+            </p>
+
+            <p>
+                No credit card needed. Download it, test on 500 photos, see the result. Like I did. If you like it, buy the full version (€39). If not, costs nothing.
+            </p>
+
+            <a href="https://www.albumforge.com/photoglobe-sorter/" class="cta-button" target="_blank" rel="noopener">
+                Start Free Trial of PhotoGlobe Sorter →
+            </a>
+
+            <p style="text-align: center; margin: 24px 0; color: #666; line-height: 1.8;">
+                ✅ 500 photos free trial (no credit card)<br>
+                ✅ Automatic sorting by Country and City<br>
+                ✅ €39 one-time payment (no subscription)<br>
+                ✅ 100% offline (no cloud required)<br>
+                ✅ Works with all European cities
+            </p>
+
+            <div style="background: #fff9f0; padding: 26px; margin: 34px 0; border: 4px solid #FFB84D; text-align: center;">
+                <p style="font-size: 1.14em; margin-bottom: 14px;">
+                    <strong>✈️ Bonus for Budget Travellers:</strong>
+                </p>
+                <p>
+                    If you also organise your city break photos with PhotoGlobe Sorter and love finding cheap flights, hit me up! I'm starting a WhatsApp group for Irish budget travel enthusiasts - sharing Ryanair deals, best hostels, city tips, etc.
+                </p>
+                <p style="margin-top: 14px; font-style: italic; color: #666;">
+                    📧 conor.citybreaks@gmail.com (This is an example email, not real!)
+                </p>
+            </div>
+
+            <h2>📊 My City Break Journey (Stats)</h2>
+
+            <p>
+                Thanks to PhotoGlobe Sorter, I now know exactly:
+            </p>
+
+            <ul style="background: #f8f8f8; padding: 26px; margin: 24px 0; line-height: 1.9;">
+                <li><strong>Total cities visited:</strong> 45</li>
+                <li><strong>Total photos taken:</strong> 14,287</li>
+                <li><strong>Time period:</strong> 6 years (2019-2025)</li>
+                <li><strong>Most visited country:</strong> Spain (5 cities, 2,847 photos)</li>
+                <li><strong>Most photographed city:</strong> Barcelona (visited 3 times, 1,124 photos)</li>
+                <li><strong>Best year:</strong> 2023 (12 city breaks, 3,200+ photos)</li>
+                <li><strong>Average photos per trip:</strong> 317</li>
+                <li><strong>Total saved on one-time payment:</strong> €100+ over 5 years vs subscriptions</li>
+            </ul>
+
+            <p>
+                Before PhotoGlobe, I didn't know any of this. Now I can see my "city break journey" clearly. I can even plan future trips based on where I haven't been yet. <span class="irish-slang">Sound!</span>
+            </p>
+
+            <blockquote style="margin-top: 32px;">
+                <strong>"City breaks aren't just about seeing new places - they're about collecting experiences, stories, and memories. My photos capture those moments. PhotoGlobe Sorter gave me the ability to actually organise and relive them. For a budget traveller like me who lives for these trips, that's priceless. Well, €39. But you know what I mean."</strong>
+                <div style="margin-top: 13px; font-style: normal; color: #FF883E; font-weight: bold;">— Conor Murphy, Dublin</div>
+            </blockquote>
+
+            <h2>🇮🇪 The Irish Budget Traveller Perspective</h2>
+
+            <p>
+                Look, us Irish are famous for a few things: the craic, Guinness, and being <strong class="irish-slang">careful with our money.</strong> It's not that we're cheap - we just want VALUE.
+            </p>
+
+            <p>
+                That's why Ryanair's so popular here. €19 return to Prague? <span class="irish-slang">Jaysus,</span> that's cheaper than the train to Cork! We'll put up with the 6am flight and the cramped seats because the PRICE is right.
+            </p>
+
+            <p>
+                PhotoGlobe Sorter fits perfectly into this mindset:
+            </p>
+
+            <ul>
+                <li>✅ <strong>One payment</strong> - No monthly fees bleeding your bank account</li>
+                <li>✅ <strong>€39 total</strong> - Less than a night out in Dublin</li>
+                <li>✅ <strong>Lifetime licence</strong> - Buy once, use forever</li>
+                <li>✅ <strong>No hidden costs</strong> - What you see is what you pay</li>
+                <li>✅ <strong>Actually useful</strong> - Not just paying for features you don't use</li>
+            </ul>
+
+            <p style="background: #e8f5f1; padding: 20px; border-left: 5px solid #169B62; margin: 26px 0;">
+                <strong>To all Irish budget travellers:</strong> If you're like me - doing 8-12 city breaks a year on Ryanair deals, taking thousands of photos, but can't find any of them - give PhotoGlobe Sorter a go. It's proper value. It's what we Irish appreciate: quality at a fair price, with no ongoing costs. <span class="irish-slang">Sound as a pound.</span>
+            </p>
+
+            <h2>🍺 A Final Word</h2>
+
+            <p>
+                Six years ago, I discovered you could fly to Barcelona for less than a tank of petrol. That discovery changed my life - I've seen 45 incredible European cities on a budget.
+            </p>
+
+            <p>
+                Four months ago, I discovered PhotoGlobe Sorter. That discovery changed how I interact with my travel memories. Now I can actually FIND my photos, SHARE them with mates, and RELIVE those amazing weekends.
+            </p>
+
+            <p>
+                Is it perfect? Nah. Windows only, needs GPS data, won't make you breakfast.
+            </p>
+
+            <p>
+                Is it worth €39? <strong class="irish-slang">Absolutely.</strong>
+            </p>
+
+            <p>
+                If you're a budget traveller with a mess of city break photos, this is your solution. Simple as.
+            </p>
+
+            <p style="text-align: center; font-size: 1.15em; margin: 28px 0; color: #169B62;">
+                <strong>Now stop reading and go book your next Ryanair deal. Sure it's Tuesday - the offers are probably live! ✈️</strong>
+            </p>
+
+        </article>
+
+        <footer>
+            <p><strong>Disclaimer:</strong> This is my honest experience after 4 months of daily use. I bought PhotoGlobe Sorter with my own money. I wasn't paid to write this review. I'm just a sound lad sharing what works.</p>
+            <p style="margin-top: 17px;">
+                <strong>Conor Murphy</strong><br>
+                Marketing Manager • Dublin, Ireland<br>
+                March 2025
+            </p>
+            <p style="margin-top: 17px; font-style: italic; color: #666;">
+                Ryanair addict since 2019 • 45 cities and counting<br>
+                "Life's too short for expensive holidays!" ✈️🍺
+            </p>
+            <p style="margin-top: 24px; font-size: 0.9em; color: #999;">
+                <a href="https://www.albumforge.com/photoglobe-sorter/" style="color: #FF883E; text-decoration: none;">PhotoGlobe Sorter</a> • Organise Your Travel Photos by Country and City
+            </p>
+        </footer>
+    </div>
+</body>
+</html><tr>
+                    <td>Time to find photos from a specific city: 30-60 minutes</td>
+                    <td>Time to find photos: <strong>10 seconds</strong></td>
+                </tr>
+                <tr>
+                    <td>Couldn't compare same city different years</td>
+                    <td>Compare Barcelona 2020 vs 2023 instantly</td>
+                

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>15年分、35,720枚の桜の写真をどう整理したか | PhotoGlobe Sorter レビュー</title>
+    
+    <meta name="description" content="15年分、35,720枚の桜と紅葉の写真を整理するためPhotoGlobe Sorterを試しました。39ユーロで京都や奈良などの都市別・日付別に写真を分類できるソフトの正直なレビューです。">
+    
+    <meta name_japanese="keywords" content="PhotoGlobe Sorter レビュー, 35000枚 写真 整理 桜, 写真 都市別 並び替え ソフト, 旅行写真 場所別 整理 クラウドなし, 日本 四季 写真 整理 おすすめソフト, 大量の写真 検索, 紅葉 写真 時系列 整理, 15年分 写真 アーカイブ 整理, 写真 日付 場所 分類, Windows 11 写真 整理 ソフト, Googleフォト 代替 ローカル, アマチュア 写真ライブラリ 管理, 39ユーロ 買い切り ソフト, 写真 GPS座標 並び替え, 写真 都道府県別 整理, ジオタグ 手動 追加, 写真 整理ソフト 買い切り, 写真 フォルダ分け 自動, 大量 写真 整理 方法, 旅行写真 整理術, サブスクなし 写真管理">
+    
+    <meta name="author" content="田中 海斗">
+    <meta property="og:title" content="35,720枚の四季の写真を47分で整理：PhotoGlobe Sorter 本音レビュー">
+    <meta property="og:description" content="15年分の桜の写真に埋もれていました。この39ユーロのソフトが私を救ってくれました。東京からの体験談です。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.albumforge.com/photoglobe-sorter/"> <style>
+        body {
+            font-family: Arial, Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+            line-height: 1.7; /* Légèrement plus aéré pour le japonais */
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 850px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+        }
+        h1 {
+            font-size: 2.1em;
+            text-align: center;
+            line-height: 1.4;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+        }
+        h3 {
+            font-size: 1.4em;
+            border-bottom: 1px dotted #ccc;
+        }
+        
+        /* Blocs de couleur simples */
+        .bloc-probleme {
+            background-color: #fdf2f2;
+            border: 1px solid #e5c0c0;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .bloc-solution {
+            background-color: #f2fdf5;
+            border: 1px solid #c0e5c8;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        .bloc-verdict {
+            background-color: #f2f9fd;
+            border: 2px solid #b8d9ed;
+            padding: 20px;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .bloc-auteur {
+            background-color: #fafafa;
+            border: 1px solid #eee;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-style: italic;
+        }
+        .bloc-cta {
+            background-color: #fff8e1;
+            border: 2px solid #ffe57f;
+            padding: 25px;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        /* Éléments de base */
+        img, .photo-placeholder {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+            border: 1px solid #ccc;
+        }
+        blockquote {
+            font-style: italic;
+            background-color: #f9f9f9;
+            border-left: 5px solid #ccc;
+            padding: 15px 20px;
+            margin: 20px 0;
+        }
+        ul, ol {
+            margin-left: 30px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f5f5f5;
+        }
+        code {
+            background-color: #eee;
+            padding: 3px 5px;
+            font-family: Consolas, monospace;
+            border-radius: 3px;
+        }
+
+        /* Placeholders Photo */
+        .photo-placeholder {
+            width: 95%;
+            min-height: 200px;
+            background-color: #e0e0e0;
+            border: 2px dashed #aaa;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .photo-placeholder div:first-child {
+            font-size: 3em;
+            color: #888;
+        }
+        .photo-placeholder div:nth-child(2) {
+            font-weight: bold;
+            color: #555;
+            margin-top: 10px;
+        }
+        .photo-placeholder div:last-child {
+            font-size: 0.9em;
+            color: #777;
+            font-style: italic;
+        }
+
+        /* Bouton simple */
+        .cta-button {
+            display: inline-block;
+            background-color: #28a745;
+            color: #ffffff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: 2px solid #218838;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        .cta-button:hover {
+            background-color: #218838;
+        }
+
+        .rating {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #f39c12;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>15年分の思い出（35,720枚）の桜と紅葉の写真を、39ユーロのソフトでどう救ったか</h1>
+        <h2>日本の四季を愛する一アマチュアが、途方に暮れた末に出会ったPhotoGlobe Sorterの正直なレビューです。</h2>
+
+
+        <div class="bloc-auteur">
+            <p><strong>著者：田中 海斗 (Tanaka Kaito)</strong><br>
+            東京、日本 | 2025年10月24日記す</p>
+            <p>私はごく普通のサラリーマンです。ITの専門家ではありません。<br>ただ、日本の儚い美しさ（もののあはれ）を捉えることに夢中になっているだけです。この記事はスポンサー提供ではありません。</p>
+        </div>
+
+        <div class="rating">
+            ★★★★☆ (4.5 / 5.0)
+            <p style="font-size: 0.7em; color: #333; font-weight: normal;">驚くべき精度を、一度の支払いで。几帳面なアーカイブ担当者におすすめです。</p>
+        </div>
+
+
+        <blockquote>
+            「桜の美しさは、わずか数日。紅葉の美しさは、一筋の太陽の光にかかっています。私はこの15年間、この瞬間を捉えるために綿密に休暇を計画してきました。そして15年間、その35,720枚の写真は、私のWindows PCの混沌とした『ピクチャ』フォルダに失われていました。それは思い出に対する冒涜でした。もう何も見つけられない。私はイライラし、恥ずかしささえ感じていました。」
+        </blockquote>
+        
+        <p>こんにちは。田中海斗と申します。15年来の趣味は、四季の写真を撮ることです。毎年春になると、桜前線（さくらぜんせん）を追いかけて、京都、奈良、東京、時には北海道まで足を運びます。秋には、紅葉（こうよう）のために同じことを繰り返します。</p>
+        
+        <p>私の問題は何か？ 撮影には几帳面なのですが、整理整頓が恐ろしく苦手なのです。その結果が、デジタルの墓場でした。この記事は、高価なサブスクリプションや複雑なクラウドサービスではなく、PhotoGlobe Sorterという39ユーロの小さなソフトウェアを使って、この問題をいかに解決したか、という物語です。</p>
+
+
+        <h2>私の問題点：四季の混沌（35,720枚の写真）</h2>
+
+        <div class="bloc-probleme">
+            <p>正確に言うと、私の「ピクチャ」フォルダの中身はこうでした：</p>
+            <ul>
+                <li><strong>35,720個のファイル</strong>（JPGといくつかのRAW）</li>
+                <li><strong>148 GB</strong>のデータ</li>
+                <li><strong>15年分のアーカイブ</strong>（2010年から2025年まで）</li>
+                <li>「詩的な」名前のフォルダ群：<code>2022年休暇コピー</code>, <code>桜 2023</code>, <code>要整理（緊急）</code>, <code>新しいフォルダー (3)</code></li>
+            </ul>
+        </div>
+
+        <p>私の挑戦は単純です。友人からこう聞かれたとします。「2021年の紅葉シーズンの金閣寺で、一番よく撮れた写真はどれ？」</p>
+
+        <p>正直な答えは、「わかりません。2時間待ってください」でした。<code>IMG_8841.jpg</code>や<code>DSC_0059.jpg</code>といった、意味不明な名前のファイルを何百も開かなければなりませんでした。悪夢でした。2022年の京都の開花状況と2023年のそれを比較することなど不可能です。私には<strong>「都市別に写真を自動で分類するソフト」</strong>が、それも正確な日付で分類できるものが必要でした。</p>
+
+        <p><strong>「35,000枚のファイルから特定の写真を見つける方法」</strong>という問題は、もはや単なる不便さを超え、私自身が撮った作品を楽しむことを妨げていました。私の<strong>「15年分の写真アーカイブ」</strong>は、ストレスの原因となっていたのです。</p>
+
+
+        <h2>私が試した解決策（と、それらが失敗した理由）</h2>
+
+        <p>このツールを見つけるまで、信じてください、私はあらゆることを試しました。<strong>「日本の四季」という私の特定の用途に最適な写真整理ソフト</strong>を探していたのです。</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>試した代替ソフト</th>
+                    <th>断念した理由</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Windowsエクスプローラー（手動整理）</strong></td>
+                    <td>ある土曜日に4時間かけて2023年分だけを整理しようとしました。フォルダを3つ作って、諦めました。この物量では手作業は不可能です。</td>
+                </tr>
+                <tr>
+                    <td><strong>Googleフォト</strong></td>
+                    <td>場所による検索は優秀です。しかし、148GBもの個人写真をアメリカのサーバーにアップロードするという考えが気に入りません。私は<strong>「旅行写真を場所別に、クラウドなしで整理」</strong>したかったのです。それに、ストレージのサブスクリプションも高額になってきました。</td>
+                </tr>
+                <tr>
+                    <td><strong>Adobe Lightroom</strong></td>
+                    <td>これは「オーバースペック」です。プロの写真家が編集作業をするためのものです。ファイルを分類するためだけに月額12ユーロ（年間144ユーロ！）も払いたくありません。不釣り合いです。</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>PhotoGlobe Sorterを見つけたのは、<strong>「Googleフォトのローカル代替」</strong>を探しているときでした。試してみようと私を納得させたのは、価格（<strong>39ユーロの買い切り</strong>は素晴らしいですが）ではなく、「フォルダ構造ビルダー」のスクリーンショットでした。</p>
+        
+        <p>その約束とは、フォルダの順序を*自分で選べる*ということ。私は（ついに！）ソフトウェアにこう指示できるのです。「<code>年 > 月 > 都道府県 > 都市</code> という構造を作ってほしい」と。これこそが、私が必要としていた緻密なコントロールでした。</p>
+
+        <h2>私の整理体験：15年分のアーカイブを47分で</h2>
+
+        <p>そこで私はライセンスを購入しました（もちろん、500枚の無料トライアルで動作確認をした後です）。<strong>35,720枚の写真を整理</strong>するために私が行った手順を、ステップバイステップで紹介します。</p>
+
+        <h3>ステップ1：インストールと設定（10分）</h3>
+        <p>インストールは標準的なWindowsソフトウェアのものです。その後、10分ほど設定に費やしました。ここが最も重要な時間です。</p>
+        <p>「写真を整理」の画面に行き、「フォルダ構造ビルダー」を使いました。各要素（ブリック）をドラッグ＆ドロップして、以下の構造にしました：</p>
+        <p><code>年</code> → <code>月</code> → <code>国</code> → <code>地域（都道府県）</code> → <code>都市</code></p>
+        <p>「50以上の言語サポート」オプションにもチェックを入れました。これで、フォルダ名が現地語（つまり日本語、例：<strong>京都</strong>）で作成されるようになります。これは完璧です。</p>
+
+        <h3>ステップ2：手動ジオタグ付け（2時間、しかし重要）</h3>
+        <p>このソフトはGPS座標（EXIFデータ）のおかげで並べ替えを行います。最近の写真（スマートフォンや新しいカメラで撮影）にはGPS情報が付いていました。しかし、2015年以前に古いカメラで撮影した約4,000枚の写真には付いていませんでした。</p>
+        <p>PhotoGlobe Sorterには<strong>「ジオタグを手動で追加」</strong>する機能があります。そこで私は（週末に分けて）約2時間かけて、古い写真を選択し、地図をクリックして「これらは奈良で撮影した」と指定していきました。少し時間はかかりますが、完璧な分類のためには不可欠な作業です。</p>
+
+        <h3>ステップ3：並べ替えの実行（待機時間47分）</h3>
+        <p>ソースフォルダ（148GBの混沌）と、外付けハードドライブ上の新しいフォルダを「出力先」として選択しました。そして「並べ替え開始」をクリックしました。</p>
+        <p>ソフトウェアはファイルを分析し、メタデータを読み取り、重複を検出（1,200個見つかりました！）し、ファイルのコピーとリネームを開始しました。進捗画面には、1秒あたり12.6枚の写真という速度が表示されていました。</p>
+        <p><strong>35,720枚の写真の合計時間：47分18秒。</strong></p>
+
+        <h3>ステップ4：結果（衝撃）</h3>
+        <p>出力先フォルダを開きました。そして、正直に言って、感動しました。クリーンでした。整然としていました。それは…完璧でした。</p>
+
+        <div class="photo-placeholder">
+            <div>📸</div>
+            <div>[整理前のフォルダ構造のスクリーンショット]</div>
+            <div style="font-size: 0.9em;">キャプション：整理前の私の「ピクチャ」フォルダ。ランダムな名前、論理性の欠如。何かを見つけるのは悪夢でした。</div>
+        </div>
+
+        <div class="photo-placeholder">
+            <div>📸</div>
+            <div>[整理後のPhotoGlobe Sorterによるフォルダ構造]</div>
+            <div style="font-size: 0.9em;">キャプション：PhotoGlobe Sorterが作成した構造。すべての写真が「年 > 月 > 国 > 都道府県 > 都市」で分類されました。</div>
+        </div>
+
+        <p>私はついに、このようにフォルダを閲覧できるようになったのです：</p>
+        <p><code>G:\整理済みの写真\2023\04_April\日本\京都府\京都市\</code></p>
+        <p>…そして、2023年4月に京都で撮ったすべての桜の写真を即座に見つけることができるようになりました。</p>
+
+        <h2>私が気に入っている点（「四季ハンター」としての長所）</h2>
+        
+        <ol>
+            <li><strong>「フォルダ構造ビルダー」の精度：</strong> これがNo.1の機能です。1656通りの組み合わせは伊達ではありません。<strong>「写真を用途別に分類」（年、月、日、そして都市！）</strong>できるようになったことが、私にとってすべてを変えました。やっと、2022年4月1日の上野公園と2023年4月1日の開花状況を比較できます。</li>
+            
+            <li><strong>処理速度：</strong> <strong>35,000枚の写真を並べ替える</strong>のに1時間もかからないのは、非常に高速です。私のWindows 11 PCのリソースをうまく使っているようです。</li>
+
+            <li><strong>100%オフライン（クラウドゼロ）：</strong> これは<strong>「サブスクリプションのない写真整理ソフト」</strong>であり、クラウドもありません。私の写真が自分のコンピュータから離れることはありません。日本人としてプライバシーには敏感であり、この「ローカル」なアプローチは非常に安心できます。</li>
+
+            <li><strong>PDFレポート（嬉しい驚き）：</strong> これはオマケ機能だと思っていました。しかし、生成されたPDFレポートは実に興味深いものでした。私が最も多く写真を撮っているエリア（京都、日光、奈良）が赤く表示される日本の*ヒートマップ*（heatmap）が含まれています。自分の旅の軌跡が美しく視覚化されました。</li>
+
+            <li><strong>価格（一回払いきり）：</strong> <strong>39ユーロ（永久ライセンス）</strong>。これはLightroomの3ヶ月分のサブスクリプション料金です。計算するまでもありません。一つのこと（整理）を完璧にこなすツールとして、これは素晴らしい投資です。</li>
+        </ol>
+
+        <h2>正直な欠点（完璧なものはない）</h2>
+        
+        <p>完全に透明性を保つために、私が気づいたいくつかの欠点を挙げます：</p>
+        <ul>
+            <li><strong>Windowsのみ：</strong> 私はWindows PCを使っているので問題ありませんでした。しかし、大学生の息子はMacBookを持っています。彼はこれを使えません。残念です。</li>
+            
+            <li><strong>インターフェースは「機能的」：</strong> インターフェースは非常に明確です（ダークモード対応は評価します）。しかし、Apple Photosのような美しいアルバムというよりは、技術的なツールのようです。デザイン性よりも効率性を重視して設計されています。</li>
+
+            <li><strong>写真編集機能はなし：</strong> 繰り返しますが、これは編集ツールでは*ありません*。整理、リネーム、ジオタグ付け*のみ*を行います。色調を補正したい場合は、別のソフトウェアが必要です。（私にとっては、これが利点でもあります。軽量で特化されているからです。）</li>
+
+            <li><strong>「地域」vs「都道府県」の翻訳：</strong> これは純粋主義者のこだわりですが、このソフトウェアはEXIFタグの「地域（State/Province）」を使用します。日本では「都道府県」（県、Ken）を使います。分類は正しく行われますが（例：「京都府」）、分類要素のブリック名は「地域」となっています。実際の問題ではありませんが、意味的なメモです。</li>
+        </ul>
+
+        <h2>どのような人に向いているか？（私の見解）</h2>
+
+        <div class="bloc-solution">
+            <p><strong>このソフトは、あなたにとって完璧です：</strong></p>
+            <ul>
+                <li>✅ あなたが（私のように）<strong>几帳面なアーキビスト</strong>である場合。</li>
+                <li>✅ あなたが<strong>偉大な旅行家</strong>で、国や都市ごとに分類したい場合。</li>
+                <li>✅ あなたが<strong>親</strong>で、20年分の家族写真を時系列（年 > 月）で整理したい場合。</li>
+                <li>✅ あなたがクラウドを信用せず、<strong>100%ローカルなソリューション</strong>を求めている場合。</li>
+                <li>✅ あなたが大量の写真（1万、5万枚...）を保有し、手作業での整理にうんざりしている場合。</li>
+            </ul>
+        </div>
+
+        <div class="bloc-probleme" style="margin-top: 20px;">
+            <p><strong>このソフトは、あなたには向いていません：</strong></p>
+            <ul>
+                <li>❌ あなたが<strong>Mac</strong>しか使わない場合。</li>
+                <li>❌ あなたが<strong>写真の編集</strong>もできるオールインワンツールを探している場合（Lightroomを選びましょう）。</li>
+                <li>❌ あなたが写真をスマートフォンと同期させたい場合（Googleフォトを選びましょう）。</li>
+                <li>❌ あなたが500枚しか写真を持っていない場合（Windowsエクスプローラーで十分です）。</li>
+            </ul>
+        </div>
+        
+        <h2>FAQ - 購入前に私が疑問に思ったこと</h2>
+
+        <p>以下は、私が持っていた疑問と、今得られた答えです：</p>
+        
+        <p><strong>Q : PhotoGlobe Sorterは日本の都道府県を認識しますか？</strong><br>
+        A : はい。EXIFの「地域（State/Province）」タグを使用しており、これが日本の都道府県（例：「京都府」「北海道」「大阪府」）に対応します。したがって、分類は非常に正確です。</p>
+
+        <p><strong>Q : GPSデータのない写真をどうやって整理しますか？</strong><br>
+        A : 付属の「ジオタグ」ツールを使う必要があります。写真（例えば、2014年の奈良旅行のすべて）を選択し、地図上で奈良をクリックします。手作業ですが、非常にうまく機能し、古いアーカイブには不可欠です。</p>
+
+        <p><strong>Q : 都市名を日本語に翻訳してくれますか？</strong><br>
+        A : 50以上の言語で可能です。私は「日本語」を選択し、漢字のフォルダ名（例：「東京」）が作成されました。非常にクリーンで気に入っています。</p>
+
+        <p><strong>Q : 50,000枚の写真を整理するのは時間がかかりすぎますか？</strong><br>
+        A : いいえ。私の35,720枚で47分でした。50,000枚なら、おそらく1時間強でしょう。15年間待ち続けたことを思えば、無に等しい時間です。</p>
+        
+        <p><strong>Q : 年-月-日の構造を作れますか？</strong><br>
+        A : もちろんです。それが「フォルダ構造ビルダー」の最大の強みです。<code>年 > 月 > 日</code> も、<code>国 > 都市 > 年</code> も可能です。コントロールは自在です。</p>
+        
+        <p><strong>Q : 39ユーロは写真整理ソフトとして妥当な価格ですか？</strong><br>
+        A : 一回払いきりの価格です。サブスクリプションではありません。Lightroomの年間144ユーロと比較すれば、迷う余地はありません。<strong>「アマチュアの写真ライブラリ管理」</strong>において、非常に優れたコストパフォーマンスです。</p>
+
+        <p><strong>Q : 日本の四季の写真を整理するのに最適なソフトですか？</strong><br>
+        A : ローカルで、正確（都市別・日付別）に、そしてサブスクリプションなしで整理したい私のようなアマチュアにとっては、答えは「はい」です。これほど緻密なコントロールを与えてくれるソフトは、他に見つかりませんでした。</p>
+
+        <h2>6ヶ月後の私の写真アーカイブ...</h2>
+
+        <p>本当の変化は、フォルダがきれいになったことだけではありません。写真をインポートすることを「恐れなく」なったことです。日光での週末旅行から帰宅すると、SDカードを差し込み、PhotoGlobe Sorterを開き、「日光 2025」フォルダを指定します。すると、ソフトが自動的に正しい場所（<code>.../2025/10_October/日本/栃木県/日光市/</code>）に送ってくれます。わずか2分の作業です。</p>
+        
+        <p>先日、同僚から「新宿御苑の桜で、一番の写真を見せてほしい」と頼まれました。以前なら「週末に探してみるよ」と答えていたでしょう。今では、<code>.../2024/03_March/日本/東京都/新宿区/</code> のフォルダを開き、そこで撮った50枚の写真を10秒で見つけることができます。</p>
+        
+        <blockquote>
+            「ここはもはやデジタルな墓場ではありません。儚い美しさを収めた、生きた図書館です。PhotoGlobe Sorterは、私のファイルを整理しただけでなく、私の思い出の価値とアクセス性を取り戻してくれました。」
+        </blockquote>
+
+        <h2>最終評決：私の趣味に費やした最高の39ユーロ</h2>
+
+        <div class="bloc-verdict">
+            <p>もしあなたが私のように、何万枚もの写真に埋もれ、そのフォルダを開くことさえ億劫になっているのなら、このソフトウェアは「解放」をもたらしてくれます。</p>
+            
+            <p><strong>「何万枚もの写真を素早く整理する方法」</strong>を求めている人、論理的（日付と場所）な分類を望む人、そして完全なコントロールとプライバシー（クラウドなし）を重視する人にとって、PhotoGlobe Sorterは私がためらうことなく推奨するソリューションです。</p>
+            
+            <p>このソフトは一つのことしかできませんが、それを驚くべき精度と効率で実行します。</p>
+
+            <div class="rating" style="font-size: 1.8em; margin-top: 15px;">
+                最終評価： 4.5 / 5.0
+            </div>
+        </div>
+
+
+        <div class="bloc-cta">
+            <h3>ご自身でお試しください（500枚まで無料です）</h3>
+            <p>私の言葉を鵜呑みにしないでください。無料トライアルをダウンロードして、あなたの混沌とした休暇フォルダの一つで試してみてください。それが私を納得させた方法です。</p>
+            
+            <a href="https://www.albumforge.com/photoglobe-sorter/" target="_blank" class="cta-button">
+                無料トライアル（500枚）をダウンロード
+            </a>
+            
+            <p style="margin-top: 20px; font-weight: bold;">価格：39ユーロ（一回払い、永久ライセンス）</p>
+            <p style="font-size: 0.9em;">
+                ✓ サブスクリプションなし ✓ 100%オフライン（クラウドなし） ✓ Windowsで動作
+            </p>
+        </div>
+
+        <div class="footer">
+            <p><strong>免責事項：</strong>これは私の個人的な経験に基づく意見です。この記事を書くにあたり、AlbumForgeから金銭や報酬は一切受け取っていません。私は自分のお金で39ユーロのライセンスを購入しました。</p>
+            <p>田中 海斗 - 東京、日本 - 2025年10月24日</p>
+            <p><a href="https://www.albumforge.com/photoglobe-sorter/" target="_blank">PhotoGlobe Sorter 公式サイトへのリンク</a></p>
+        </div>
+
+    </div>
+
+</body>
+</html>

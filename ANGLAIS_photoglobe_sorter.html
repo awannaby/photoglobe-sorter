@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sorted! How I Organised 15,000+ City Break Photos | PhotoGlobe Sorter Review</title>
+    
+    <meta name="description" content="A UK city-tripper's review of PhotoGlobe Sorter. How I sorted 15,000+ photos from weekend breaks (Paris, Rome, Berlin) by country/city for just €39. The PDF stats are brilliant!">
+    
+    <meta name="keywords" content="PhotoGlobe Sorter review UK, how to organise city break photos, sort 15000 travel photos, best photo organiser for weekend trips, sort photos by country and city automatically, offline photo software no subscription, alternative to Google Photos UK, organise photos from Paris Rome Berlin, one time fee photo sorter €39, photo software with travel stats, PDF report photo locations, finding photos from specific city break, geotag photos manually windows, photo management software Europe travel, cheap photo organiser software">
+    
+    <meta name="author" content="Arthur Evans">
+    <meta property="og:title" content="My 15,000+ Weekend Trip Photos (Paris, Rome...) Finally Sorted! + Fun Stats!">
+    <meta property="og:description" content="My phone's camera roll was a disaster zone of European capitals. This €39 (€39) tool sorted it all by city AND gave me cool stats on countries visited. My review.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="URL-OF-THIS-REVIEW-HERE"> 
+
+
+    <style>
+        body {
+            font-family: Arial, Verdana, sans-serif;
+            line-height: 1.7;
+            background-color: #f5f5f5; /* Light neutral grey */
+            color: #333;
+            font-size: 17px;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 25px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+        h1, h2, h3 {
+            font-family: Georgia, Times, "Times New Roman", serif; /* Slightly more classic for travel */
+            color: #004E89; /* A deep, classic blue */
+            border-bottom: 2px solid #D7C49E; /* Cream/light tan accent */
+            padding-bottom: 8px;
+        }
+        h1 {
+            font-size: 2.4em;
+            text-align: center;
+            line-height: 1.3;
+        }
+        h2 {
+            font-size: 2em;
+            margin-top: 50px;
+        }
+        h3 {
+            font-size: 1.5em;
+            border-bottom: 1px dashed #ccc;
+        }
+        
+        /* Blocks with travel journal colours */
+        .bloc-problema, .bloc-solution, .bloc-verdict, .bloc-auteur, .bloc-cta {
+            background-color: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .bloc-problema {
+            background-color: #fff8f8;
+            border-left: 5px solid #D9534F; /* A touch of red for 'problem' */
+        }
+        .bloc-solution {
+            background-color: #f8f9fa;
+            border-left: 5px solid #004E89; /* Blue accent */
+        }
+        .bloc-verdict {
+            background-color: #FFF9E6; /* Light cream */
+            border: 2px solid #D7C49E;
+            text-align: center;
+        }
+        .bloc-auteur {
+            text-align: center;
+            font-style: italic;
+            background-color: #f0f8ff; /* Light blue */
+        }
+        .bloc-cta {
+            background-color: #004E89; /* Solid blue */
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .bloc-cta h3 {
+            color: #ffffff;
+            border-bottom: 1px solid #fff;
+        }
+        .bloc-cta p {
+            font-size: 1.1em;
+        }
+
+        /* Basic elements */
+        img, .photo-placeholder {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        blockquote {
+            font-style: italic;
+            background-color: #f8f9fa;
+            border-left: 6px solid #D7C49E; /* Cream accent */
+            padding: 18px 25px;
+            margin: 25px 0;
+            font-size: 1.15em;
+            color: #555;
+        }
+        ul, ol {
+            margin-left: 30px;
+        }
+        li {
+            margin-bottom: 12px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            font-size: 0.95em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 14px;
+            text-align: left;
+        }
+        th {
+            background-color: #f5f5f5;
+        }
+        code {
+            background-color: #eee;
+            padding: 3px 6px;
+            font-family: monospace;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+
+        /* Photo Placeholders */
+        .photo-placeholder {
+            width: 95%;
+            min-height: 250px;
+            background-color: #e8e8e8;
+            border: 2px dashed #a0a0a0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .photo-placeholder div:first-child {
+            font-size: 3.5em;
+            color: #888;
+        }
+        .photo-placeholder div:nth-child(2) {
+            font-weight: bold;
+            color: #555;
+            margin-top: 15px;
+        }
+        .photo-placeholder div:last-child {
+            font-size: 0.9em;
+            color: #777;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        /* Button - White on Blue */
+        .cta-button {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #004E89;
+            padding: 18px 35px;
+            text-decoration: none;
+            font-size: 1.25em;
+            font-weight: bold;
+            border: 2px solid #ffffff;
+            border-radius: 5px;
+            transition: all 0.2s;
+        }
+        .cta-button:hover {
+            background-color: #f0f8ff;
+            border-color: #f0f8ff;
+        }
+
+        .rating {
+            font-size: 2em;
+            font-weight: bold;
+            color: #004E89; /* Blue */
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Sorted! How I Organised 8 Years of City Breaks (15,000+ Photos!) Across Europe</h1>
+        <h2>My review of PhotoGlobe Sorter – the tool that finally organised my weekend trip chaos AND gave me brilliant stats.</h2>
+
+
+        <div class="bloc-auteur">
+            <p>By <strong>Arthur Evans</strong><br>
+            London, UK | Review written: 24th October 2025</p>
+            <p>I work in finance, but live for those long weekends exploring European capitals. My camera roll was a mess – this sorted it.</p>
+        </div>
+
+        <div class="rating">
+            ★★★★☆ (4.5 / 5.0)
+            <p style="font-size: 0.7em; color: #333; font-weight: normal;">Spot on for travellers. The stats are a fun bonus!</p>
+        </div>
+
+
+        <blockquote>
+            "Trying to find photos from that weekend in Berlin two years ago? Good luck, mate! My phone's 'Photos' folder was a disaster zone. Snaps from Paris next to Prague, Rome mixed with Riga. Just thousands of files with names like <code>IMG_5678.jpg</code>. It was a proper nightmare. I love travelling, but finding the photos afterwards? Not so much."
+        </blockquote>
+        
+        <p>Alright? I'm Arthur. I love a good city break. Living in London, it's dead easy to hop on a budget flight for a long weekend. Paris, Rome, Berlin, Budapest, Krakow... I probably do 5 or 6 trips a year. I'm not a pro photographer, just snapping away on my iPhone and maybe a small mirrorless camera.</p>
+        
+        <p>My problem? All those brilliant weekends resulted in a digital mess. This is my story of finding a cracking little programme for €39 (about £34) called PhotoGlobe Sorter, which not only fixed my photo chaos but also gave me some fun travel bragging rights.</p>
+
+
+        <h2>My Problem: The "European Capital Scramble"</h2>
+
+        <div class="bloc-problema">
+            <p>My photo library was basically my camera roll dump:</p>
+            <ul>
+                <li><strong>Roughly 15,800 photos</strong> and short videos.</li>
+                <li><strong>8 years</strong> of weekend trips (since 2017).</li>
+                <li><strong>180 GB</strong> of data, mostly on my main PC's hard drive.</li>
+                <li>Folders: <code>iPhone Backups</code>, <code>Europe Trips</code>, <code>SORT LATER!!!</code>, <code>New Folder</code>.</li>
+            </ul>
+        </div>
+
+        <p>The frustration was real. My mate asks, "Show us that picture of the Colosseum at night from your Rome trip last year."</p>
+
+        <p>I'd scroll... and scroll... through thousands of photos. I'd find photos from Krakow, photos of my cat, photos from a pub night in London... but finding that *one* Rome photo? Forget it.</p>
+        
+        <p>I needed a simple way to <strong>organise my city break photos</strong>. The dream was a tool that could automatically <strong>sort photos by country and city</strong>. Manually creating folders for Paris, Rome, Berlin... just wasn't going to happen. I needed something automatic, and ideally, an <strong>offline photo software with no subscription</strong>.</p>
+
+
+        <h2>What I Tried Before (Rubbish Options)</h2>
+
+        <p>I looked around for the <strong>best photo organiser for weekend trips</strong>, but everything seemed too complicated or too expensive.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Alternative</th>
+                    <th>Why it was pants</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Manual Sorting</strong></td>
+                    <td>Life's too short. I'd rather be planning my next trip.</td>
+                </tr>
+                <tr>
+                    <td><strong>Google Photos</strong></td>
+                    <td>I just don't trust them with all my travel data. Plus, I hate paying monthly fees for storage. Wanted a proper <strong>alternative to Google Photos UK</strong> that worked offline.</td>
+                </tr>
+                <tr>
+                    <td><strong>Adobe Lightroom</strong></td>
+                    <td>Way too much for what I need. It's like using a sledgehammer to crack a nut. And again, the subscription cost adds up.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>I found PhotoGlobe Sorter while searching for <strong>"photo software with travel stats"</strong>. What really grabbed me wasn't just the one-off price (€39, about £34). It was the screenshot of the <strong>"Sort Summary" (Résumé du Tri) page</strong>.</p>
+        
+        <p>It showed graphs! Pie charts showing photos per country! A list of "Countries Visited"! For a bloke who likes stats, this was brilliant. It wasn't just an organiser; it was a fun travel tracker too. Sold!</p>
+
+        <h2>The Process: Sorting 8 Years of Weekends in 25 Minutes</h2>
+
+        <p>Bought the licence. Paid with my card, the €39 came out as <strong>£34.20</strong> on my statement. Easy peasy. Here's how I sorted my <strong>15,000+ travel photos</strong>.</p>
+
+        <h3>Step 1: The "Euro Explorer" Structure (5 minutes)</h3>
+        <p>This was dead simple. In the "Structure Builder", I set up my ideal travel log:</p>
+        <p><code>Country</code> → <code>City</code> → <code>Year</code> → <code>Month</code></p>
+        <p>Perfect. The software would read the GPS tag from my phone pics and automatically create folders like `France > Paris > 2024 > 05_May`. Genius!</p>
+
+        <h3>Step 2: Old Camera Pics (Maybe 30 minutes)</h3>
+        <p>My old mirrorless camera didn't have GPS. So, about 1,000 photos were "Location Unknown". The software has a <strong>manual geotagging</strong> tool. I just selected my old "Berlin_2018" photos, clicked Berlin on the map, and job done. Did this for a few old trips while watching the telly.</p>
+
+        <h3>Step 3: Hit 'Go' (25 Minutes)</h3>
+        <p>I pointed the "Source" to my messy main photo folder. Pointed the "Destination" to a new folder on my external drive. Clicked "Start Sorting".</p>
+        <p><strong>Total time for 15,800 photos: 25 minutes flat.</strong> Blimey, that was quick!</p>
+
+        <h3>Step 4: The Result (Tidy Folders & Brilliant Stats!)</h3>
+        <p>At the end, it popped up the "Sort Summary" page. And it was brilliant!</p>
+
+        <div class="photo-placeholder">
+            <div>📸</div>
+            <div>[My 'Photos' folder BEFORE]</div>
+            <div style="font-size: 0.9em;">Caption: Before. Just a massive dump of `IMG_xxxx.jpg` files. A proper mess.</div>
+        </div>
+
+        <div class="photo-placeholder">
+            <div>📸</div>
+            <div>[Screenshot of the 'Sort Summary' stats page]</div>
+            <div style="font-size: 0.9em;">Caption: After! Not just tidy folders, but this brilliant summary page. Shows 12 countries visited, photos per year... love it!</div>
+        </div>
+        
+        <p>My folders were now immaculate. I could finally <strong>find photos from a specific city break</strong> instantly:</p>
+        <p><code>G:\Travel_Archive\Italy\Rome\2023\</code><br>
+        <code>G:\Travel_Archive\Germany\Berlin\2022\</code></p>
+        
+        <p>But the real fun was that Summary page. It told me I'd taken photos in **12 different countries** over 8 years, with France (Paris, mostly) being my top destination (28% of photos). Wicked!</p>
+
+        <h2>What I Absolutely Love (The City Tripper's View)</h2>
+        
+        <ol>
+            <li><strong>The "Sort Summary" Stats!</strong><br>
+            This is the killer feature for me. The <strong>PDF report with photo locations</strong> and stats is fantastic. Seeing the pie chart of "Photos per Country" and the list of "Countries Visited" is just brilliant. It's like a visual travel diary generated automatically. Love it.</li>
+            
+            <li><strong>Automatic Sorting by COUNTRY > CITY.</strong><br>
+            This is the core function, and it works flawlessly. It reads the GPS from my iPhone photos and just *knows* this was Paris, this was Prague. Finally, I can easily <strong>organise photos from Paris, Rome, Berlin</strong> etc.</li>
+
+            <li><strong>One-Time Fee (£34)! No Subscription!</strong><br>
+            Can't beat it. Pay once, use forever. Proper value for money. It's refreshing to see a <strong>cheap photo organiser software</strong> that's actually good.</li>
+            
+            <li><strong>100% Offline.</strong><br>
+            My travel photos stay on my computer. No worries about privacy or needing an internet connection.</li>
+        </ol>
+
+        <h2>What's Not So Great (Minor Quibbles)</h2>
+        
+        <ul>
+            <li><strong>Windows Only.</strong><br>
+            My sister uses a Mac, she can't have it. Seems a missed opportunity.</li>
+            
+            <li><strong>Interface is a bit... basic.</strong><br>
+            It does the job, but it's not the prettiest software you'll ever see. Very functional, not much flair. But who cares when it works this well?</li>
+
+            <li><strong>Price in Euros (€).</strong><br>
+            Minor annoyance paying in Euros from the UK. Cost me £34.20, which is fine, but seeing the price in GBP would be nice.</li>
+        </ul>
+
+        <h2>Who Should Buy This? (My Recommendation)</h2>
+
+        <div class="bloc-solution">
+            <p><strong>This software is SPOT ON for you if:</strong></p>
+            <ul>
+                <li>✅ You're a frequent traveller (city breaks, holidays...) and your photos are a mess.</li>
+                <li>✅ You want to <strong>automatically sort photos by COUNTRY and CITY</strong>.</li>
+                <li>✅ You love seeing stats about your travels (like countries visited).</li>
+                <li>✅ You hate monthly subscriptions and want a <strong>one-time fee photo sorter</strong>.</li>
+                <li>✅ You use a Windows PC and value keeping your photos offline.</li>
+            </ul>
+        </div>
+
+        <div class="bloc-problema" style="margin-top: 20px;">
+            <p><strong>Give it a MISS if:</strong></p>
+            <ul>
+                <li>❌ You are a <strong>Mac user</strong>.</li>
+                <li>❌ You want a fancy photo *viewing* or *editing* tool (this just sorts files).</li>
+                <li>❌ You prefer cloud services like Google Photos.</li>
+            </ul>
+        </div>
+        
+        <h2>FAQ (Stuff I Wondered About)</h2>
+        
+        <p><strong>Q: Does it really know the difference between Paris and Berlin?</strong><br>
+        A: Yes, perfectly! As long as your phone camera has GPS enabled (most do), the photos contain the location data. The software reads "Paris, France" or "Berlin, Germany" and sorts accordingly.</p>
+
+        <p><strong>Q: How good are the travel stats?</strong><br>
+        A: They're brilliant fun! The PDF report gives you a list of all countries it found photos from, a count of photos per country, and pie charts showing the distribution per country and per year. It's surprisingly detailed.</p>
+        
+        <p><strong>Q: Is £34 (€39) good value?</strong><br>
+        A: Absolutely. It's a one-off payment. Compared to paying £9.99 *every month* for Lightroom, this is a bargain. It solves the problem permanently for the price of a couple of pints in central London.</p>
+
+        <h2>My Photo Archive, 6 Months Later...</h2>
+
+        <p>It's changed how I handle photos. I got back from Krakow last month. Plugged in my phone, ran PhotoGlobe Sorter on the new photos. Took literally 2 minutes. They all landed neatly in `.../Poland/Krakow/2025/09_September/`. Done.</p>
+        
+        <p>And my PDF report updated – Poland is now on my list of countries! It's actually motivating me to visit new places just to see them pop up on my stats page.</p>
+        
+        <blockquote>
+            "This isn't just an organiser; it's my personal travel dashboard. It's turned the chore of sorting photos into a fun way to review my adventures. Seeing that list of countries grow is ace!"
+        </blockquote>
+
+        <h2>Final Verdict: Absolutely Spot On for the Price</h2>
+
+        <div class="bloc-verdict">
+            <p>If you travel a lot, take loads of photos on your phone, and end up with a digital mess, this is the solution you've been waiting for.</p>
+            
+            <p>It sorts perfectly by city, it's offline, it's a one-time fee, AND it gives you fun travel stats. For £34, you really can't go wrong.</p>
+
+            <div class="rating" style="font-size: 1.8em; margin-top: 15px;">
+                Final Score: 4.5 / 5.0
+            </div>
+        </div>
+
+
+        <div class="bloc-cta">
+            <h3>Give the Free Trial a Go!</h3>
+            <p>Don't just take my word for it. Download the free trial and point it at 500 photos from your last trip. See how easy it is (and check out the mini-stats!).</p>
+            
+            <a href="https://www.albumforge.com/photoglobe-sorter/" target="_blank" class="cta-button">
+                Download the 500-Photo Free Trial
+            </a>
+            
+            <p style="margin-top: 25px; font-weight: bold; font-size: 1.1em; color: #fff;">
+                Price: €39 (Approx. £34) - One-Time Payment!
+            </p>
+            <p style="font-size: 0.9em; color: #fff;">
+                ✓ No Subscriptions ✓ 100% Offline (Private) ✓ Lifetime Licence
+            </p>
+        </div>
+
+        <div class="footer">
+            <p><strong>Disclaimer:</strong> This is my own personal review. I wasn't paid or perked by AlbumForge. I bought my own €39 licence fair and square.</p>
+            <p>Arthur Evans - London, UK - 24/10/2025</p>
+            <p><a href="https://www.albumforge.com/photoglobe-sorter/" target="_blank" style="color: #555;">Official PhotoGlobe Sorter Website Link</a></p>
+        </div>
+
+    </div>
+
+</body>
+</html>

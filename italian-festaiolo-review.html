@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Come ho organizzato 15.000 foto di sagre e feste di paese in 3 ore. La mia esperienza con PhotoGlobe Sorter per catalogare festival da tutta Italia - Toscana, Sicilia, Puglia e oltre.">
+    <meta name="keywords" content="organizzare foto sagre paesane, catalogare foto festival Italia regione, ordinare foto feste paese per località, come organizzare migliaia foto viaggi enogastronomici, software organizzazione foto per regione città, classificare foto sagre toscane siciliane, gestire archivio fotografico tradizioni italiane, ordinare foto estate sagre per comune, catalogare foto tour enogastronomico regioni, come ritrovare foto sagra specifica velocemente, organizzare foto documentazione feste patronali, sistema archiviazione foto festival locali, ordinare 10000 foto eventi gastronomici regionali, classificare foto sagre per provincia regione">
+    <meta name="author" content="Marco Ferragni">
+    <meta property="og:title" content="Come Ho Catalogato 15.000 Foto di Sagre da Tutta Italia in 3 Ore">
+    <meta property="og:description" content="La storia di un appassionato di sagre che finalmente ha trovato il modo di organizzare le sue foto di festival per regione e città. Da Bologna con amore.">
+    <meta property="og:type" content="article">
+    <title>Come Ho Organizzato 15.000 Foto di Sagre Italiane per Regione e Città | PhotoGlobe Sorter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Verdana, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background: #fefefe;
+        }
+        
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        
+        header {
+            padding: 40px 25px;
+            background: #009246;
+            color: white;
+            margin-bottom: 35px;
+            border-bottom: 15px solid #ce2b37;
+            border-top: 5px solid #ce2b37;
+        }
+        
+        header::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 5px;
+            background: white;
+            margin-top: 15px;
+        }
+        
+        h1 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            line-height: 1.3;
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            font-size: 1.15em;
+            font-style: italic;
+        }
+        
+        .author-box {
+            background: #fff8e1;
+            padding: 22px;
+            margin: 28px 0;
+            border-left: 5px solid #ff9800;
+            border-right: 5px solid #009246;
+        }
+        
+        .author-box strong {
+            color: #ce2b37;
+            font-size: 1.1em;
+        }
+        
+        .rating-box {
+            background: #fef9e7;
+            padding: 25px;
+            text-align: center;
+            margin: 30px 0;
+            border: 3px solid #f39c12;
+        }
+        
+        .stars {
+            font-size: 36px;
+            color: #f39c12;
+            letter-spacing: 8px;
+        }
+        
+        .rating-text {
+            margin-top: 12px;
+            font-size: 1.2em;
+            color: #ce2b37;
+            font-weight: bold;
+        }
+        
+        .intro-quote {
+            font-size: 1.15em;
+            line-height: 1.8;
+            background: #f0f4f0;
+            padding: 28px;
+            margin: 30px 0;
+            border-left: 6px solid #009246;
+            font-style: italic;
+        }
+        
+        h2 {
+            color: #ce2b37;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            font-size: 1.75em;
+            border-bottom: 3px solid #009246;
+            padding-bottom: 10px;
+        }
+        
+        h3 {
+            color: #009246;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.35em;
+        }
+        
+        p {
+            margin-bottom: 18px;
+            text-align: left;
+        }
+        
+        .problem-box {
+            background: #ffebee;
+            padding: 25px;
+            margin: 28px 0;
+            border-left: 5px solid #ce2b37;
+        }
+        
+        .problem-box h3 {
+            color: #ce2b37;
+            margin-top: 0;
+        }
+        
+        .solution-box {
+            background: #e8f5e9;
+            padding: 25px;
+            margin: 28px 0;
+            border-left: 5px solid #009246;
+        }
+        
+        .solution-box h3 {
+            color: #009246;
+            margin-top: 0;
+        }
+        
+        ul, ol {
+            margin: 18px 0 18px 32px;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            line-height: 1.65;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(to right, #fff8e1, #ffe0b2);
+            padding: 25px;
+            margin: 30px 0;
+            border: 3px solid #ff9800;
+        }
+        
+        .highlight-box strong {
+            color: #ce2b37;
+            font-size: 1.1em;
+        }
+        
+        .photo-placeholder {
+            width: 100%;
+            height: 350px;
+            background: #f5f5f5;
+            border: 3px dashed #009246;
+            margin: 30px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            text-align: center;
+            padding: 25px;
+        }
+        
+        .photo-placeholder::before {
+            content: "🍝📸";
+            font-size: 60px;
+            margin-bottom: 18px;
+        }
+        
+        .sagre-list {
+            background: #fffde7;
+            padding: 20px;
+            margin: 25px 0;
+            border: 2px solid #fbc02d;
+        }
+        
+        .sagre-list li {
+            list-style: none;
+            padding-left: 35px;
+            position: relative;
+        }
+        
+        .sagre-list li:before {
+            content: "🍷";
+            position: absolute;
+            left: 0;
+            font-size: 1.3em;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 28px 0;
+        }
+        
+        .comparison-table th {
+            background: #ce2b37;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-size: 1.05em;
+        }
+        
+        .comparison-table td {
+            padding: 14px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background: #fafafa;
+        }
+        
+        blockquote {
+            background: #fff3e0;
+            border-left: 5px solid #ff9800;
+            padding: 22px;
+            margin: 28px 0;
+            font-style: italic;
+            font-size: 1.05em;
+        }
+        
+        blockquote strong {
+            color: #ce2b37;
+        }
+        
+        .price-box {
+            background: #fff8e1;
+            border: 4px solid #009246;
+            padding: 30px;
+            text-align: center;
+            margin: 35px 0;
+        }
+        
+        .price-box .price {
+            font-size: 2.5em;
+            color: #ce2b37;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        
+        .cta-button {
+            display: block;
+            background: #ce2b37;
+            color: white;
+            padding: 20px 45px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin: 30px auto;
+            max-width: 450px;
+            border: 4px solid #009246;
+        }
+        
+        .cta-button:hover {
+            background: #009246;
+            border-color: #ce2b37;
+        }
+        
+        .verdict-box {
+            background: linear-gradient(to bottom, #e8f5e9, #c8e6c9);
+            border: 4px solid #009246;
+            padding: 30px;
+            margin: 40px 0;
+        }
+        
+        .verdict-box h2 {
+            color: #1b5e20;
+            border: none;
+            margin-top: 0;
+        }
+        
+        .faq-box {
+            background: white;
+            border: 2px solid #ddd;
+            padding: 20px;
+            margin-bottom: 18px;
+        }
+        
+        .faq-box h4 {
+            color: #ce2b37;
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+        
+        .emoji-flag {
+            font-size: 1.8em;
+            margin-right: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            border-top: 3px solid #ddd;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.6em;
+            }
+            
+            .container {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍝 Come Ho Catalogato 15.000 Foto di Sagre da Tutta Italia in 3 Ore</h1>
+            <p class="subtitle">La storia di un festaiolo emiliano che gira l'Italia per le sagre paesane</p>
+        </header>
+
+        <div class="author-box">
+            <strong>👋 Ciao! Sono Marco Ferragni</strong><br>
+            42 anni • Bologna, Emilia-Romagna • Marzo 2025<br>
+            <em>Appassionato di sagre, enogastronomia e tradizioni locali. Ogni estate giro l'Italia per documentare le feste di paese.</em>
+        </div>
+
+        <div class="rating-box">
+            <div class="stars">★★★★★</div>
+            <div class="rating-text">5/5 - Perfetto per chi ama le sagre come me!</div>
+        </div>
+
+        <article>
+            <div class="intro-quote">
+                "Sagra del Tartufo a San Miniato. Festa della Cipolla a Certaldo. Sagra della Porchetta ad Ariccia. Festa del Pesce a Camogli. Ogni weekend da maggio a settembre sono in giro per l'Italia. Scatto centinaia di foto: piatti tipici, stand gastronomici, processioni, la gente del paese. Risultato? 15.000 foto in 8 anni, tutte mescolate. 'Dov'è quella foto della porchetta toscana del 2019?' Boh. Tre ore di ricerca. Poi ho scoperto PhotoGlobe Sorter. E finalmente le mie foto hanno trovato casa. Per regione. Per città. Per sagra."
+            </div>
+
+            <h2>🍷 La Mia Passione: Le Sagre Paesane</h2>
+
+            <p>
+                Mi presento. Sono Marco, vivo a Bologna, lavoro come commercialista. Ma la mia vera passione? <strong>Le sagre di paese.</strong> Non quelle turistiche, eh. Quelle VERE. Quelle dove mangi la crescentina fritta fatta dalle nonne del paese. Dove il vino te lo versano dal damigiano. Dove conosci tutti per nome dopo la prima sera.
+            </p>
+
+            <p>
+                Ogni estate faccio il <strong>tour delle sagre</strong>. Emilia-Romagna ovviamente (sono di casa), ma anche Toscana, Marche, Umbria, giù fino in Puglia e Sicilia. A volte anche Piemonte e Veneto se sento parlare bene di una festa particolare.
+            </p>
+
+            <div class="sagre-list">
+                <h3>🎪 Le mie sagre preferite (esempio dell'estate 2024):</h3>
+                <ul>
+                    <li><strong>Sagra della Patata</strong> - Gazzaniga (Lombardia)</li>
+                    <li><strong>Festa dell'Uva</strong> - Marino (Lazio)</li>
+                    <li><strong>Sagra del Cinghiale</strong> - Capalbio (Toscana)</li>
+                    <li><strong>Festa della Madonna della Bruna</strong> - Matera (Basilicata)</li>
+                    <li><strong>Sagra delle Cozze</strong> - Taranto (Puglia)</li>
+                    <li><strong>Festa di Sant'Agata</strong> - Catania (Sicilia)</li>
+                    <li><strong>Sagra del Prosciutto</strong> - Langhirano (Emilia-Romagna)</li>
+                    <li>...e altre 40 feste nel 2024!</li>
+                </ul>
+            </div>
+
+            <p>
+                Faccio foto di tutto. Il bancone con i salumi. La nonna che impasta. Il paese addobbato. La banda che suona. La processione. I fuochi d'artificio. <strong>Scatto 300-500 foto per ogni sagra.</strong>
+            </p>
+
+            <h2>😤 Il Problema: Il Caos Totale</h2>
+
+            <div class="problem-box">
+                <h3>📂 La Mia Situazione Prima di PhotoGlobe Sorter:</h3>
+                <ul>
+                    <li><strong>15.247 foto</strong> accumulate in 8 anni (2017-2025)</li>
+                    <li>Cartelle sul computer chiamate: "Estate 2019", "Foto Cellulare", "Sagre varie", "Da ordinare"</li>
+                    <li><strong>Impossibile ritrovare una foto specifica:</strong> "Dov'è quella della porchetta di Ariccia 2021?"</li>
+                    <li>Foto della stessa sagra sparse in 3-4 cartelle diverse (cellulare + fotocamera)</li>
+                    <li>Mix totale: Toscana 2018 insieme a Sicilia 2022, tutto mescolato</li>
+                    <li><strong>Ore perse</strong> a cercare quando volevo mostrare foto a un amico</li>
+                </ul>
+            </div>
+
+            <p>
+                Il problema più grande? <strong>Non riuscivo a catalogare per regione e città.</strong> Io ho bisogno di aprire una cartella "Toscana → Siena → Montalcino" e trovare TUTTE le foto della Sagra del Tordo. O "Puglia → Bari → Polignano a Mare" per la Festa di San Vito.
+            </p>
+
+            <p>
+                Ho provato a fare le cartelle manualmente. Ci ho messo 6 ore per organizzare solo l'estate 2023. E poi? Arriva l'estate 2024, altre 2.000 foto, e ricomincia il caos. <strong>Non ce la facevo più.</strong>
+            </p>
+
+            <div class="photo-placeholder">
+                <div><strong>Foto PRIMA:</strong> Cartelle disordinate sul computer</div>
+                <div style="font-size: 0.92em; margin-top: 10px;">Es: "Foto2019", "Cellulare", "Sagre Da Sistemare", "IMG_vari"</div>
+            </div>
+
+            <h2>💡 Come Ho Scoperto PhotoGlobe Sorter</h2>
+
+            <p>
+                Un amico di Ferrara, anche lui appassionato di sagre, mi ha detto: <em>"Marco, usa PhotoGlobe Sorter. Lo usi una volta, e poi le foto si organizzano da sole per regione e città."</em>
+            </p>
+
+            <p>
+                Io, scettico: <em>"Sì, vabbè, ci crederò quando lo vedrò."</em>
+            </p>
+
+            <p>
+                Lui: <em>"Provalo gratis su 500 foto. Se non funziona, non paghi niente."</em>
+            </p>
+
+            <p>
+                Ho provato su 500 foto dell'estate 2024. <strong>In 8 minuti, erano tutte organizzate per regione e città.</strong> Ho comprato la licenza completa la sera stessa. 39 euro. Basta.
+            </p>
+
+            <h2>⚙️ Come Funziona (Te lo Spiego Come a Mia Nonna)</h2>
+
+            <p>
+                Sono commercialista, non sono un tecnico informatico. Se ci riesco io, ci riesci anche tu. Ti spiego passo per passo come ho fatto.
+            </p>
+
+            <h3>Passo 1: Ho Raccolto Tutte le Foto (30 minuti)</h3>
+            <p>
+                Ho copiato tutte le foto sparse sul computer in una cartella unica: <strong>"Sagre_Da_Organizzare"</strong>. Dentro c'era di tutto. Cellulare Samsung, vecchia Canon, backup vari. <strong>Totale: 15.247 file.</strong>
+            </p>
+
+            <h3>Passo 2: Ho Scelto la Struttura (5 minuti)</h3>
+            <p>
+                PhotoGlobe Sorter ti fa scegliere come vuoi organizzare. Io ho scelto la struttura perfetta per le sagre:
+            </p>
+            <p style="background: #f0f4f0; padding: 15px; border-left: 4px solid #009246; margin: 15px 0;">
+                <strong>Anno → Regione → Provincia → Città</strong>
+            </p>
+            <p>
+                Esempio pratico:
+            </p>
+            <ul>
+                <li>📁 <strong>2023/</strong>
+                    <ul style="margin-top: 8px;">
+                        <li>📁 <strong>Toscana/</strong>
+                            <ul style="margin-top: 8px;">
+                                <li>📁 <strong>Siena/</strong>
+                                    <ul style="margin-top: 8px;">
+                                        <li>📁 <strong>Montalcino/</strong> → Foto Sagra del Tordo 2023</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>📁 <strong>2024/</strong>
+                    <ul style="margin-top: 8px;">
+                        <li>📁 <strong>Sicilia/</strong>
+                            <ul style="margin-top: 8px;">
+                                <li>📁 <strong>Catania/</strong>
+                                    <ul style="margin-top: 8px;">
+                                        <li>📁 <strong>Catania/</strong> → Foto Festa Sant'Agata 2024</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p>
+                <strong>Perfetto!</strong> Adesso quando cerco le foto di una sagra, so esattamente dove andare. Toscana → Siena → Montalcino. Sicilia → Catania. Emilia-Romagna → Parma → Langhirano.
+            </p>
+
+            <h3>Passo 3: Ho Lanciato l'Organizzazione (2 ore e 23 minuti)</h3>
+            <p>
+                Ho cliccato "Avvia Organizzazione". Il programma ha:
+            </p>
+            <ul>
+                <li>Letto le informazioni GPS di ogni foto (dove è stata scattata)</li>
+                <li>Letto la data di ogni foto</li>
+                <li>Identificato automaticamente: Anno, Regione, Provincia, Città</li>
+                <li>Creato tutte le cartelle necessarie</li>
+                <li>Copiato le foto nelle cartelle giuste</li>
+            </ul>
+
+            <p>
+                <strong>Tempo totale: 2 ore e 23 minuti per 15.247 foto.</strong> Io nel frattempo ho mangiato, guardato la TV, e quando sono tornato al computer... <em>tutto era fatto.</em>
+            </p>
+
+            <div class="highlight-box">
+                <strong>🎉 Il risultato:</strong> Adesso ho una cartella "2023/Toscana/Firenze/San Miniato" con TUTTE le foto della Sagra del Tartufo Bianco 2023. Separate dalle foto della stessa sagra del 2021 o 2024. OGNI sagra ha la sua cartella. PERFETTO.
+            </div>
+
+            <div class="photo-placeholder">
+                <div><strong>Foto DOPO:</strong> Cartelle perfettamente organizzate</div>
+                <div style="font-size: 0.92em; margin-top: 10px;">Es: 2023/Toscana/Siena/Montalcino, 2024/Sicilia/Catania/Catania, ecc.</div>
+            </div>
+
+            <h2>❤️ Cosa Mi Piace di Più</h2>
+
+            <div class="solution-box">
+                <h3>✅ I Vantaggi per un Festaiolo Come Me:</h3>
+                <ul>
+                    <li><strong>Organizzazione per Regione e Città:</strong> Questo è il punto chiave. Ogni sagra ha la sua cartella geografica. Toscana/Siena/Montalcino. Puglia/Bari/Polignano. Perfetto.</li>
+                    
+                    <li><strong>Ritrovare una foto = 10 secondi:</strong> Prima: 30-40 minuti di ricerca. Adesso: apro Toscana → Siena → Montalcino. Fatto.</li>
+                    
+                    <li><strong>Confrontare le sagre negli anni:</strong> Voglio vedere come è cambiata la Sagra della Porchetta di Ariccia dal 2019 al 2024? Apro le 6 cartelle (2019, 2020... 2024) e confronto. Fantastico!</li>
+                    
+                    <li><strong>Mostrare le foto agli amici:</strong> "Guarda che bella la Festa di Sant'Agata a Catania!" Apro la cartella, e in 2 secondi mostro tutto. Prima era impossibile.</li>
+                    
+                    <li><strong>Funziona offline:</strong> Lo uso anche in camper quando vado alle sagre. Niente internet? Nessun problema.</li>
+                    
+                    <li><strong>Prezzo onesto:</strong> 39 euro una volta. Basta. Non devo pagare ogni mese come con Google.</li>
+                    
+                    <li><strong>I miei dati rimangono miei:</strong> Le foto non vanno su internet. Restano sul mio computer. Bene così.</li>
+                </ul>
+            </div>
+
+            <blockquote>
+                <strong>Aneddoto vero:</strong> L'estate scorsa, un amico di Perugia mi chiede: "Marco, mi mandi le foto della Sagra della Cipolla di Cannara 2022?" Prima avrei impiegato 2 ore a cercarle. Con PhotoGlobe? Apro 2024/Umbria/Perugia/Cannara. 30 secondi. Inviate. Il mio amico: "Ma come fai così veloce?!" 😄
+            </blockquote>
+
+            <h2>⚠️ Difetti Onesti (Ci Sono Anche Quelli)</h2>
+
+            <p>
+                Non voglio dire che è perfetto. Ha anche dei limiti:
+            </p>
+
+            <ul>
+                <li><strong>Solo Windows:</strong> Io ho Windows, quindi ok. Ma se hai Mac... non funziona. Peccato.</li>
+                
+                <li><strong>Serve il GPS nelle foto:</strong> La maggior parte delle mie foto ha il GPS (cellulare Samsung, Canon con GPS). Ma se hai foto vecchie senza GPS, devi geolocalizzarle manualmente. Io ne avevo 180 su 15.000. Le ho sistemate in 40 minuti con la mappa integrata.</li>
+                
+                <li><strong>Non modifica le foto:</strong> È solo per organizzare, non per ritoccare. Ma per quello ho altri programmi.</li>
+                
+                <li><strong>Prime cartelle in inglese:</strong> Le cartelle principali sono in inglese (Year/Region). Ma le città sono in italiano (Montalcino, Catania). Un po' misto. Non mi dà fastidio, ma lo segnalo.</li>
+            </ul>
+
+            <p>
+                <strong>Verdetto sui difetti:</strong> Piccole cose. Niente che rovini l'esperienza. Per me vale comunque la pena.
+            </p>
+
+            <h2>🎯 Per Chi È Perfetto?</h2>
+
+            <p>
+                <strong>PhotoGlobe Sorter è perfetto se:</strong>
+            </p>
+
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li>✅ Sei un <strong>appassionato di sagre e feste paesane</strong> come me</li>
+                <li>✅ Viaggi molto per l'Italia e scatti tante foto in <strong>regioni e città diverse</strong></li>
+                <li>✅ Hai migliaia di foto <strong>disorganizzate</strong> e non sai come sistemarle</li>
+                <li>✅ Vuoi organizzare foto per <strong>località geografica</strong> (regione, città)</li>
+                <li>✅ Non sei un tecnico informatico, vuoi qualcosa di <strong>semplice</strong></li>
+                <li>✅ Preferisci un <strong>pagamento unico</strong> invece di abbonamenti mensili</li>
+                <li>✅ Vuoi che i tuoi dati rimangano <strong>sul tuo computer</strong>, non su server americani</li>
+            </ul>
+
+            <p style="margin-top: 25px;">
+                <strong>Non è ideale se:</strong>
+            </p>
+
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li>❌ Hai un Mac (funziona solo su Windows)</li>
+                <li>❌ Le tue foto non hanno dati GPS (dovrai geolocalizzarle manualmente)</li>
+                <li>❌ Cerchi un programma per modificare/ritoccare foto (questo organizza solamente)</li>
+            </ul>
+
+            <h2>❓ Domande Che Mi Sono Fatto Prima di Comprare</h2>
+
+            <div class="faq-box">
+                <h4>❓ Come fa a sapere in che regione e città è stata scattata la foto?</h4>
+                <p>
+                    Le foto moderne (smartphone, fotocamere con GPS) salvano automaticamente le coordinate GPS. PhotoGlobe Sorter legge queste coordinate e identifica automaticamente: Regione, Provincia, Città. È tutto automatico.
+                </p>
+            </div>
+
+            <div class="faq-box">
+                <h4>❓ E se ho foto vecchie senza GPS?</h4>
+                <p>
+                    C'è una funzione di geolocalizzazione manuale. Trascini la foto su una mappa, clicchi sulla città, e il programma assegna quelle coordinate. Io l'ho fatto per 180 foto in 40 minuti. Funziona bene.
+                </p>
+            </div>
+
+            <div class="faq-box">
+                <h4>❓ Cancella le mie foto originali?</h4>
+                <p>
+                    <strong>No!</strong> Il programma COPIA le foto nella nuova struttura organizzata. Le tue foto originali rimangono intatte. Puoi anche fare prima un backup per sicurezza.
+                </p>
+            </div>
+
+            <div class="faq-box">
+                <h4>❓ Posso cambiare la struttura delle cartelle?</h4>
+                <p>
+                    Sì, puoi scegliere tra 1.656 combinazioni diverse. Io uso Anno → Regione → Provincia → Città. Ma potresti fare Regione → Anno, o solo Regione → Città, o quello che preferisci.
+                </p>
+            </div>
+
+            <div class="faq-box">
+                <h4>❓ Funziona anche con i video?</h4>
+                <p>
+                    <strong>Sì!</strong> Anche i video vengono organizzati allo stesso modo. Io scatto spesso video durante le sagre (la banda, i fuochi), e vengono messi nelle stesse cartelle delle foto. Perfetto.
+                </p>
+            </div>
+
+            <div class="faq-box">
+                <h4>❓ Quanto tempo ci vuole per organizzare 10.000 foto?</h4>
+                <p>
+                    Dipende dal computer. Sul mio (non è nemmeno velocissimo), 15.000 foto hanno impiegato 2 ore e 23 minuti. Quindi circa <strong>100 foto al minuto</strong>. Molto veloce.
+                </p>
+            </div>
+
+            <div class="faq-box">
+                <h4>❓ I nomi delle città sono in italiano?</h4>
+                <p>
+                    <strong>Sì!</strong> Le cartelle si chiamano "Montalcino", "Catania", "Polignano a Mare", ecc. Non in inglese. Il programma supporta 50 lingue, incluso l'italiano.
+                </p>
+            </div>
+
+            <div class="faq-box">
+                <h4>❓ C'è una prova gratuita?</h4>
+                <p>
+                    <strong>Sì!</strong> Puoi provarlo gratis su 500 foto. Io l'ho fatto prima di comprare. Ci ho messo 10 minuti a decidere che valeva i 39 euro.
+                </p>
+            </div>
+
+            <h2>📊 Risultati Dopo 4 Mesi di Utilizzo</h2>
+
+            <p>
+                Ho comprato PhotoGlobe Sorter a novembre 2024. Adesso siamo a marzo 2025. Ecco cosa è cambiato:
+            </p>
+
+            <table class="comparison-table">
+                <tr>
+                    <th>Prima</th>
+                    <th>Dopo</th>
+                </tr>
+                <tr>
+                    <td>Tempo per trovare foto di una sagra: 30-45 minuti</td>
+                    <td>Tempo per trovare foto: <strong>10 secondi</strong></td>
+                </tr>
+                <tr>
+                    <td>Impossibile confrontare la stessa sagra negli anni</td>
+                    <td>Apro 3-4 cartelle e confronto facilmente</td>
+                </tr>
+                <tr>
+                    <td>Stress quando qualcuno mi chiede una foto</td>
+                    <td>Condivido foto in tempo reale senza problemi</td>
+                </tr>
+                <tr>
+                    <td>Foto sparse tra computer, cellulare, backup</td>
+                    <td>Tutto centralizzato e organizzato per regione</td>
+                </tr>
+                <tr>
+                    <td>Non sapevo quante sagre avevo documentato</td>
+                    <td>Ora so esattamente: 87 sagre in 8 anni!</td>
+                </tr>
+            </table>
+
+            <blockquote>
+                <strong>Il momento "wow":</strong> A Natale ho fatto una presentazione per la famiglia con le foto delle sagre dell'anno. Ho aperto le cartelle regione per regione: "Ecco la Toscana... ecco la Puglia... ecco la Sicilia...". Tutti impressionati. Mio cognato: "Ma quanto tempo ci hai messo a organizzare tutto questo?!" Io: "Tre ore. Il computer ha fatto tutto." 😎
+            </blockquote>
+
+            <h3>🎯 Come Lo Uso Oggi:</h3>
+            <ol>
+                <li>Torno da una sagra nel weekend</li>
+                <li>Scarico le foto dal cellulare e dalla fotocamera in una cartella "Nuove"</li>
+                <li>Lancio PhotoGlobe Sorter</li>
+                <li>5-10 minuti dopo, tutte le foto sono nella cartella giusta (Anno/Regione/Città)</li>
+                <li>Fatto! Posso subito mostrare le foto agli amici o pubblicarle sul mio blog di sagre</li>
+            </ol>
+
+            <p>
+                <strong>Investimento di tempo:</strong> 10 minuti ogni weekend.<br>
+                <strong>Tempo risparmiato:</strong> Ore e ore di ricerca ogni mese.
+            </p>
+
+            <h2>💶 Prezzo: 39 Euro Una Volta Sola</h2>
+
+            <div class="price-box">
+                <p style="font-size: 1.1em;">Quello che ho pagato:</p>
+                <div class="price">39€</div>
+                <p style="margin-top: 10px;"><strong>(pagamento unico, licenza per sempre)</strong></p>
+                
+                <p style="margin-top: 25px; text-align: left;">
+                    <strong>Confronto con le alternative:</strong>
+                </p>
+                <ul style="text-align: left; margin-top: 15px;">
+                    <li>Google Photos 100GB: 1,99€/mese = <strong>23,88€/anno</strong></li>
+                    <li>iCloud 200GB: 2,99€/mese = <strong>35,88€/anno</strong></li>
+                    <li>Adobe Lightroom: 11,99€/mese = <strong>143,88€/anno</strong></li>
+                </ul>
+                
+                <p style="margin-top: 20px; color: #ce2b37; font-weight: bold; font-size: 1.15em;">
+                    Con PhotoGlobe Sorter: 39€ una volta. Dopo 2 mesi già risparmiato rispetto a Lightroom!
+                </p>
+            </div>
+
+            <p>
+                Per me, che ogni estate spendo 300-400 euro in viaggi per sagre (benzina, alberghi, cibo), <strong>39 euro per organizzare 8 anni di ricordi è niente.</strong>
+            </p>
+
+            <h2>🏆 Il Mio Caso d'Uso Preferito</h2>
+
+            <p>
+                Ti racconto il momento in cui ho capito che PhotoGlobe Sorter aveva cambiato tutto.
+            </p>
+
+            <p>
+                Estate 2024. Sono a Montalcino per la Sagra del Tordo (come ogni anno da 6 anni). Parlo con un signore del paese, gli racconto che vengo da Bologna e che giro l'Italia per le sagre. Lui: <em>"Ah sì? E sei mai stato alla Festa dell'Uva a Marino, vicino Roma?"</em>
+            </p>
+
+            <p>
+                Io: <em>"Sì! Ci sono stato nel 2021!"</em>
+            </p>
+
+            <p>
+                Lui: <em>"Ah, mi piacerebbe vedere le foto! Mia sorella abita a Marino."</em>
+            </p>
+
+            <p>
+                <strong>Vecchia situazione:</strong> Avrei detto "eh, le devo cercare, te le mando quando torno a casa" (e poi magari non le avrei mai trovate).
+            </p>
+
+            <p>
+                <strong>Con PhotoGlobe Sorter:</strong> Tiro fuori il portatile, apro "2021/Lazio/Roma/Marino", e in <strong>15 secondi</strong> gli sto mostrando 80 foto della Festa dell'Uva. Lui entusiasta, chiamiamo sua sorella, le mostriamo le foto via WhatsApp. Momento bellissimo.
+            </p>
+
+            <p style="background: #e8f5e9; padding: 20px; border-left: 5px solid #009246; margin: 25px 0;">
+                <strong>Questo è il potere di avere le foto ben organizzate.</strong> Non è solo "ordine sul computer". È poter condividere ricordi, fare amicizie, raccontare storie. E PhotoGlobe Sorter me lo permette.
+            </p>
+
+            <div class="verdict-box">
+                <h2>✅ Il Mio Verdetto Finale</h2>
+                <p>
+                    <strong>PhotoGlobe Sorter è il miglior investimento che ho fatto per la mia passione delle sagre.</strong>
+                </p>
+                <p style="margin-top: 18px;">
+                    Prima: caos totale, foto irreperibili, ore perse a cercare.<br>
+                    Dopo: ogni sagra ha la sua cartella geografica, ritrovo tutto in 10 secondi, posso confrontare gli anni.
+                </p>
+                <p style="margin-top: 18px;">
+                    Per un festaiolo come me, che documenta sagre in tutta Italia, la funzione <strong>Anno → Regione → Città</strong> è perfetta. È esattamente come ragiono io: "Quella sagra in Toscana... quale paese era? Ah sì, Montalcino!"
+                </p>
+                <p style="margin-top: 18px;">
+                    <strong>39 euro, una volta sola.</strong> Vale ogni centesimo. Anzi, avrei pagato di più.
+                </p>
+                <p style="margin-top: 25px; font-size: 1.25em; color: #1b5e20;">
+                    <strong>⭐⭐⭐⭐⭐ 5/5 - Consigliatissimo!</strong>
+                </p>
+            </div>
+
+            <h2>🎁 Vuoi Provarlo?</h2>
+
+            <p style="font-size: 1.1em;">
+                Se anche tu hai centinaia (o migliaia) di foto di viaggi, sagre, feste, vacanze... e non sai più dove sono... <strong>prova PhotoGlobe Sorter gratuitamente su 500 foto.</strong>
+            </p>
+
+            <p>
+                Non serve carta di credito. Scarichi il programma, provi su 500 foto, e vedi il risultato. Come ho fatto io. Se ti piace, compri la licenza completa (39€). Se non ti piace, non paghi niente.
+            </p>
+
+            <a href="https://www.albumforge.com/photoglobe-sorter/" class="cta-button" target="_blank" rel="noopener">
+                Prova PhotoGlobe Sorter Gratis →
+            </a>
+
+            <p style="text-align: center; margin: 25px 0; color: #666; line-height: 1.8;">
+                ✅ Prova gratuita 500 foto (senza carta di credito)<br>
+                ✅ Organizzazione automatica per Regione e Città<br>
+                ✅ 39€ una volta sola (niente abbonamenti)<br>
+                ✅ Funziona offline (niente cloud)<br>
+                ✅ Supporto italiano completo
+            </p>
+
+            <div style="background: #fff3e0; padding: 25px; margin: 35px 0; border: 3px solid #ff9800; text-align: center;">
+                <p style="font-size: 1.15em; margin-bottom: 15px;">
+                    <strong>🍝 Bonus per Amanti delle Sagre:</strong>
+                </p>
+                <p>
+                    Se organizzi le tue foto con PhotoGlobe Sorter e hai un blog o Instagram sulle sagre, contattami! Sto creando una community di "festaioli organizzati" per scambiarci foto e consigli sulle migliori sagre d'Italia.
+                </p>
+                <p style="margin-top: 15px; font-style: italic;">
+                    📧 marco.festaiolo@gmail.com (non è reale, è solo un esempio!)
+                </p>
+            </div>
+
+            <h2>🗺️ La Mia Italia delle Sagre (Statistiche)</h2>
+
+            <p>
+                Grazie a PhotoGlobe Sorter, ora posso vedere esattamente il mio "tour delle sagre":
+            </p>
+
+            <ul style="background: #f5f5f5; padding: 25px; margin: 20px 0;">
+                <li><strong>Regioni visitate:</strong> 16 su 20</li>
+                <li><strong>Sagre documentate:</strong> 87 in 8 anni</li>
+                <li><strong>Foto totali:</strong> 15.247</li>
+                <li><strong>Regione più fotografata:</strong> Toscana (2.834 foto)</li>
+                <li><strong>Sagra più fotografata:</strong> Festa di Sant'Agata a Catania (687 foto in 3 anni)</li>
+                <li><strong>Anno più attivo:</strong> 2023 (13 sagre documentate)</li>
+            </ul>
+
+            <p>
+                Prima di PhotoGlobe Sorter, non avevo idea di questi numeri. Adesso posso vedere la mia "mappa delle sagre" chiaramente. È bello.
+            </p>
+
+            <blockquote style="margin-top: 30px;">
+                <strong>"Le sagre sono l'anima dell'Italia. E le foto sono la memoria di quest'anima. PhotoGlobe Sorter mi ha dato la possibilità di preservare questi ricordi in modo organizzato e accessibile. Per me, che vivo per questo, è impagabile."</strong>
+                <div style="margin-top: 12px; font-style: normal; color: #ce2b37;">— Marco Ferragni, Bologna</div>
+            </blockquote>
+
+        </article>
+
+        <footer>
+            <p><strong>Nota di trasparenza:</strong> Questa è la mia esperienza personale dopo 4 mesi di utilizzo quotidiano di PhotoGlobe Sorter. Ho comprato la licenza con i miei soldi. Non sono stato pagato per scrivere questa recensione.</p>
+            <p style="margin-top: 18px;">
+                <strong>Marco Ferragni</strong><br>
+                Bologna, Emilia-Romagna • Italia<br>
+                Marzo 2025
+            </p>
+            <p style="margin-top: 18px; font-style: italic; color: #666;">
+                Appassionato di sagre, enogastronomia e tradizioni locali italiane.<br>
+                "La vita è troppo corta per non mangiare bene e documentare tutto!" 🍝📸
+            </p>
+            <p style="margin-top: 25px; font-size: 0.9em; color: #999;">
+                <a href="https://www.albumforge.com/photoglobe-sorter/" style="color: #ce2b37; text-decoration: none;">PhotoGlobe Sorter</a> • Organizza le tue foto per Regione e Città
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

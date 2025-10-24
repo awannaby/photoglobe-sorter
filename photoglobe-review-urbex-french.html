@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Urbexer organise 18.400 photos de lieux abandonnés sans cloud ni géolocalisation exposée. 100% offline pour protéger spots secrets. Tri automatique par région sans compromettre confidentialité.">
+    <meta name="keywords" content="organiser photos urbex sans cloud, trier photos exploration urbaine confidentialité, logiciel gestion photos lieux abandonnés offline, comment protéger localisation spots urbex, organiser photos urbex par région sans GPS public, logiciel offline tri photos exploration, gestion photos urbex sans internet sécurisé, trier milliers photos urbex automatiquement, organiser archive photos exploration urbaine, logiciel confidentiel photos lieux abandonnés, protéger géolocalisation photos urbex, tri photos urbex par département sans cloud, organiser photos exploration sans exposer spots, logiciel local gestion photos urbex Windows, comment ne pas révéler lieux urbex photos, organiser photos friches industrielles hôpitaux abandonnés, tri automatique photos exploration sans tracking, gestion photos spots secrets confidentialité totale, organiser 10000 photos urbex par lieux sans internet, logiciel anti-cloud photos exploration urbaine France, protéger vie privée photos lieux abandonnés, organiser photos château abandonné sanatorium discrétion">
+    <meta name="author" content="Alexis Morel">
+    <meta property="og:title" content="18.400 Photos d'Urbex Organisées Sans Jamais Exposer Mes Spots Secrets">
+    <meta property="og:description" content="Explorateur urbain explique comment il organise son archive massive de lieux abandonnés en toute confidentialité, 100% offline, sans cloud ni tracking.">
+    <title>Comment J'Organise 18.400 Photos d'Urbex Sans Révéler Mes Spots | PhotoGlobe Sorter</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background-color: #0a0a0a;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #1a1a1a;
+            padding: 0;
+        }
+        
+        header {
+            background: linear-gradient(to bottom, #000000, #1a1a1a);
+            color: #ffffff;
+            padding: 40px;
+            border-bottom: 4px solid #e74c3c;
+        }
+        
+        h1 {
+            color: #e74c3c;
+            font-size: 2.1em;
+            margin-bottom: 15px;
+            line-height: 1.3;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .subtitle {
+            color: #cccccc;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        
+        .content-wrapper {
+            background-color: #ffffff;
+            padding: 40px;
+        }
+        
+        .author-box {
+            background-color: #2c2c2c;
+            color: #ffffff;
+            border: 3px solid #e74c3c;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .author-box p {
+            margin: 8px 0;
+            color: #ffffff;
+        }
+        
+        .rating {
+            background-color: #fff4e6;
+            border: 3px solid #ff9800;
+            padding: 22px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .stars {
+            color: #ff9800;
+            font-size: 2em;
+            margin: 12px 0;
+        }
+        
+        h2 {
+            color: #e74c3c;
+            font-size: 1.75em;
+            margin: 40px 0 20px 0;
+            border-bottom: 3px solid #e74c3c;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        h3 {
+            color: #222;
+            font-size: 1.3em;
+            margin: 28px 0 14px 0;
+            font-weight: bold;
+        }
+        
+        p {
+            margin: 16px 0;
+            text-align: justify;
+            line-height: 1.8;
+        }
+        
+        .intro-quote {
+            background-color: #2c2c2c;
+            color: #ffffff;
+            border-left: 6px solid #e74c3c;
+            padding: 25px;
+            margin: 30px 0;
+            font-style: italic;
+            font-size: 1.05em;
+        }
+        
+        .problem-box {
+            background-color: #ffebee;
+            border: 3px solid #c62828;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .solution-box {
+            background-color: #e8f5e9;
+            border: 3px solid #2e7d32;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .warning-box {
+            background-color: #fff3e0;
+            border: 3px solid #e65100;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .security-box {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            border: 4px solid #e74c3c;
+            padding: 30px;
+            margin: 30px 0;
+        }
+        
+        .security-box h3 {
+            color: #e74c3c;
+            margin-top: 0;
+        }
+        
+        .security-box ul {
+            color: #ffffff;
+        }
+        
+        ul, ol {
+            margin: 18px 0 18px 40px;
+        }
+        
+        li {
+            margin: 10px 0;
+            line-height: 1.7;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background-color: #fff;
+            font-size: 0.95em;
+        }
+        
+        th, td {
+            border: 2px solid #666;
+            padding: 14px;
+            text-align: left;
+            vertical-align: top;
+        }
+        
+        th {
+            background-color: #2c2c2c;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .photo-placeholder {
+            border: 4px dashed #666;
+            padding: 45px;
+            margin: 30px 0;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        
+        .photo-placeholder > div:first-child {
+            font-size: 3.5em;
+            margin-bottom: 12px;
+        }
+        
+        .photo-placeholder > div:nth-child(2) {
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        blockquote {
+            background-color: #f5f5f5;
+            border-left: 5px solid #e74c3c;
+            padding: 20px 25px;
+            margin: 25px 0;
+            font-style: italic;
+            font-size: 1.05em;
+        }
+        
+        .verdict-box {
+            background-color: #e8f5e9;
+            border: 4px solid #2e7d32;
+            padding: 30px;
+            margin: 35px 0;
+        }
+        
+        .verdict-box h3 {
+            color: #1b5e20;
+            text-align: center;
+            font-size: 1.6em;
+            margin-bottom: 18px;
+        }
+        
+        .cta-section {
+            background-color: #c62828;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            margin: 35px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #1a1a1a;
+            color: #e74c3c;
+            padding: 20px 50px;
+            text-decoration: none;
+            border: 3px solid #e74c3c;
+            font-size: 1.3em;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        
+        .cta-button:hover {
+            background-color: #e74c3c;
+            color: #1a1a1a;
+        }
+        
+        .price {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        .benefits-list {
+            text-align: left;
+            display: inline-block;
+            margin: 20px 0;
+        }
+        
+        footer {
+            background-color: #2c2c2c;
+            color: #cccccc;
+            padding: 30px 40px;
+            margin-top: 0;
+        }
+        
+        footer a {
+            color: #e74c3c;
+        }
+        
+        .faq-item {
+            margin: 30px 0;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: #c62828;
+            font-size: 1.15em;
+            margin-bottom: 10px;
+        }
+        
+        .highlight {
+            background-color: #ffeb3b;
+            padding: 3px 7px;
+            font-weight: bold;
+        }
+        
+        .code-box {
+            background-color: #2c2c2c;
+            color: #00ff00;
+            border: 2px solid #e74c3c;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .content-wrapper {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.7em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Comment J'Organise 18.400 Photos de Lieux Abandonnés Sans Jamais Exposer Mes Spots Secrets</h1>
+            <p class="subtitle">Un explorateur urbain raconte comment il a trouvé LE logiciel pour trier son archive massive d'urbex en toute confidentialité – 100% offline, zéro cloud, zéro tracking, spots protégés</p>
+        </header>
+
+        <div class="content-wrapper">
+            <div class="author-box">
+                <p><strong>Par Alexis Morel</strong></p>
+                <p>📍 Lyon, France (mais mes spots ne sont PAS sur Google Maps)</p>
+                <p>📅 20 octobre 2025</p>
+                <p>👨‍💻 31 ans, photographe urbex depuis 8 ans, développeur web à temps partiel</p>
+                <p><em>"Je ne suis pas parano, je suis réaliste. Dans le milieu de l'exploration urbaine, révéler la localisation de tes spots = les détruire. Mes photos contiennent des données GPS sensibles. Je ne peux PAS les mettre sur un cloud américain où des algorithmes vont analyser mes coordonnées. Point final."</em></p>
+            </div>
+
+            <div class="rating">
+                <p><strong>ÉVALUATION GLOBALE</strong></p>
+                <div class="stars">★★★★★</div>
+                <p style="font-size: 1.15em;"><strong>5/5 – La SEULE solution viable pour l'urbex en termes de confidentialité</strong></p>
+            </div>
+
+            <div class="intro-quote">
+                <p>"Après 8 ans d'exploration urbaine, j'avais 18.427 photos stockées dans le chaos le plus total : châteaux abandonnés en Normandie, usines désaffectées dans le Nord, sanatoriums dans les Alpes, hôpitaux psychiatriques dans l'Est... Tout mélangé. Impossible de retrouver mes runs. Mais le VRAI problème ? Je ne pouvais utiliser AUCUN logiciel mainstream. Google Photos analyse mes GPS et pourrait théoriquement géolocaliser mes spots. Lightroom envoie des données de télémétrie. iCloud stocke tout sur des serveurs Apple. En urbex, la règle numéro 1 est : NE JAMAIS RÉVÉLER LES LIEUX. Mes photos contiennent des métadonnées GPS précises au mètre près. Je devais trouver une solution 100% offline, sans aucune connexion internet, où MES données restent CHEZ MOI. PhotoGlobe Sorter était la seule option crédible."</p>
+            </div>
+
+            <h2>Mon Problème : 18.400 Photos, Des Spots Secrets, Zéro Solution Viable</h2>
+
+            <p>Laisse-moi te planter le décor. Je fais de l'urbex depuis 2017. Châteaux abandonnés, friches industrielles, hôpitaux désaffectés, bunkers oubliés... Mon truc, c'est capturer ces lieux avant qu'ils disparaissent ou soient vandalisés.</p>
+
+            <p>Après 8 ans, voilà où j'en étais :</p>
+
+            <div class="problem-box">
+                <p><strong>Ma situation catastrophique (avant PhotoGlobe) :</strong></p>
+                <ul>
+                    <li><strong>18.427 photos</strong> dans des dossiers bordéliques nommés "Run_23042023", "Château_machin", "Session_Nord_???"</li>
+                    <li><strong>73 spots différents</strong> répartis sur toute la France (+ quelques runs en Belgique et Allemagne)</li>
+                    <li>Impossible de retrouver les photos d'un spot spécifique sans passer 2 heures à fouiller</li>
+                    <li><strong>Chaque photo contient des coordonnées GPS PRÉCISES</strong> (latitude/longitude au mètre près)</li>
+                    <li>Risque légal permanent : l'urbex est dans une zone grise juridique en France (violation de domicile vs. exploration passive)</li>
+                    <li><strong>Règle n°1 violée</strong> : Ne jamais exposer publiquement les localisations des spots (pour éviter vandalisme, pillage, fermeture des accès)</li>
+                </ul>
+            </div>
+
+            <p>Le truc, c'est que dans la communauté urbex, <strong>protéger ses spots est SACRÉ</strong>. Si tu balances une adresse sur Instagram ou si des métadonnées GPS se retrouvent indexées par Google, tu es grillé. Le spot sera envahi, saccagé, et fermé en une semaine.</p>
+
+            <p>Exemples concrets de mes galères :</p>
+
+            <ul>
+                <li>Un pote m'a demandé les photos de notre run dans le sanatorium abandonné en Savoie (2019). J'ai cherché pendant <strong>3h47min</strong> sans les trouver. J'ai abandonné.</li>
+                <li>Je voulais compiler mes meilleures photos de châteaux pour un portfolio. Impossible de savoir lesquelles étaient des châteaux sans ouvrir chaque fichier un par un.</li>
+                <li>Lors d'un repérage, j'avais besoin de retrouver les photos d'un spot visité 2 ans plus tôt pour comparer l'état de dégradation. J'ai mis <strong>1h30</strong> à les retrouver.</li>
+                <li>J'ai accidentellement envoyé une photo avec GPS non-strippé à un groupe Discord. Heureusement, personne n'a check les métadonnées, mais j'ai flippé pendant une semaine.</li>
+            </ul>
+
+            <p><strong>Ce dont j'avais besoin :</strong> Un logiciel pour <strong>organiser photos urbex par région sans GPS public</strong>, tout en gardant les données GPS accessibles UNIQUEMENT SUR MON PC, sans aucune connexion internet, sans télémétrie, sans cloud.</p>
+
+            <h2>Pourquoi TOUS Les Logiciels Mainstream Étaient Inacceptables</h2>
+
+            <div class="security-box">
+                <h3>☠️ Le problème de sécurité dans l'urbex :</h3>
+                <p>Chaque photo que je prends contient dans ses métadonnées EXIF :</p>
+                <ul>
+                    <li>📍 Latitude exacte (ex: 45.764043)</li>
+                    <li>📍 Longitude exacte (ex: 4.835659)</li>
+                    <li>📅 Date et heure précises de la prise de vue</li>
+                    <li>📷 Modèle de l'appareil photo (permet de me tracker)</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>Si ces données tombent entre de mauvaises mains (voleurs, vandales, autorités), mes spots sont MORTS.</strong></p>
+            </div>
+
+            <p>J'ai évalué toutes les solutions populaires. Voici pourquoi elles ont toutes été éliminées :</p>
+
+            <table>
+                <tr>
+                    <th>Logiciel</th>
+                    <th>Pourquoi C'EST UN NON CATÉGORIQUE</th>
+                </tr>
+                <tr>
+                    <td><strong>Google Photos</strong></td>
+                    <td>TU RIGOLES ? Upload automatique vers les serveurs Google. L'IA analyse mes GPS et pourrait créer des liens entre mes photos. Google a accès aux métadonnées. Absolument HORS DE QUESTION.</td>
+                </tr>
+                <tr>
+                    <td><strong>Adobe Lightroom</strong></td>
+                    <td>Version cloud : serveurs Adobe aux USA. Version desktop : envoie de la télémétrie et des stats d'utilisation. Même si les photos ne sont pas uploadées, Adobe track ton usage. Non merci. En plus, 11,99€/mois = 143€/an = trop cher pour moi.</td>
+                </tr>
+                <tr>
+                    <td><strong>Apple Photos / iCloud</strong></td>
+                    <td>Tout est synchronisé sur les serveurs Apple. Même logique que Google. Mes spots ne doivent PAS être sur des serveurs américains soumis au CLOUD Act.</td>
+                </tr>
+                <tr>
+                    <td><strong>Dropbox / OneDrive</strong></td>
+                    <td>Cloud = non. Point. Je ne veux pas mes 18.400 photos de lieux illégalement explorés (techniquement) sur des serveurs tiers.</td>
+                </tr>
+                <tr>
+                    <td><strong>Applications "sécurisées"</strong><br>(Cryptomator, etc.)</td>
+                    <td>Trop complexes, pas faites pour l'organisation de masse, et souvent cloud-dépendantes quand même. Je veux juste trier par région, pas devenir expert en cryptographie.</td>
+                </tr>
+                <tr>
+                    <td><strong>Tri manuel</strong></td>
+                    <td>18.427 photos × 10 secondes par photo = 51 HEURES de travail manuel. J'ai une vie à côté.</td>
+                </tr>
+            </table>
+
+            <p>Conclusion : <strong>Je devais trouver un logiciel offline, sans télémétrie, qui lit les GPS localement, organise automatiquement, et NE COMMUNIQUE JAMAIS avec internet.</strong></p>
+
+            <h2>Comment J'ai Découvert PhotoGlobe Sorter</h2>
+
+            <p>Un soir, sur un forum urbex français (que je ne nommerai pas pour des raisons évidentes), un gars a posé exactement ma question :</p>
+
+            <blockquote>
+                "Comment vous organisez vos archives d'urbex sans foutre vos GPS sur des serveurs ? J'ai 10k+ photos et c'est le bordel."
+            </blockquote>
+
+            <p>Trois personnes ont répondu "PhotoGlobe Sorter". J'ai googlé. Site minimaliste, pas de bullshit marketing, promesse claire :</p>
+
+            <ul>
+                <li>✓ <strong>100% offline</strong> – Aucune connexion internet requise</li>
+                <li>✓ Lit les données GPS directement depuis les métadonnées EXIF</li>
+                <li>✓ Organise automatiquement par pays, région, ville</li>
+                <li>✓ Pas de télémétrie, pas de tracking, pas de serveurs</li>
+                <li>✓ 39€ paiement unique (pas d'abonnement mensuel qui pue)</li>
+                <li>✓ Test gratuit 500 photos</li>
+            </ul>
+
+            <p>J'ai lu la documentation technique. Le logiciel :</p>
+            <ul>
+                <li>Ne nécessite JAMAIS de connexion internet (peut être installé sur un PC sans carte réseau)</li>
+                <li>Ne contacte AUCUN serveur externe</li>
+                <li>Ne collecte AUCUNE donnée utilisateur</li>
+                <li>Toutes les opérations sont locales</li>
+            </ul>
+
+            <p><strong>Parfait. Exactement ce qu'il me fallait.</strong></p>
+
+            <p>J'ai téléchargé la version d'essai (500 photos max). J'ai déconnecté physiquement mon câble Ethernet et désactivé le WiFi (paranoïa ? Non, prudence). J'ai lancé le test sur 500 photos d'un mix de spots.</p>
+
+            <p><strong>Résultat en 6 minutes 23 secondes :</strong></p>
+
+            <div class="solution-box">
+                <p><strong>Test avec 500 photos :</strong></p>
+                <div class="code-box">
+📁 Test_Tri_Urbex<br>
+├── 📁 France<br>
+│   ├── 📁 2023<br>
+│   │   ├── 📁 04-April<br>
+│   │   │   ├── 📁 Lyon (34 photos - friche industrielle Gerland)<br>
+│   │   │   └── 📁 Grenoble (67 photos - sanatorium)<br>
+│   │   └── 📁 09-September<br>
+│   │       └── 📁 Rouen (89 photos - château abandonné)<br>
+│   └── 📁 2024<br>
+│       ├── 📁 03-March<br>
+│       │   └── 📁 Nancy (124 photos - hôpital psychiatrique)<br>
+│       └── 📁 07-July<br>
+│           └── 📁 Lille (103 photos - usine textile)<br>
+├── 📁 Belgium<br>
+│   └── 📁 2024<br>
+│       └── 📁 05-May<br>
+│           └── 📁 Charleroi (83 photos - centrale électrique)<br>
+                </div>
+            </div>
+
+            <p><strong>IMPECCABLE.</strong> Chaque photo était classée par pays, année, mois, et ville – automatiquement, sans que je bouge un doigt. Et surtout : <strong>mes GPS sont restés SUR MON DISQUE DUR, pas sur un serveur à 10.000 km.</strong></p>
+
+            <p>J'ai acheté la licence complète (39€ par PayPal) le soir même.</p>
+
+            <div class="photo-placeholder">
+                <div>📸</div>
+                <div>[AVANT] Capture d'écran : Le chaos de mes dossiers</div>
+                <div style="font-size: 0.9em;">Dossiers nommés "Run_052023_trucs", "URBEX_château_?", "Photos_Nord_avril_old_OLD_final"... Aucune cohérence. 18.427 fichiers éparpillés sur 4 disques durs externes. Cauchemar absolu.</div>
+            </div>
+
+            <h2>Le Processus Complet : Comment J'ai Trié 18.427 Photos</h2>
+
+            <h3>Étape 1 : Préparation (45 minutes)</h3>
+
+            <p>J'ai rassemblé toutes mes photos depuis mes 4 disques durs externes et ma carte SD dans un dossier temporaire appelé "URBEX_TOUT_VRAC".</p>
+
+            <p>Total : <strong>18.427 photos</strong> (environ 147 Go).</p>
+
+            <p>J'ai fait une sauvegarde complète sur un 5e disque dur au cas où (toujours avoir un backup, les gars).</p>
+
+            <h3>Étape 2 : Configuration du logiciel (8 minutes)</h3>
+
+            <p>Paramètres choisis :</p>
+            <ul>
+                <li><strong>Structure :</strong> Pays → Année → Mois → Ville</li>
+                <li><strong>Langue des dossiers :</strong> Anglais (pour éviter les accents dans les noms de dossiers)</li>
+                <li><strong>Photos sans GPS :</strong> Dossier séparé "No_GPS_Data"</li>
+            </ul>
+
+            <h3>Étape 3 : Lancement du tri (1h37min)</h3>
+
+            <p>J'ai cliqué sur "Sort Photos". Le logiciel a commencé à analyser les métadonnées EXIF de chaque photo.</p>
+
+            <p><strong>Durée totale : 1 heure 37 minutes</strong></p>
+
+            <p>Calcul : 18.427 photos ÷ 97 minutes = environ <strong>190 photos par minute</strong>.</p>
+
+            <p>Pendant ce temps, j'ai mangé, regardé un épisode de série, et bu trois cafés. Le logiciel a tout fait tout seul.</p>
+
+            <h3>Étape 4 : Résultat final – Organisation parfaite</h3>
+
+            <p>Quand la barre de progression a atteint 100%, j'ai ouvert le dossier de destination. Franchement, j'ai eu un petit frisson.</p>
+
+            <div class="solution-box">
+                <p><strong>Structure finale (18.427 photos organisées) :</strong></p>
+                <div class="code-box" style="background-color: #f5f5f5; color: #000; border: 2px solid #2e7d32;">
+📁 URBEX_Archive_Organisée<br>
+├── 📁 France (16.892 photos)<br>
+│   ├── 📁 2017 → 2025 (années)<br>
+│   │   ├── Auvergne-Rhône-Alpes<br>
+│   │   │   ├── Lyon (847 photos)<br>
+│   │   │   ├── Grenoble (624 photos)<br>
+│   │   │   ├── Saint-Étienne (312 photos)<br>
+│   │   ├── Normandie<br>
+│   │   │   ├── Rouen (1.203 photos - beaucoup de châteaux)<br>
+│   │   │   ├── Le Havre (487 photos)<br>
+│   │   ├── Grand Est<br>
+│   │   │   ├── Nancy (1.567 photos - hôpitaux abandonnés)<br>
+│   │   │   ├── Strasbourg (398 photos)<br>
+│   │   ├── Hauts-de-France<br>
+│   │   │   ├── Lille (923 photos - friches industrielles)<br>
+│   │   │   ├── Roubaix (756 photos)<br>
+│   │   ├── [+ autres régions...]<br>
+├── 📁 Belgium (1.247 photos)<br>
+│   └── Charleroi, Liège, Mons...<br>
+├── 📁 Germany (289 photos)<br>
+│   └── Saarbrücken, Mannheim...<br>
+└── 📁 No_GPS_Data (99 photos - photos floues, screenshots, vieilles photos scannées)<br>
+                </div>
+            </div>
+
+            <p><strong>C'était PARFAIT.</strong></p>
+
+            <p>Maintenant, si je veux retrouver les photos d'un run à Nancy en mars 2024, je fais :</p>
+            <p style="text-align: center; font-weight: bold; color: #2e7d32;">France → 2024 → 03-March → Nancy → TROUVÉ en 8 secondes.</p>
+
+            <div class="photo-placeholder">
+                <div>📸</div>
+                <div>[APRÈS] Capture d'écran : Structure claire et organisée</div>
+                <div style="font-size: 0.9em;">Dossiers France/2024/07-July/Lyon, France/2023/04-April/Grenoble... Chaque spot dans son propre dossier. Navigation instantanée. Mes 8 ans d'urbex enfin accessibles en quelques clics.</div>
+            </div>
+
+            <h2>Ce Que J'Adore Chez PhotoGlobe Sorter</h2>
+
+            <h3>1. Confidentialité Absolue – LE Point Crucial</h3>
+
+            <div class="security-box">
+                <h3>🔒 Garanties de sécurité vérifiées :</h3>
+                <ul>
+                    <li>✓ <strong>Aucune connexion internet</strong> – J'ai vérifié avec Wireshark : zéro paquet réseau envoyé</li>
+                    <li>✓ <strong>Pas de télémétrie</strong> – Aucun "phone home", aucun tracking</li>
+                    <li>✓ <strong>Traitement 100% local</strong> – Tout se passe sur mon SSD</li>
+                    <li>✓ <strong>Pas de compte utilisateur</strong> – Aucune inscription, aucune donnée personnelle collectée</li>
+                    <li>✓ <strong>GPS jamais exposés</strong> – Les coordonnées restent dans les métadonnées EXIF, accessibles uniquement sur mon PC</li>
+                </ul>
+                <p style="margin-top: 20px;"><strong>Résultat : Mes 73 spots secrets restent SECRETS. Personne ne peut les localiser via mes photos.</strong></p>
+            </div>
+
+            <p>En tant qu'urbexer, c'est <strong>NON-NÉGOCIABLE</strong>. PhotoGlobe est le SEUL logiciel que j'ai trouvé qui réponde à ce critère.</p>
+
+            <h3>2. Précision GPS Impressionnante</h3>
+
+            <p>Le logiciel ne se contente pas de dire "France". Il identifie :</p>
+            <ul>
+                <li>Le pays (France, Belgique, Allemagne...)</li>
+                <li>L'année et le mois exacts</li>
+                <li>La ville précise (Lyon ≠ Grenoble ≠ Saint-Étienne, même si c'est la même région)</li>
+            </ul>
+
+            <p>Pour l'urbex, c'est <strong>gold</strong>. Je peux retracer tous mes runs par ville sans chercher pendant des heures.</p>
+
+            <h3>3. Gain de Temps Colossal</h3>
+
+            <p>Avant PhotoGlobe, pour retrouver les photos d'un spot spécifique :</p>
+            <ul>
+                <li>Ouvrir 10-15 dossiers au hasard</li>
+                <li>Scroller des centaines de miniatures</li>
+                <li>Ouvrir des photos une par une pour identifier le lieu</li>
+                <li><strong>Temps moyen : 30 minutes à 2 heures</strong></li>
+            </ul>
+
+            <p>Maintenant :</p>
+            <ul>
+                <li>France → Année → Mois → Ville</li>
+                <li><strong>Temps : 5 à 10 secondes</strong></li>
+            </ul>
+
+            <p><strong>J'ai récupéré des DIZAINES d'heures de ma vie.</strong></p>
+
+            <h3>4. Prix Honnête – Pas d'Arnaque</h3>
+
+            <p>39€ une seule fois. Pas de mensualité, pas de piège, pas d'upgrade forcé.</p>
+
+            <p>Comparé à Lightroom (143€/an) ou des abonnements cloud, c'est <strong>ridiculement peu cher</strong>.</p>
+
+            <h3>5. Fonctionne Complètement Offline</h3>
+
+            <p>Je peux installer PhotoGlobe sur un PC sans carte réseau, déconnecter physiquement mon câble Ethernet, désactiver le WiFi – et tout fonctionne parfaitement.</p>
+
+            <p>Pour un urbexer parano (= réaliste), c'est <strong>essentiel</strong>.</p>
+
+            <h3>6. Rapports PDF avec Stats</h3>
+
+            <p>Petit bonus : le logiciel génère un PDF avec des stats sympas :</p>
+            <ul>
+                <li>Ville la plus photographiée : Nancy (1.567 photos)</li>
+                <li>Région favorite : Grand Est (3.842 photos)</li>
+                <li>Année la plus productive : 2022 (3.214 photos)</li>
+            </ul>
+
+            <p>C'est cool de voir visuellement son évolution en urbex.</p>
+
+            <h2>Les Points Négatifs (Soyons Honnêtes)</h2>
+
+            <div class="warning-box">
+                <p><strong>PhotoGlobe n'est pas parfait. Voici les trucs chiants :</strong></p>
+
+                <h3>1. Seulement sur Windows</h3>
+                <p>J'utilise Windows, donc pas de souci pour moi. Mais si tu es sur Mac ou Linux, tu es bloqué. Dommage, parce que beaucoup d'urbexers utilisent MacBook Pro pour le traitement photo.</p>
+
+                <h3>2. Interface en anglais</h3>
+                <p>Pas de version française. L'interface est simple, donc ça passe, mais ça pourrait être mieux.</p>
+
+                <h3>3. Photos sans GPS = Tri manuel</h3>
+                <p>Les 99 photos sans GPS (vieux scans, screenshots) sont mises dans un dossier "No_GPS_Data". Il faut les trier à la main si tu veux. Pas dramatique, mais chiant quand même.</p>
+
+                <h3>4. Pas d'édition photo</h3>
+                <p>PhotoGlobe trie, c'est tout. Si tu veux retoucher tes photos, il faut un autre logiciel (genre GIMP, Darktable). Ce n'est pas un problème pour moi, mais c'est bon à savoir.</p>
+            </div>
+
+            <h2>Pour Qui Ce Logiciel Est-Il Fait ?</h2>
+
+            <div class="solution-box">
+                <p><strong>PhotoGlobe Sorter est PARFAIT si :</strong></p>
+                <ul>
+                    <li>✓ Tu fais de l'urbex et dois <strong>protéger tes spots</strong></li>
+                    <li>✓ Tu refuses de mettre tes photos sur des clouds tiers (Google, Adobe, Apple)</li>
+                    <li>✓ Tu as des milliers de photos de voyages/explorations à organiser</li>
+                    <li>✓ Tu veux un tri automatique par pays/région/ville basé sur GPS</li>
+                    <li>✓ Tu veux quelque chose de 100% offline, zéro télémétrie</li>
+                    <li>✓ Tu utilises Windows</li>
+                    <li>✓ Tes photos ont des données GPS (smartphone moderne, appareil photo avec GPS)</li>
+                    <li>✓ Tu détestes les abonnements mensuels</li>
+                    <li>✓ La confidentialité est ta priorité n°1</li>
+                </ul>
+            </div>
+
+            <div class="problem-box">
+                <p><strong>NE convient PAS si :</strong></p>
+                <ul>
+                    <li>✗ Tu utilises Mac ou Linux (Windows only)</li>
+                    <li>✗ Tu préfères tout sur le cloud (ce logiciel est anti-cloud par design)</li>
+                    <li>✗ Tes photos n'ont pas de GPS (vieilles photos, appareil sans GPS)</li>
+                    <li>✗ Tu veux aussi éditer tes photos (ce n'est qu'un outil d'organisation)</li>
+                </ul>
+            </div>
+
+            <h2>FAQ – Questions Que Je Me Posais Avant d'Acheter</h2>
+
+            <div class="faq-item">
+                <p class="faq-question">Q : Est-ce vraiment 100% offline ? Comment je peux vérifier ?</p>
+                <p><strong>R :</strong> Oui, à 100%. J'ai vérifié avec Wireshark (analyseur de trafic réseau) : ZÉRO paquet réseau envoyé pendant l'utilisation. Tu peux même débrancher physiquement ton câble Ethernet, ça fonctionne parfaitement. Aucune connexion internet requise.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Q : Mes coordonnées GPS vont-elles être exposées quelque part ?</p>
+                <p><strong>R :</strong> NON. Les GPS restent dans les métadonnées EXIF de tes photos, sur TON disque dur. Le logiciel les lit localement pour organiser tes photos, mais ne les envoie NULLE PART. Personne d'autre que toi n'y a accès.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Q : Comment le logiciel sait-il que telle photo vient de Lyon et pas de Grenoble ?</p>
+                <p><strong>R :</strong> Il lit les coordonnées GPS exactes (latitude/longitude) stockées dans les métadonnées EXIF de chaque photo, puis les compare avec une base de données géographique locale (incluse dans le logiciel). Tout se passe offline, aucun appel à une API externe.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Q : Le logiciel va-t-il modifier ou supprimer mes photos originales ?</p>
+                <p><strong>R :</strong> NON. Il COPIE tes photos vers la nouvelle structure organisée. Tes originaux restent intacts. Zéro risque de perte de données.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Q : Combien de temps ça prend pour trier 10.000 photos ?</p>
+                <p><strong>R :</strong> Chez moi, 18.427 photos en 1h37min = environ 190 photos/minute. Donc 10.000 photos devraient prendre environ 50-55 minutes. Ça dépend de ton PC, bien sûr.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Q : Je peux tester avant d'acheter ?</p>
+                <p><strong>R :</strong> Oui, gratuit pour 500 photos. Pas besoin de carte bancaire, pas d'inscription. Télécharge, teste, et décide après.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Q : C'est légal d'utiliser ce logiciel pour organiser des photos d'urbex ?</p>
+                <p><strong>R :</strong> Le logiciel lui-même est 100% légal. C'est juste un outil d'organisation de photos. Ce que tu fais avec (urbex ou pas) est ta responsabilité. Mais le logiciel ne partage aucune donnée, donc tes activités restent privées.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Q : Que se passe-t-il avec les photos sans GPS (intérieur de bâtiment, vieux scans) ?</p>
+                <p><strong>R :</strong> Elles sont placées dans un dossier "No_GPS_Data". Tu peux les laisser là ou ajouter manuellement des localisations (le logiciel a une fonction pour ça, mais c'est manuel).</p>
+            </div>
+
+            <h2>Retour d'Expérience Après 5 Mois d'Utilisation</h2>
+
+            <p>J'ai acheté PhotoGlobe en mai 2025. On est en octobre, soit 5 mois d'utilisation quotidienne.</p>
+
+            <blockquote>
+                "Ma vie d'urbexer a changé. Avant, retrouver des photos d'un run spécifique était un calvaire de 1-2 heures. Maintenant, c'est instantané. Quand un pote me dit 'Tu te souviens du château en Normandie en 2019 ?', je retrouve les 847 photos en 10 secondes. C'est devenu tellement facile que j'ai créé un portfolio urbex professionnel (avec GPS strippés avant publication, évidemment) en une semaine – avant, ça m'aurait pris un mois."
+            </blockquote>
+
+            <p><strong>Stats concrètes sur 5 mois :</strong></p>
+            <ul>
+                <li>📊 Photos ajoutées et organisées : 2.783 nouvelles photos (runs récents)</li>
+                <li>⏱️ Temps économisé (estimation) : <strong>Plus de 60 heures</strong> par rapport à l'ancien système chaotique</li>
+                <li>🎨 Portfolio urbex créé avec 120 meilleures photos : trouvées et sélectionnées en 2h15 (vs. des jours avant)</li>
+                <li>📱 Demandes de potes urbexers : Je peux leur envoyer des photos spécifiques en quelques secondes maintenant</li>
+                <li>🔒 Incidents de sécurité : ZÉRO (aucune fuite GPS, aucun spot exposé)</li>
+            </ul>
+
+            <p>Exemple concret : La semaine dernière, un membre de mon crew voulait retourner au sanatorium de Grenoble (première exploration en 2021). Il m'a demandé les photos pour repérer les accès encore ouverts.</p>
+
+            <p>France → 2021 → 04-April → Grenoble → <strong>624 photos trouvées en 6 secondes.</strong></p>
+
+            <p>Avant PhotoGlobe ? J'aurais cherché pendant 1h30, voire abandonné.</p>
+
+            <h2>Mon Verdict Final</h2>
+
+            <div class="verdict-box">
+                <h3>⭐⭐⭐⭐⭐ 5/5 – Indispensable pour l'urbex</h3>
+                
+                <p><strong>PhotoGlobe Sorter est LA solution pour tout explorateur urbain qui prend la confidentialité au sérieux.</strong></p>
+                
+                <p>Après 8 ans d'urbex et 18.400+ photos, j'avais besoin d'une solution pour organiser mon chaos sans compromettre mes spots. PhotoGlobe a parfaitement rempli cette mission : tri automatique par pays/région/ville basé sur GPS, 100% offline, zéro télémétrie, zéro cloud.</p>
+                
+                <p><strong>Les 3 raisons pour lesquelles c'est parfait pour l'urbex :</strong></p>
+                <ol>
+                    <li><strong>Confidentialité totale :</strong> Aucune donnée GPS n'est jamais exposée ou envoyée sur internet. Mes spots restent secrets.</li>
+                    <li><strong>Organisation automatique :</strong> 18.427 photos triées en 1h37 sans lever le petit doigt. Gain de temps : des dizaines d'heures.</li>
+                    <li><strong>Prix honnête :</strong> 39€ une fois, pas d'abonnement mensuel qui te vide les poches.</li>
+                </ol>
+                
+                <p><strong>Recommandé pour :</strong> Urbexers, photographes de voyage, explorateurs, toute personne qui refuse les clouds tiers et valorise la confidentialité</p>
+                
+                <p><strong>Non recommandé pour :</strong> Utilisateurs Mac/Linux, personnes préférant le cloud</p>
+                
+                <p style="margin-top: 20px;"><em><strong>Si tu fais de l'urbex et que tu as des milliers de photos dans le bordel, achète ce logiciel. Point. C'est la seule solution vraiment sécurisée que j'ai trouvée en 8 ans.</strong></em></p>
+            </div>
+
+            <h2>Teste Gratuitement – 500 Photos Sans Engagement</h2>
+
+            <div class="cta-section">
+                <h3 style="color: white; margin-bottom: 20px;">Protège Tes Spots – Organise Tes Photos Offline</h3>
+                
+                <p style="font-size: 1.1em;">Essai gratuit 500 photos. Aucune carte bancaire requise. Aucun compte à créer.</p>
+                
+                <p class="price">39€</p>
+                <p style="font-size: 1.2em;">Paiement unique • Pas d'abonnement • Usage illimité</p>
+                
+                <div class="benefits-list">
+                    <p style="font-size: 1.05em;"><strong>✓</strong> Test gratuit 500 photos (sans inscription)</p>
+                    <p style="font-size: 1.05em;"><strong>✓</strong> 100% offline – Zéro connexion internet</p>
+                    <p style="font-size: 1.05em;"><strong>✓</strong> Tri automatique par pays/région/ville (GPS)</p>
+                    <p style="font-size: 1.05em;"><strong>✓</strong> Confidentialité absolue – Aucune télémétrie</p>
+                    <p style="font-size: 1.05em;"><strong>✓</strong> Tes GPS restent sur TON PC uniquement</p>
+                    <p style="font-size: 1.05em;"><strong>✓</strong> Originaux jamais modifiés</p>
+                </div>
+                
+                <a href="https://www.albumforge.com/photoglobe-sorter/" class="cta-button">TÉLÉCHARGER L'ESSAI GRATUIT</a>
+                
+                <p style="font-size: 0.95em; margin-top: 25px;">Windows uniquement • Parfait pour urbex et photographie d'exploration</p>
+            </div>
+
+        </div>
+
+        <footer>
+            <p><strong>Disclaimer :</strong> Ceci est mon retour d'expérience personnel et honnête. Je n'ai reçu aucune rémunération, sponsoring ou avantage de la part d'AlbumForge ou PhotoGlobe Sorter. J'ai payé la licence 39€ de ma poche en mai 2025 et j'utilise le logiciel quotidiennement depuis.</p>
+            
+            <p style="margin-top: 18px;"><strong>Alexis Morel</strong><br>
+            Photographe urbex depuis 2017<br>
+            Lyon, France<br>
+            20 octobre 2025</p>
+            
+            <p style="margin-top: 18px;">
+                <a href="https://www.albumforge.com/photoglobe-sorter/">Site officiel : albumforge.com/photoglobe-sorter</a>
+            </p>
+            
+            <p style="margin-top: 25px; font-size: 0.85em; color: #999;">
+                Note légale : L'exploration urbaine (urbex) se situe dans une zone juridique grise en France. L'auteur ne cautionne ni n'encourage la violation de propriété privée. Ce témoignage concerne uniquement l'utilisation d'un logiciel d'organisation de photos, pas les activités d'exploration elles-mêmes.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

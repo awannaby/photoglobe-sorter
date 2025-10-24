@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="컴퓨터 잘 모르는 50대가 60,000장 사진을 단 3번의 클릭으로 자동 정리한 실제 후기. 복잡한 프로그램 없이 날짜와 장소별로 완벽하게 분류됨.">
+    <meta name="keywords" content="사진 자동 정리 프로그램 쉬운, 6만장 사진 한번에 정리하는 법, 컴퓨터 초보 사진 정리 방법, 복잡하지 않은 사진 관리 소프트웨어, 클릭 몇번으로 사진 분류, 날짜별 장소별 사진 자동 정리, 대량 사진 빠르게 정리 프로그램, 기술 지식 없이 사진 정리, 사진 찾기 쉽게 만드는 방법, 사진 폴더 자동 분류 프로그램, 초보자용 사진 정리 소프트웨어, 한 폴더에 수만장 사진 정리, 어렵지 않은 사진 관리 프로그램, 자동으로 사진 분류해주는 프로그램, 사진 많아서 못 찾을때 해결법, 간단한 사진 정리 윈도우, 비전문가 사진 백업 정리, 클라우드 없이 사진 자동 정리, 오프라인 사진 분류 프로그램 한국어, GPS 정보로 사진 자동 분류, 여행 사진 자동 정리 날짜순, 가족 사진 쉽게 찾는 방법, 사진 정리 포기했는데 해결, 중년층 사진 정리 추천 프로그램">
+    <meta name="author" content="김민수">
+    <meta property="og:title" content="컴맹인 제가 60,000장 사진을 3번의 클릭으로 정리했습니다">
+    <meta property="og:description" content="복잡한 프로그램 다 포기했던 50대가 드디어 찾은 해답. 기술 지식 제로, 클릭 3번이면 끝나는 자동 정리의 기적.">
+    <title>60,000장 사진을 3번의 클릭으로 정리한 방법 | PhotoGlobe Sorter 솔직 후기</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Malgun Gothic", Arial, sans-serif;
+            line-height: 1.7;
+            color: #222;
+            background-color: #f8f8f8;
+            padding: 15px;
+        }
+        
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 35px;
+            border: 3px solid #ddd;
+        }
+        
+        header {
+            border-bottom: 4px solid #d32f2f;
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #d32f2f;
+            font-size: 2em;
+            margin-bottom: 15px;
+            line-height: 1.4;
+            font-weight: bold;
+        }
+        
+        .subtitle {
+            color: #555;
+            font-size: 1.15em;
+            line-height: 1.5;
+        }
+        
+        .author-box {
+            background-color: #f5f5f5;
+            border: 2px solid #aaa;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        
+        .author-box p {
+            margin: 7px 0;
+            font-size: 1em;
+        }
+        
+        .rating {
+            background-color: #fff9c4;
+            border: 3px solid #fbc02d;
+            padding: 20px;
+            margin: 25px 0;
+            text-align: center;
+        }
+        
+        .stars {
+            color: #fbc02d;
+            font-size: 2em;
+            margin: 12px 0;
+        }
+        
+        h2 {
+            color: #d32f2f;
+            font-size: 1.65em;
+            margin: 40px 0 18px 0;
+            border-bottom: 3px solid #d32f2f;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        h3 {
+            color: #333;
+            font-size: 1.25em;
+            margin: 28px 0 14px 0;
+            font-weight: bold;
+        }
+        
+        p {
+            margin: 16px 0;
+            text-align: justify;
+        }
+        
+        .intro-quote {
+            background-color: #ffebee;
+            border-left: 5px solid #d32f2f;
+            padding: 25px;
+            margin: 30px 0;
+            font-style: italic;
+            font-size: 1.05em;
+        }
+        
+        .problem-box {
+            background-color: #ffebee;
+            border: 3px solid #e53935;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .solution-box {
+            background-color: #e8f5e9;
+            border: 3px solid #43a047;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .warning-box {
+            background-color: #fff3e0;
+            border: 3px solid #fb8c00;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        ul, ol {
+            margin: 18px 0 18px 40px;
+        }
+        
+        li {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background-color: #fff;
+        }
+        
+        th, td {
+            border: 2px solid #ccc;
+            padding: 14px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #d32f2f;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .photo-placeholder {
+            border: 4px dashed #999;
+            padding: 45px;
+            margin: 30px 0;
+            text-align: center;
+            background-color: #fafafa;
+        }
+        
+        .photo-placeholder > div:first-child {
+            font-size: 3.5em;
+            margin-bottom: 12px;
+        }
+        
+        .photo-placeholder > div:nth-child(2) {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        blockquote {
+            background-color: #fafafa;
+            border-left: 5px solid #d32f2f;
+            padding: 18px 22px;
+            margin: 25px 0;
+            font-style: italic;
+        }
+        
+        .verdict-box {
+            background-color: #e8f5e9;
+            border: 4px solid #43a047;
+            padding: 30px;
+            margin: 35px 0;
+        }
+        
+        .verdict-box h3 {
+            color: #2e7d32;
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 18px;
+        }
+        
+        .cta-section {
+            background-color: #1565c0;
+            color: white;
+            padding: 35px;
+            text-align: center;
+            margin: 35px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #43a047;
+            color: white;
+            padding: 18px 45px;
+            text-decoration: none;
+            border: 3px solid #2e7d32;
+            font-size: 1.25em;
+            margin: 18px 0;
+            font-weight: bold;
+        }
+        
+        .cta-button:hover {
+            background-color: #2e7d32;
+        }
+        
+        .price {
+            font-size: 2.2em;
+            font-weight: bold;
+            margin: 18px 0;
+        }
+        
+        .benefits-list {
+            text-align: left;
+            display: inline-block;
+            margin: 18px 0;
+        }
+        
+        footer {
+            border-top: 3px solid #ddd;
+            padding-top: 25px;
+            margin-top: 45px;
+            color: #666;
+            font-size: 0.95em;
+        }
+        
+        .faq-item {
+            margin: 30px 0;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: #d32f2f;
+            font-size: 1.12em;
+            margin-bottom: 10px;
+        }
+        
+        .highlight {
+            background-color: #fff9c4;
+            padding: 2px 6px;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.6em;
+            }
+            
+            h2 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>컴퓨터 잘 모르는 50대가 60,000장 사진을 단 3번의 클릭으로 자동 정리한 실제 이야기</h1>
+            <p class="subtitle">복잡한 프로그램 다 포기했던 제가 드디어 찾은 해답 - 기술 지식 제로, 클릭 3번이면 끝</p>
+        </header>
+
+        <div class="author-box">
+            <p><strong>작성자: 김민수</strong></p>
+            <p>📍 서울특별시 강남구</p>
+            <p>📅 2025년 10월 21일</p>
+            <p>👨‍💼 52세, 중소기업 경리 담당, 컴퓨터는 엑셀과 이메일 정도만 사용</p>
+            <p><em>"저는 IT 전문가가 아닙니다. 그냥 가족 사진 좀 제대로 정리하고 싶었던 평범한 아빠입니다. 컴퓨터는 어렵고, 복잡한 프로그램은 더더욱 싫어합니다."</em></p>
+        </div>
+
+        <div class="rating">
+            <p><strong>종합 평가</strong></p>
+            <div class="stars">★★★★★</div>
+            <p style="font-size: 1.15em;"><strong>5/5점 - 컴퓨터 잘 모르는 분들께 강력 추천합니다</strong></p>
+        </div>
+
+        <div class="intro-quote">
+            <p>"15년 동안 찍은 사진이 60,247장이었습니다. 전부 '내 사진'이라는 폴더 하나에 쑤셔박혀 있었죠. 파일 이름은 전부 'DSC_1234.jpg' 이런 식이었고요. 아내가 '작년 제주도 여행 사진 좀 보내줘'라고 하면... 포기했습니다. 6만 장을 어떻게 뒤져요? 클릭 3번으로 이게 해결될 줄은 꿈에도 몰랐습니다."</p>
+        </div>
+
+        <h2>제 문제: 60,000장이 한 폴더에... 지옥이었습니다</h2>
+
+        <p>저는 2010년부터 디지털 카메라로 가족 사진을 찍기 시작했습니다. 처음에는 몇백 장이었죠. "나중에 정리해야지" 하면서 미뤘습니다.</p>
+
+        <p>그게 15년이 됐습니다.</p>
+
+        <div class="problem-box">
+            <p><strong>제 컴퓨터 상황 (PhotoGlobe 쓰기 전):</strong></p>
+            <ul>
+                <li><strong>총 60,247장</strong>의 사진이 "내 사진" 폴더 하나에 전부 들어있음</li>
+                <li>파일 이름: DSC_0001.jpg부터 DSC_60247.jpg까지 의미 없는 숫자들</li>
+                <li>2010년 아이 돌잔치 사진과 2025년 추석 사진이 뒤섞여 있음</li>
+                <li>제주도, 부산, 경주, 서울... 어디서 찍은 사진인지 전혀 모름</li>
+                <li>특정 사진 찾으려면 몇 시간씩 스크롤하며 하나하나 클릭해서 확인해야 함</li>
+                <li>외장하드에 백업도 같은 상태로 복사만 해놨음</li>
+            </ul>
+        </div>
+
+        <p>제가 얼마나 좌절했는지 아시나요? 실제로 겪은 상황들입니다:</p>
+
+        <ul>
+            <li><strong>2시간 40분</strong> 동안 딸 초등학교 입학식 사진을 찾다가 포기 (2017년 3월쯤 찍은 건데 도저히 못 찾겠더라고요)</li>
+            <li>장모님이 "작년에 우리 같이 찍은 사진 좀 보내줘"라고 하셨는데... 부끄러워서 "못 찾겠다"고 못하고 "나중에 보내드릴게요" 하고 3개월째 미루는 중</li>
+            <li>아내 생일 선물로 사진 앨범 만들어주려다가 사진 찾는데만 하루 꼬박 걸려서 포기</li>
+            <li>회사 동료가 "사진 정리 어떻게 해요?" 물어봤을 때 "그냥... 안 합니다" 라고 대답할 수밖에 없었던 창피함</li>
+        </ul>
+
+        <p>가장 큰 문제는 제가 <strong>컴퓨터를 잘 모른다</strong>는 겁니다. 엑셀로 장부 정리하고, 이메일 보내는 정도는 하지만... 그 이상은 솔직히 어렵습니다.</p>
+
+        <p>인터넷 검색하면 나오는 <strong>"사진 정리 방법"</strong>들은 전부 너무 어려웠어요:</p>
+        <ul>
+            <li>"폴더를 연도/월/일 형식으로 만드세요" → 6만 장을 언제 일일이 옮겨요?</li>
+            <li>"라이트룸 같은 전문 프로그램 쓰세요" → 배우는 데만 몇 달 걸릴 것 같던데요?</li>
+            <li>"클라우드에 올리세요" → 매달 돈 내야 되고, 용량도 부족하고...</li>
+        </ul>
+
+        <p>저는 그냥 <strong>클릭 몇 번으로 자동으로 정리</strong>되는 게 필요했습니다. 그게 다였어요.</p>
+
+        <h2>다른 프로그램들은 왜 안 됐나요?</h2>
+
+        <p>PhotoGlobe 찾기 전에 정말 여러 가지 시도했습니다. 다 실패했고요.</p>
+
+        <table>
+            <tr>
+                <th>시도한 방법</th>
+                <th>왜 실패했는가</th>
+            </tr>
+            <tr>
+                <td><strong>수동으로 폴더 만들기</strong></td>
+                <td>30분 만에 포기. 너무 많아서 도저히 못하겠더라고요. 언제 6만 장을 일일이 옮겨요?</td>
+            </tr>
+            <tr>
+                <td><strong>구글 포토</strong></td>
+                <td>설정하는 것부터 어려웠습니다. 그리고 사진이 미국 서버에 올라간다는 게 찝찝했어요. 우리 가족 사진을 외국 회사 서버에?</td>
+            </tr>
+            <tr>
+                <td><strong>네이버 클라우드</strong></td>
+                <td>무료는 용량이 너무 작고, 유료는 매달 돈 내야 돼서... 그리고 여전히 정리는 제가 해야 하더라고요.</td>
+            </tr>
+            <tr>
+                <td><strong>Adobe Lightroom</strong></td>
+                <td>회사 후배가 추천했는데... 처음 실행했을 때 화면 보고 바로 껐습니다. 너무 복잡해요. 전문가용인 것 같았어요. 그리고 월 만 원 넘게 계속 내야 한다고 해서 부담스러웠고요.</td>
+            </tr>
+            <tr>
+                <td><strong>윈도우 기본 기능</strong></td>
+                <td>"날짜별로 정렬" 해봤는데... 여전히 6만 장이 한 폴더에 있는 건 똑같잖아요? 스크롤 지옥은 해결 안 됩니다.</td>
+            </tr>
+            <tr>
+                <td><strong>유튜브 보고 따라하기</strong></td>
+                <td>30분짜리 튜토리얼 영상 3개 봤는데 다 중간에 포기. 너무 복잡하고, 젊은 사람들이 빨리 설명해서 못 따라가겠더라고요.</td>
+            </tr>
+        </table>
+
+        <p>결론: <strong>기술 지식 없이 사진 정리</strong>할 수 있는 방법이 없었습니다. 다들 "공부하세요", "시간 투자하세요" 이러는데... 저는 그럴 여력이 없어요.</p>
+
+        <h2>PhotoGlobe Sorter를 선택한 이유</h2>
+
+        <p>회사 점심시간에 동료한테 사진 정리 고민을 털어놨어요. 그분이 딱 이렇게 말하더라고요:</p>
+
+        <blockquote>
+            "민수씨, 복잡한 거 싫어하시잖아요. 제가 쓰는 프로그램 하나 알려드릴게요. 클릭 3번이면 끝나요. 진짜로."
+        </blockquote>
+
+        <p>처음엔 안 믿었죠. 그런 게 어딨어요? 근데 그분이 직접 화면 캡처 보여주면서 설명해줬는데...</p>
+
+        <p><strong>와, 진짜 클릭 3번이더라고요.</strong></p>
+
+        <p>그날 저녁에 바로 집에 가서 다운로드했습니다. 제가 PhotoGlobe를 선택한 이유:</p>
+
+        <ol>
+            <li><strong>진짜로 간단함</strong> - 설명서 안 봐도 될 정도로 직관적</li>
+            <li><strong>자동으로 다 해줌</strong> - 제가 할 일: 폴더 선택, 시작 버튼 누르기. 끝.</li>
+            <li><strong>무료 체험 500장</strong> - 돈 안 내고 먼저 테스트 가능</li>
+            <li><strong>한 번만 지불</strong> - 39유로(약 5만 7천 원). 월 구독 아님!</li>
+            <li><strong>오프라인 작동</strong> - 인터넷 안 필요, 내 컴퓨터에서만 작동</li>
+            <li><strong>윈도우에서 작동</strong> - 제가 쓰는 삼성 노트북(윈도우 10)에서 바로 됨</li>
+        </ol>
+
+        <p>가장 마음에 든 건 <strong>"자동"</strong>이라는 단어였습니다. 제가 배울 필요가 없다는 거죠.</p>
+
+        <h2>실제로 어떻게 썼는가: 단계별 설명</h2>
+
+        <p>토요일 오후 2시. 아내랑 아이들이 쇼핑 나간 사이 혼자 집에서 도전했습니다. 솔직히 좀 떨렸어요. "이번에도 또 안 되면 어쩌지..."</p>
+
+        <h3>1단계: 설치 (7분)</h3>
+
+        <p>albumforge.com/photoglobe-sorter 접속해서 다운로드 버튼 클릭. 파일 다운로드되고, 더블클릭해서 설치.</p>
+
+        <p>설치는 자동으로 쭉쭉 진행됐어요. "다음" 버튼만 몇 번 누르면 끝. <strong>특별히 어려운 설정 없었습니다.</strong></p>
+
+        <h3>2단계: 프로그램 실행 및 테스트 (15분)</h3>
+
+        <p>바탕화면에 생긴 PhotoGlobe 아이콘 더블클릭. 프로그램이 열렸습니다.</p>
+
+        <p>화면이... 엄청 심플하더라고요. 버튼이 5개밖에 없었어요:</p>
+        <ul>
+            <li>"Select Source Folder" (사진 있는 폴더 선택)</li>
+            <li>"Select Destination Folder" (정리된 사진 저장할 곳)</li>
+            <li>"Sort Photos" (정리 시작 버튼)</li>
+            <li>설정 버튼 2개</li>
+        </ul>
+
+        <p>일단 무료 테스트로 "내 사진" 폴더 안에 있는 사진 500장만 먼저 해봤습니다.</p>
+
+        <div class="solution-box">
+            <p><strong>제가 한 일 (정확히):</strong></p>
+            <ol>
+                <li>첫 번째 버튼 클릭 → "내 사진" 폴더 선택</li>
+                <li>두 번째 버튼 클릭 → "정리된 사진" 이름으로 새 폴더 만들고 선택</li>
+                <li>세 번째 버튼("Sort Photos") 클릭</li>
+            </ol>
+            <p style="margin-top: 15px;"><strong>끝입니다. 진짜로 클릭 3번이었습니다.</strong></p>
+        </div>
+
+        <p>프로그램이 돌아가기 시작했어요. 진행 바(progress bar)가 쭉쭉 차올라가더니...</p>
+
+        <p><strong>4분 12초 만에 완료!</strong></p>
+
+        <p>"정리된 사진" 폴더를 열었습니다. 그리고 입이 떡 벌어졌어요.</p>
+
+        <div class="photo-placeholder">
+            <div>📸</div>
+            <div>[이전 모습] 정리 전: "내 사진" 폴더 스크린샷</div>
+            <div style="font-size: 0.9em;">DSC_0001.jpg, DSC_0002.jpg, DSC_0003.jpg... 끝도 없이 이어지는 의미 없는 파일 이름들. 스크롤만 30초 넘게 해야 끝까지 볼 수 있는 지옥 같은 폴더.</div>
+        </div>
+
+        <h3>3단계: 결과 확인 - 깜짝 놀람 (3분)</h3>
+
+        <p>500장이 자동으로 이렇게 정리돼 있었어요:</p>
+
+        <pre style="background: #f5f5f5; padding: 20px; border: 2px solid #ccc; overflow-x: auto;">
+📁 정리된 사진 (테스트)
+├── 📁 South Korea (대한민국)
+│   ├── 📁 2023
+│   │   ├── 📁 05-May
+│   │   │   └── 📁 Jeju (42장)
+│   │   └── 📁 08-August
+│   │       └── 📁 Seoul (67장)
+│   ├── 📁 2024
+│   │   ├── 📁 01-January
+│   │   │   └── 📁 Seoul (38장)
+│   │   ├── 📁 04-April
+│   │   │   └── 📁 Gyeongju (56장)
+│   │   └── 📁 09-September
+│   │       └── 📁 Busan (73장)
+│   └── 📁 2025
+│       └── 📁 02-February
+│           └── 📁 Seoul (89장)
+└── 📁 No Location Data (135장 - GPS 정보 없는 오래된 사진들)
+        </pre>
+
+        <p><strong>자동으로 연도별, 월별, 도시별로 분류돼 있었습니다!</strong></p>
+
+        <p>제주도 사진은 Jeju 폴더에, 서울 사진은 Seoul 폴더에, 부산 사진은 Busan 폴더에!</p>
+
+        <p>심지어 "2023년 5월 제주도" 이런 식으로 정확하게 날짜까지!</p>
+
+        <p>저는 그 자리에서 바로 결제했습니다. 39유로(약 5만 7천 원). 망설임 제로.</p>
+
+        <h3>4단계: 전체 60,247장 정리 실전 (1시간 52분)</h3>
+
+        <p>이제 진짜 전투입니다. 6만 장 전부를 돌리는 거죠.</p>
+
+        <p>똑같이 클릭 3번 했습니다:</p>
+        <ol>
+            <li>"내 사진" 폴더 선택 (60,247장 전부)</li>
+            <li>새로운 "우리 가족 사진 정리본" 폴더 선택</li>
+            <li>"Sort Photos" 클릭</li>
+        </ol>
+
+        <p>프로그램이 돌아가기 시작했어요. 화면에 "Processing... 3,245 / 60,247" 이런 식으로 진행 상황이 보였습니다.</p>
+
+        <p>저는 그냥 커피 마시면서 TV 봤어요. <strong>제가 할 일이 없었거든요.</strong> 프로그램이 알아서 다 하고 있었으니까요.</p>
+
+        <p><strong>1시간 52분 후, 완료 알림창이 떴습니다.</strong></p>
+
+        <div class="solution-box">
+            <p><strong>최종 결과:</strong></p>
+            <ul>
+                <li>✅ 총 60,247장의 사진 자동 분류 완료</li>
+                <li>✅ 2010년부터 2025년까지 연도별로 정리됨</li>
+                <li>✅ 서울, 제주, 부산, 경주, 속초, 강릉 등 도시별 폴더 자동 생성</li>
+                <li>✅ GPS 정보 없는 오래된 사진 4,892장은 별도 폴더에 분리</li>
+                <li>✅ <span class="highlight">제가 한 일: 클릭 3번</span></li>
+                <li>✅ <span class="highlight">프로그램이 한 일: 나머지 전부</span></li>
+            </ul>
+        </div>
+
+        <div class="photo-placeholder">
+            <div>📸</div>
+            <div>[이후 모습] 정리 완료 후: 새 폴더 구조 스크린샷</div>
+            <div style="font-size: 0.9em;">South Korea 폴더 안에 연도별 → 월별 → 도시별로 완벽하게 정리된 모습. 2024/05-May/Jeju 폴더를 클릭하면 2024년 5월 제주도 여행 사진만 딱 나옴. 기적 같은 순간.</div>
+        </div>
+
+        <h2>PhotoGlobe를 쓰면서 제일 좋았던 점들</h2>
+
+        <h3>1. 정말로 쉬움 = 배울 필요 없음</h3>
+
+        <p>52년 살면서 이렇게 쉬운 컴퓨터 프로그램은 처음이었습니다.</p>
+
+        <p>설명서 읽을 필요 없었어요. 유튜브 튜토리얼 볼 필요도 없었고요. 버튼 3개만 누르면 끝이니까요.</p>
+
+        <p><strong>초보자용 사진 정리 소프트웨어</strong>를 찾는다면, 이것만 한 게 없습니다. 정말로요.</p>
+
+        <h3>2. 시간 엄청 절약됨</h3>
+
+        <p>제가 수동으로 6만 장을 정리하려면 얼마나 걸렸을까요?</p>
+
+        <p>계산해봤습니다:</p>
+        <ul>
+            <li>사진 한 장당 연도 확인하고 폴더에 옮기는데 10초 걸린다고 가정</li>
+            <li>60,247장 × 10초 = 602,470초 = 약 167시간</li>
+            <li>하루 2시간씩 한다면 = 84일</li>
+        </ul>
+
+        <p><strong>거의 3개월이 걸릴 일을, PhotoGlobe는 2시간도 안 돼서 해냈습니다.</strong></p>
+
+        <p>그리고 제가 한 일은 클릭 3번뿐이었고요.</p>
+
+        <h3>3. 사진 찾기가 천국으로 바뀜</h3>
+
+        <p>이제 사진 찾는 게 정말 쉬워졌어요.</p>
+
+        <p>예전에는: "2017년 경주 여행 사진 어디 있더라..." → 포기<br>
+        지금은: South Korea → 2017 → 04-April → Gyeongju → <strong>찾았다! (5초 걸림)</strong></p>
+
+        <p>진짜 예시:</p>
+        <ul>
+            <li>아내: "작년 제주도 사진 보내줘" → South Korea/2024/05-May/Jeju 폴더 열어서 바로 전송 (12초 소요)</li>
+            <li>장모님: "우리 같이 찍은 사진..." → South Korea/2023/09-September/Seoul 폴더에서 바로 찾음 (8초 소요)</li>
+            <li>딸: "아빠 내 초등학교 입학식 사진 어디 있어?" → South Korea/2017/03-March/Seoul 폴더에서 찾음 (10초 소요)</li>
+        </ul>
+
+        <p>예전 같았으면 각각 1-2시간씩 걸렸을 겁니다.</p>
+
+        <h3>4. 오프라인 = 내 사진이 내 것</h3>
+
+        <p>구글이나 네이버 같은 클라우드는... 솔직히 찝찝했어요. 우리 가족 사진이 어디 서버에 올라간다는 게.</p>
+
+        <p>PhotoGlobe는 <strong>100% 제 컴퓨터에서만 작동</strong>합니다. 인터넷 연결 안 해도 돼요. 사진이 어디 업로드되지도 않고요.</p>
+
+        <p>완전히 내 통제 하에 있다는 게 마음 편합니다.</p>
+
+        <h3>5. 가격이 저렴함 (한 번만 지불)</h3>
+
+        <p>39유로 = 약 5만 7천 원. 한 번 내면 끝입니다.</p>
+
+        <p>비교해보세요:</p>
+        <ul>
+            <li>네이버 클라우드 1TB: 월 9,900원 = 연간 118,800원</li>
+            <li>구글 원 2TB: 월 11,900원 = 연간 142,800원</li>
+            <li>Adobe Lightroom: 월 12,000원 = 연간 144,000원</li>
+        </ul>
+
+        <p>저는 5만 7천 원 한 번 내고, 평생 쓸 수 있습니다. 계산해보니 <strong>1년만 써도 본전</strong>이더라고요.</p>
+
+        <h3>6. 통계 리포트가 재미있음</h3>
+
+        <p>프로그램이 PDF 리포트를 만들어줘요. 제가 어느 장소에서 사진을 제일 많이 찍었는지, 어느 해에 사진을 제일 많이 찍었는지 등등.</p>
+
+        <p>제 통계:</p>
+        <ul>
+            <li>가장 많이 찍은 장소: 서울 (27,842장) - 당연하죠, 여기 살으니까</li>
+            <li>두 번째: 제주도 (8,247장) - 가족 여행 많이 갔었네요</li>
+            <li>가장 많이 찍은 해: 2018년 (6,892장) - 아, 그때 둘째 태어났지</li>
+        </ul>
+
+        <p>이런 거 보는 재미가 쏠쏠하더라고요.</p>
+
+        <h2>솔직한 단점들 (있습니다)</h2>
+
+        <div class="warning-box">
+            <p><strong>완벽하진 않습니다. 이런 점들은 좀 아쉬웠어요:</strong></p>
+
+            <h3>1. 한국어 지원 안 됨</h3>
+            <p>프로그램이 전부 영어예요. 저는 영어 잘 못하는데... 다행히 버튼이 몇 개 없어서 크게 문제는 안 됐지만, 한국어 버전 있으면 더 좋을 것 같아요.</p>
+
+            <h3>2. 오래된 사진은 정리 안 됨</h3>
+            <p>2010년 이전에 찍은 오래된 사진들(필름 카메라 스캔본, 초기 디지털 카메라 사진)은 GPS 정보가 없어서 "No Location Data" 폴더에 몰빵됐어요. 이건 어쩔 수 없는 것 같긴 한데... 4,892장이 여기 있으니 좀 아쉽긴 하더라고요.</p>
+            <p>물론 수동으로 위치 추가하는 기능이 있긴 한데, 제가 그걸 배우기는 좀... 귀찮았습니다.</p>
+
+            <h3>3. 맥(Mac)에서는 안 됨</h3>
+            <p>저는 윈도우라 상관없지만, 아들이 맥북 쓰는데 거기선 안 되더라고요. 윈도우 전용이에요.</p>
+
+            <h3>4. 사진 편집 기능은 없음</h3>
+            <p>이 프로그램은 "정리만" 해줘요. 사진 밝기 조절, 자르기, 필터 같은 건 못 해요. 그건 다른 프로그램 써야 해요. 저는 정리만 잘 되면 됐어서 상관없었지만, 혹시나 편집도 같이 하고 싶으신 분들은 알아두세요.</p>
+        </div>
+
+        <p>근데 솔직히... 이 정도 단점은 저한테는 별로 중요하지 않았어요. <strong>정리만 잘 해주면 그걸로 충분했거든요.</strong></p>
+
+        <h2>누구한테 추천하나요?</h2>
+
+        <div class="solution-box">
+            <p><strong>이런 분들에게 강력 추천합니다:</strong></p>
+            <ul>
+                <li>✅ 컴퓨터 잘 모르는데 사진은 정리하고 싶은 분</li>
+                <li>✅ 복잡한 프로그램 배우기 싫은 분</li>
+                <li>✅ 몇만 장씩 사진이 쌓여서 손댈 수가 없는 분</li>
+                <li>✅ 특정 사진 찾을 때마다 몇 시간씩 날리는 분</li>
+                <li>✅ "그냥 자동으로 정리됐으면 좋겠다" 생각하는 분</li>
+                <li>✅ 클라우드는 싫고 내 컴퓨터에만 두고 싶은 분</li>
+                <li>✅ 월 구독 부담스러운 분 (한 번만 내면 됨)</li>
+                <li>✅ 윈도우 컴퓨터 쓰는 분</li>
+                <li>✅ 스마트폰이나 최근 카메라로 찍은 사진 많은 분 (GPS 있는 사진)</li>
+            </ul>
+        </div>
+
+        <div class="problem-box">
+            <p><strong>이런 분들한테는 안 맞을 수도:</strong></p>
+            <ul>
+                <li>❌ 맥(Mac) 쓰시는 분</li>
+                <li>❌ 사진 편집도 같이 하고 싶은 분 (이건 정리 전용)</li>
+                <li>❌ 오래된 사진만 있는 분 (GPS 정보 없으면 자동 정리 안 됨)</li>
+                <li>❌ 클라우드가 더 편한 분</li>
+                <li>❌ 영어 알레르기 심한 분 (버튼이 영어예요)</li>
+            </ul>
+        </div>
+
+        <h2>자주 묻는 질문 (제가 궁금했던 것들)</h2>
+
+        <div class="faq-item">
+            <p class="faq-question">Q: 정말 컴퓨터 초보도 쓸 수 있나요?</p>
+            <p><strong>A:</strong> 네! 저도 초보인데 했어요. 버튼 3개만 누르면 됩니다. 폴더 선택하고, 시작 버튼 누르고, 기다리면 끝이에요. 설명서 안 봐도 됩니다.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Q: 6만장 사진 한번에 정리하는 법이 정말 있나요?</p>
+            <p><strong>A:</strong> 네, PhotoGlobe가 그걸 해줍니다. 제가 실제로 60,247장을 1시간 52분 만에 정리했어요. 자동으로요.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Q: 무료 테스트는 어떻게 하나요?</p>
+            <p><strong>A:</strong> 프로그램 다운로드하면 500장까지는 무료로 정리할 수 있어요. 신용카드 입력 같은 거 없어요. 그냥 바로 써보면 됩니다.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Q: 제 원본 사진이 지워지거나 망가지진 않나요?</p>
+            <p><strong>A:</strong> 전혀요! 원본은 그대로 두고, 복사본을 만들어서 정리해줘요. 혹시 몰라 저는 외장하드에 백업도 해뒀지만, 원본은 하나도 안 건드려져요.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Q: GPS 정보 없는 오래된 사진은 어떻게 되나요?</p>
+            <p><strong>A:</strong> "No Location Data"라는 폴더에 따로 모아져요. 거기 있는 사진들은 나중에 수동으로 정리하거나 그냥 그대로 두면 됩니다. 저는 그냥 뒀어요.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Q: 인터넷이 꼭 필요한가요?</p>
+            <p><strong>A:</strong> 아니요! 완전히 오프라인으로 작동해요. 한 번 설치하면 인터넷 없어도 언제든 쓸 수 있어요.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Q: 사진이 어디 서버에 업로드되나요?</p>
+            <p><strong>A:</strong> 안 돼요! 전부 내 컴퓨터 안에서만 작동해요. 사진이 인터넷으로 나가지 않아요. 그래서 마음 편합니다.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Q: 가격이 39유로면 얼마죠?</p>
+            <p><strong>A:</strong> 환율에 따라 다른데, 제가 살 때는 약 5만 7천 원이었어요. <strong>한 번만 내면 평생 쓸 수 있어요.</strong> 월 구독 아니고요!</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Q: 나중에 새 사진 추가되면 또 정리해야 하나요?</p>
+            <p><strong>A:</strong> 네, 근데 엄청 쉬워요. 새 사진 폴더 선택하고 버튼 누르면 자동으로 기존 구조에 추가돼요. 저는 한 달에 한 번씩 돌려요. 5분이면 끝나요.</p>
+        </div>
+
+        <h2>6개월 사용 후 솔직한 평가</h2>
+
+        <p>이 프로그램 산 게 2025년 4월이었어요. 지금 10월이니까 6개월 넘게 썼네요.</p>
+
+        <blockquote>
+            "제 삶이 바뀌었다고 해도 과언이 아닙니다. 사진 때문에 스트레스 받던 게 완전히 사라졌어요. 이제는 가족들이 사진 달라고 하면 10초 안에 찾아서 보내줘요. 아내가 깜짝 놀랄 정도로요."
+        </blockquote>
+
+        <p><strong>구체적인 변화들:</strong></p>
+
+        <ul>
+            <li>📊 6개월 동안 추가로 촬영한 사진 3,847장도 자동 정리 완료</li>
+            <li>⏱️ 사진 찾는데 쓰던 시간 <strong>95% 감소</strong> (진짜 체감됨)</li>
+            <li>😊 가족들한테 "사진 전문가" 소리 들음 (ㅋㅋ 저는 그냥 버튼만 눌렀는데)</li>
+            <li>🎁 아내 생일에 2010-2024년 베스트 사진 모음 USB 선물했는데 엄청 좋아함</li>
+            <li>💾 외장하드에도 똑같은 정리된 구조로 백업 완료 (마음의 평화...)</li>
+            <li>📱 장모님께 스마트폰으로 쉽게 사진 찾아드릴 수 있게 됨</li>
+        </ul>
+
+        <p>실제 사례: 지난주에 딸 학교에서 "2020년 유치원 때 사진 가져오래요" 했는데...</p>
+
+        <p>South Korea → 2020 폴더 → 쭉 보면서 유치원 사진 골라서 인화 → <strong>총 소요 시간 15분</strong></p>
+
+        <p>예전 같았으면? 포기했을 겁니다. 아니면 하루 종일 찾아야 했겠죠.</p>
+
+        <h2>최종 결론</h2>
+
+        <div class="verdict-box">
+            <h3>⭐⭐⭐⭐⭐ 5점 만점에 5점</h3>
+            
+            <p><strong>컴퓨터 잘 모르는 52세가 60,000장 사진을 정리할 수 있었습니다.</strong></p>
+            
+            <p>저는 IT 전문가도 아니고, 복잡한 프로그램 배우는 것도 싫어하는 평범한 회사원입니다. 그런 제가 15년 동안 쌓인 사진 지옥에서 벗어날 수 있었던 건 <strong>오직 PhotoGlobe Sorter 덕분</strong>입니다.</p>
+            
+            <p><strong>제일 좋았던 3가지:</strong></p>
+            <ol>
+                <li><strong>진짜 쉬움</strong> - 클릭 3번이면 끝. 배울 필요 없음</li>
+                <li><strong>완전 자동</strong> - 제가 할 일이 거의 없음. 프로그램이 다 함</li>
+                <li><strong>한 번만 지불</strong> - 5만 7천 원으로 평생 사용. 월 구독 부담 없음</li>
+            </ol>
+            
+            <p><strong>이런 분들에게 강력 추천:</strong> 컴퓨터 초보, 사진 많이 쌓인 분, 복잡한 거 싫어하는 분, 자동으로 정리되길 바라는 분</p>
+            
+            <p><strong>비추천:</strong> 맥 사용자, 사진 편집도 같이 하고 싶은 분</p>
+            
+            <p style="margin-top: 20px;"><em><strong>만약 3년 전으로 돌아갈 수 있다면, 제일 먼저 이 프로그램부터 살 겁니다. 그동안 사진 찾느라 낭비한 수백 시간이 아까워요.</strong></em></p>
+        </div>
+
+        <h2>직접 테스트해보세요 (무료)</h2>
+
+        <div class="cta-section">
+            <h3 style="color: white; margin-bottom: 18px;">500장 무료 테스트 - 카드 등록 필요 없음</h3>
+            
+            <p>저처럼 컴퓨터 잘 모르셔도 됩니다. 클릭 3번이면 끝나요.</p>
+            
+            <p class="price">€39</p>
+            <p style="font-size: 1.15em;">약 57,000원 • 한 번만 지불 • 평생 사용 • 월 구독 없음</p>
+            
+            <div class="benefits-list">
+                <p><strong>✓</strong> 500장 무료 테스트 (카드 등록 불필요)</p>
+                <p><strong>✓</strong> 100% 오프라인 작동 (인터넷 불필요)</p>
+                <p><strong>✓</strong> 자동 정리 (날짜·장소별)</p>
+                <p><strong>✓</strong> 초보자도 쉽게 사용</p>
+                <p><strong>✓</strong> 내 컴퓨터에서만 작동 (클라우드 없음)</p>
+            </div>
+            
+            <a href="https://www.albumforge.com/photoglobe-sorter/" class="cta-button">무료 체험 다운로드 (500장)</a>
+            
+            <p style="font-size: 0.95em; margin-top: 22px;">윈도우 전용 • 원본 파일 손상 없음 • 안전함</p>
+        </div>
+
+        <footer>
+            <p><strong>면책사항:</strong> 이 글은 제 개인적인 경험을 솔직하게 쓴 것입니다. 회사로부터 돈을 받거나 협찬을 받지 않았습니다. 제 돈 주고 직접 구매해서 6개월 넘게 쓰고 있는 실제 사용자입니다.</p>
+            
+            <p style="margin-top: 18px;"><strong>김민수</strong><br>
+            52세, 회사원<br>
+            서울특별시 강남구<br>
+            2025년 10월 21일</p>
+            
+            <p style="margin-top: 18px;">
+                <a href="https://www.albumforge.com/photoglobe-sorter/" style="color: #d32f2f; font-weight: bold;">공식 사이트: albumforge.com/photoglobe-sorter</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
